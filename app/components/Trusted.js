@@ -22,7 +22,7 @@ const FiveImageSlider = ({ images }) => (
 );
 
 const ThreeImageSlider = ({ images }) => (
-  <div className='mt-12 relative overflow-hidden'>
+  <div className='mt-10 md:mt-12 relative overflow-hidden'>
     <div className='marquee-container-one flex'>
       <div className='marquee-content flex'>
         {images.concat(images).map((image, index) => ( 
@@ -56,11 +56,11 @@ const Trusted = () => {
   ]
 
   return (
-    <div className='max-w-[950px] w-full mx-auto py-20'>
-      <h3 className='text-center text-[#818898] text-[20px] leading-[28px] font-medium'>
+    <div className='max-w-[950px] w-full mx-auto py-12 md:py-20'>
+      <h3 className='text-center text-[#818898] text-[18px] sm:text-[20px] leading-[28px] font-medium'>
         Trusted by beloved partner and customer
       </h3>
-      <div className='mt-12'>
+      <div className='mt-6 md:mt-12'>
         <FiveImageSlider images={images1} />
         <ThreeImageSlider images={images2} />
       </div>

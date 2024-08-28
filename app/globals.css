@@ -103,3 +103,15 @@ body {
     transform: translateX(-50%);
   }
 }
+
+
+/* Custom CSS for FAQ animations */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.faq-content.open {
+  max-height: 500px; /* Adjust this value based on content */
+}
