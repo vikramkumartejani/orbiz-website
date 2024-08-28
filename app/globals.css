@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-custom {
+  font-family: 'Inter Display V', sans-serif;
+}
+
+.no-select {
+  user-select: none !important;
+}
+
+
+.custom-border {
+  position: relative;
+  padding: 5px 12px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.custom-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(
+    92.26deg,
+    rgba(95, 87, 255, 0.3) -1.79%,
+    rgba(51, 207, 255, 0.3) 127.15%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  z-index: 0;
+}
+
+.custom-border > * {
+  position: relative;
+  z-index: 1;
+}
+
+.gradient-text {
+  background: linear-gradient(91.13deg, #5f57ff -9.06%, #33cfff 149.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.custom-bg {
+  background: linear-gradient(179.19deg, rgba(255, 255, 255, 0) 0.7%, rgba(255, 255, 255, 0.15) 180.65%);
+}
+
+
