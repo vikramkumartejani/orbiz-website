@@ -13,49 +13,49 @@ const cardsData = [
     },
     {
         rating: '4.8',
-        review: '“Payments are the main interaction point between Accenture’s financial services clients and their customers, and are core to our relationships beyond that sector too.”',
+        review: '“Payments are the main interaction point between Accentures financial services clients and their customers, and are core to our relationships beyond that sector too.”',
         profileImg: '/assets/icons/profile-rating.svg',
         name: 'Charolette Hanlin',
         position: 'Co-Founder, Heroes Digital',
     },
     {
         rating: '4.8',
-        review: '“Payments are the main interaction point between Accenture’s financial services clients and their customers, and are core to our relationships beyond that sector too.”',
+        review: '“Payments are the main interaction point between Accentures financial services clients and their customers, and are core to our relationships beyond that sector too.”',
         profileImg: '/assets/icons/profile-rating.svg',
         name: 'Charolette Hanlin',
         position: 'Co-Founder, Heroes Digital',
     },
     {
         rating: '4.8',
-        review: '“Payments are the main interaction point between Accenture’s financial services clients and their customers, and are core to our relationships beyond that sector too.”',
+        review: '“Payments are the main interaction point between Accentures financial services clients and their customers, and are core to our relationships beyond that sector too.”',
         profileImg: '/assets/icons/profile-rating.svg',
         name: 'Charolette Hanlin',
         position: 'Co-Founder, Heroes Digital',
     },
     {
         rating: '4.8',
-        review: '“Payments are the main interaction point between Accenture’s financial services clients and their customers, and are core to our relationships beyond that sector too.”',
+        review: '“Payments are the main interaction point between Accentures financial services clients and their customers, and are core to our relationships beyond that sector too.”',
         profileImg: '/assets/icons/profile-rating.svg',
         name: 'Charolette Hanlin',
         position: 'Co-Founder, Heroes Digital',
     },
     {
         rating: '4.8',
-        review: '“Payments are the main interaction point between Accenture’s financial services clients and their customers, and are core to our relationships beyond that sector too.”',
+        review: '“Payments are the main interaction point between Accentures financial services clients and their customers, and are core to our relationships beyond that sector too.”',
         profileImg: '/assets/icons/profile-rating.svg',
         name: 'Charolette Hanlin',
         position: 'Co-Founder, Heroes Digital',
     },
     {
         rating: '4.8',
-        review: '“Payments are the main interaction point between Accenture’s financial services clients and their customers, and are core to our relationships beyond that sector too.”',
+        review: '“Payments are the main interaction point between Accentures financial services clients and their customers, and are core to our relationships beyond that sector too.”',
         profileImg: '/assets/icons/profile-rating.svg',
         name: 'Charolette Hanlin',
         position: 'Co-Founder, Heroes Digital',
     },
     {
         rating: '4.8',
-        review: '“Payments are the main interaction point between Accenture’s financial services clients and their customers, and are core to our relationships beyond that sector too.”',
+        review: '“Payments are the main interaction point between Accentures financial services clients and their customers, and are core to our relationships beyond that sector too.”',
         profileImg: '/assets/icons/profile-rating.svg',
         name: 'Charolette Hanlin',
         position: 'Co-Founder, Heroes Digital',
@@ -107,7 +107,7 @@ const OurCustomer = () => {
                         <h1 className="text-[#5F57FF] text-[13px] leading-[21.7px] font-medium font-custom">Our Customers</h1>
                     </div>
                     <h1 className='max-w-[607px] mx-auto text-[#0D0D12] text-[40px] sm:text-[52px] sm:leading-[65px] tracking-[-0.01em] font-medium'>See What Our Customers Are Saying</h1>
-                    <p className='text-[#666D80] text-[16px] sm:text-[18px] sm:leading-[27px] font-normal max-w-[630px] mx-auto'>Here's what some of our customers say about our platform.</p>
+                    <p className='text-[#666D80] text-[16px] sm:text-[18px] sm:leading-[27px] font-normal max-w-[630px] mx-auto'>Heres what some of our customers say about our platform.</p>
                 </div>
                 <div className='mt-14 relative'>
                     <div className='absolute bottom-0 h-[300px] w-full bg-custom-bg-one'></div>
