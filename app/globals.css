@@ -11,17 +11,16 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .font-custom {
-  font-family: 'Inter Display V', sans-serif;
+  font-family: "Inter Display V", sans-serif;
 }
 
 .no-select {
   user-select: none !important;
 }
-
 
 .custom-border {
   position: relative;
@@ -63,7 +62,44 @@ body {
 }
 
 .custom-bg {
-  background: linear-gradient(179.19deg, rgba(255, 255, 255, 0) 0.7%, rgba(255, 255, 255, 0.15) 180.65%);
+  background: linear-gradient(
+    179.19deg,
+    rgba(255, 255, 255, 0) 0.7%,
+    rgba(255, 255, 255, 0.15) 180.65%
+  );
 }
 
+.marquee-container-one {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: auto;
+  width: 700px;
+}
 
+.marquee-container {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 100px;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee-slide {
+  flex-shrink: 0;
+  padding-right: 20px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

@@ -1,8 +1,13 @@
 import React from 'react'
+import SolutionsHero from './SolutionsHero'
+import Trusted from '../components/Trusted'
 
 const Solutions = () => {
   return (
-    <div>Solutions</div>
+    <div>
+      <SolutionsHero/>
+      <Trusted/>
+    </div>
   )
 }
 
