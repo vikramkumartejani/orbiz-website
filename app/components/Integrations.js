@@ -1,7 +1,79 @@
 import Image from 'next/image'
 import React from 'react'
 
+
+const MarqueeSliderOne = ({ images }) => (
+    <div className='mt-10 md:mt-12 relative overflow-hidden max-w-[600px] mx-auto'>
+        <div className='marquee-wrapper'>
+            <div className='marquee-items'>
+                {images.concat(images).map((image, index) => (
+                    <div key={index} className='marquee-item'>
+                        <img
+                            src={image.src}
+                            alt={image.alt}
+                        />
+                    </div>
+                ))}
+            </div>
+        </div>
+    </div>
+);
+const MarqueeSliderTwo = ({ images }) => (
+    <div className='mt-10 md:mt-12 relative overflow-hidden'>
+        <div className='marquee-wrapper'>
+            <div className='marquee-items'>
+                {images.concat(images).map((image, index) => (
+                    <div key={index} className='marquee-item'>
+                        <img
+                            src={image.src}
+                            alt={image.alt}
+                        />
+                    </div>
+                ))}
+            </div>
+        </div>
+    </div>
+);
+const MarqueeSliderThree = ({ images }) => (
+    <div className='mt-10 md:mt-12 relative overflow-hidden max-w-[600px] mx-auto'>
+        <div className='marquee-wrapper'>
+            <div className='marquee-items'>
+                {images.concat(images).map((image, index) => (
+                    <div key={index} className='marquee-item'>
+                        <img
+                            src={image.src}
+                            alt={image.alt}
+                        />
+                    </div>
+                ))}
+            </div>
+        </div>
+    </div>
+);
+
 const Integrations = () => {
+    const images1 = [
+        { src: '/assets/icons/card.svg', alt: 'AngelList' },
+        { src: '/assets/icons/card.svg', alt: 'Loom' },
+        { src: '/assets/icons/card.svg', alt: 'Retool' },
+        { src: '/assets/icons/card.svg', alt: 'Ramp' },
+        { src: '/assets/icons/card.svg', alt: 'Ramp' },
+    ]
+    const images2 = [
+        { src: '/assets/icons/card.svg', alt: 'AngelList' },
+        { src: '/assets/icons/card.svg', alt: 'Loom' },
+        { src: '/assets/icons/card.svg', alt: 'Retool' },
+        { src: '/assets/icons/card.svg', alt: 'Ramp' },
+        { src: '/assets/icons/card.svg', alt: 'Ramp' },
+    ]
+    const images3 = [
+        { src: '/assets/icons/card.svg', alt: 'AngelList' },
+        { src: '/assets/icons/card.svg', alt: 'Loom' },
+        { src: '/assets/icons/card.svg', alt: 'Retool' },
+        { src: '/assets/icons/card.svg', alt: 'Ramp' },
+        { src: '/assets/icons/card.svg', alt: 'Ramp' },
+    ]
+
     return (
         <div className='w-full px-2 py-5 md:p-5'>
             <div className='w-full border border-[#DFE1E7] rounded-[24px] shadow-custom-one px-4'>
@@ -16,8 +88,17 @@ const Integrations = () => {
                     </div>
 
                     <div className='flex flex-col items-center justify-center'>
-                        <Image src='/assets/integrations.svg' alt='integrations' width={768} height={320} className='py-10' />
-                        <button className='bg-[#5F57FF] w-full sm:w-[200px] h-[48px] rounded-[1000px] text-white text-[16px] leading-[24.9px] font-semibold'>Explore Integrations</button>
+                        <div>
+                            <div className='w-full max-w-[768px] mx-auto relative overflow-hidden'>
+                                <div className='absolute inset-0 bg-custom-two w-full h-full z-20'></div>
+                                <div className='flex flex-col items-center gap-3'>
+                                    <MarqueeSliderOne images={images1} />
+                                    <MarqueeSliderTwo images={images2} />
+                                    <MarqueeSliderThree images={images3} />
+                                </div>
+                            </div>
+                        </div>
+                        <button className='bg-[#5F57FF] mt-10 w-full sm:w-[200px] h-[48px] rounded-[1000px] text-white text-[16px] leading-[24.9px] font-semibold'>Explore Integrations</button>
                     </div>
                 </div>
             </div>

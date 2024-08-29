@@ -1,15 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
 
-
-
-
-
-
-
-
-
-
 const MarqueeSliderOne = ({ images }) => (
     <div className='mt-10 md:mt-12 relative overflow-hidden max-w-[600px] mx-auto'>
         <div className='marquee-wrapper'>
