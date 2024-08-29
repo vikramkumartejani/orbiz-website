@@ -4,11 +4,16 @@ import Trusted from '../components/Trusted'
 import OurCustomer from '../components/OurCustomer'
 import ExploreIntegrations from '../features/ExploreIntegrations'
 import Image from 'next/image'
+import Navbar from '../components/Navbar'
+import OptimizeRevenue from './OptimizeRevenue'
 
 const Solutions = () => {
   return (
     <div>
-      <SolutionsHero />
+      <div className='bg-[#0D0D12] px-4 md:px-5'>
+        <Navbar/>
+        <SolutionsHero />
+      </div>
       <Trusted />
       <div className='max-w-[1200px] mx-auto w-full px-5'>
         <div className='py-10'>
@@ -38,6 +43,7 @@ const Solutions = () => {
           </div>
         </div>
       </div>
+      <OptimizeRevenue/>
       <ExploreIntegrations />
       <OurCustomer />
     </div>

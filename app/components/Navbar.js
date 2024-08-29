@@ -57,39 +57,167 @@ const Navbar = () => {
     setMobileMenuOpen(prevState => !prevState);
   };
 
-  // Menu data
   const menuData = {
     features: {
       title: 'Features',
+      mainTitle: 'Features',
       items: [
-        { icon: '/path/to/icon1.svg', label: 'Data structure & sources', link: '/data-structure' },
-        { icon: '/path/to/icon2.svg', label: 'Automations', link: '/automations' },
-        { icon: '/path/to/icon3.svg', label: 'Work & collaboration', link: '/work-collaboration' },
-        { icon: '/path/to/icon4.svg', label: 'Reporting', link: '/reporting' },
-        { icon: '/path/to/icon5.svg', label: 'Changelog', link: '/changelog' },
+        {
+          title: 'Help center',
+          description: 'Learn more about Attio\'s features.',
+          icon: '/assets/icons/resources-help.svg',
+        },
+        {
+          title: 'Getting started',
+          description: 'Quick start guides and tutorials.',
+          icon: '/assets/icons/resources-help.svg',
+        },
+        {
+          title: 'Templates',
+          description: 'Help to accelerate your GTM motion.',
+          icon: '/assets/icons/resources-help.svg',
+        },
+        {
+          title: 'Blog',
+          description: 'Learn more about Attio, CRM, and GTM.',
+          icon: '/assets/icons/resources-help.svg',
+        },
+        {
+          title: 'Developers',
+          description: 'API setup and endpoint references.',
+          icon: '/assets/icons/resources-help.svg',
+        },
+      ],
+      additionalSection: [
+        {
+          title: 'Managing your data',
+          description: 'Manage your data in Attio.',
+        },
+        {
+          title: 'Email and calendar',
+          description: 'How we sync email and calendars.',
+        },
+        {
+          title: 'Imports and exports',
+          description: 'Import and export your data.',
+        },
+        {
+          title: 'Productivity and collaborating',
+          description: 'Collaborate with your team in real-time.',
+        },
+        {
+          title: 'Integrations and automations',
+          description: 'Connect Attio to your favorite apps.',
+        },
       ],
     },
     solutions: {
       title: 'Solutions',
+      mainTitle: 'Solutions',
       items: [
-        { icon: '/path/to/icon1.svg', label: 'Data structure & sources', link: '/data-structure' },
-        { icon: '/path/to/icon2.svg', label: 'Automations', link: '/automations' },
-        { icon: '/path/to/icon3.svg', label: 'Work & collaboration', link: '/work-collaboration' },
-        { icon: '/path/to/icon4.svg', label: 'Reporting', link: '/reporting' },
-        { icon: '/path/to/icon5.svg', label: 'Changelog', link: '/changelog' },
+        {
+          title: 'Help center',
+          description: 'Learn more about Attio\'s features.',
+          icon: '/assets/icons/resources-help.svg',
+        },
+        {
+          title: 'Getting started',
+          description: 'Quick start guides and tutorials.',
+          icon: '/assets/icons/resources-help.svg',
+        },
+        {
+          title: 'Templates',
+          description: 'Help to accelerate your GTM motion.',
+          icon: '/assets/icons/resources-help.svg',
+        },
+        {
+          title: 'Blog',
+          description: 'Learn more about Attio, CRM, and GTM.',
+          icon: '/assets/icons/resources-help.svg',
+        },
+        {
+          title: 'Developers',
+          description: 'API setup and endpoint references.',
+          icon: '/assets/icons/resources-help.svg',
+        },
+      ],
+      additionalSection: [
+        {
+          title: 'Managing your data',
+          description: 'Manage your data in Attio.',
+        },
+        {
+          title: 'Email and calendar',
+          description: 'How we sync email and calendars.',
+        },
+        {
+          title: 'Imports and exports',
+          description: 'Import and export your data.',
+        },
+        {
+          title: 'Productivity and collaborating',
+          description: 'Collaborate with your team in real-time.',
+        },
+        {
+          title: 'Integrations and automations',
+          description: 'Connect Attio to your favorite apps.',
+        },
       ],
     },
     resources: {
       title: 'Resources',
+      mainTitle: 'References',
       items: [
-        { icon: '/path/to/icon1.svg', label: 'Documentation', link: '/documentation' },
-        { icon: '/path/to/icon2.svg', label: 'API Reference', link: '/api-reference' },
-        { icon: '/path/to/icon3.svg', label: 'Guides', link: '/guides' },
-        { icon: '/path/to/icon4.svg', label: 'Tutorials', link: '/tutorials' },
+        {
+          title: 'Help center',
+          description: 'Learn more about Attio\'s features.',
+          icon: '/assets/icons/resources-help.svg',
+        },
+        {
+          title: 'Getting started',
+          description: 'Quick start guides and tutorials.',
+          icon: '/assets/icons/resources-help.svg',
+        },
+        {
+          title: 'Templates',
+          description: 'Help to accelerate your GTM motion.',
+          icon: '/assets/icons/resources-help.svg',
+        },
+        {
+          title: 'Blog',
+          description: 'Learn more about Attio, CRM, and GTM.',
+          icon: '/assets/icons/resources-help.svg',
+        },
+        {
+          title: 'Developers',
+          description: 'API setup and endpoint references.',
+          icon: '/assets/icons/resources-help.svg',
+        },
       ],
-    }
+      additionalSection: [
+        {
+          title: 'Managing your data',
+          description: 'Manage your data in Attio.',
+        },
+        {
+          title: 'Email and calendar',
+          description: 'How we sync email and calendars.',
+        },
+        {
+          title: 'Imports and exports',
+          description: 'Import and export your data.',
+        },
+        {
+          title: 'Productivity and collaborating',
+          description: 'Collaborate with your team in real-time.',
+        },
+        {
+          title: 'Integrations and automations',
+          description: 'Connect Attio to your favorite apps.',
+        },
+      ],
+    },
   };
-
 
 
   return (
@@ -120,17 +248,32 @@ const Navbar = () => {
                 {openDropdown === key && (
                   <div
                     ref={dropdownRef}
-                    className='absolute top-10 left-0 z-30 w-[300px] bg-white border rounded-lg text-black shadow-lg flex flex-wrap transition-opacity duration-300 opacity-100'
+                    className='absolute top-10 left-0 w-[650px] z-30 bg-white border rounded-lg text-black shadow-lg flex transition-opacity duration-300 opacity-100'
                   >
-                    <div className='p-4'>
-                      <h3 className='text-[16px] font-semibold mb-2'>{menu.title}</h3>
-                      <ul className='space-y-2'>
+                    <div className='px-4 flex'>
+                       <div className='border-r py-4 pr-4'>
+                        <h1 className='text-[16px] font-semibold'>{menu.mainTitle}</h1>
                         {menu.items.map((item, index) => (
-                          <li key={index} className='flex items-center gap-2 text-[14px] font-medium'>
-                            <Link href={item.link}>{item.label}</Link>
-                          </li>
+                          <div key={index} className='flex items-center gap-3 mt-3'>
+                            <div className='border min-w-[40px] min-h-[40px] rounded-lg flex items-center justify-center'>
+                              <Image src={item.icon} alt={item.title} width={35} height={35} />
+                            </div>
+                            <div>
+                              <h1 className='text-[13px] font-medium'>{item.title}</h1>
+                              <p className='text-[13px] opacity-70'>{item.description}</p>
+                            </div>
+                          </div>
                         ))}
-                      </ul>
+                      </div>
+                      {/* Right section for additionalSection */}
+                      <div className='p-4 flex flex-col gap-3'>
+                        {menu.additionalSection.map((section, index) => (
+                          <div key={index}>
+                            <h1 className='text-[13px] font-medium opacity-85'>{section.title}</h1>
+                            <p className='text-[13px] opacity-70'>{section.description}</p>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 )}
@@ -139,6 +282,9 @@ const Navbar = () => {
             <li><Link href='/customers' className='text-[15px] leading-[25.6px] font-medium'>Customers</Link></li>
             <li><Link href='/pricing' className='text-[15px] leading-[25.6px] font-medium'>Pricing</Link></li>
           </ul>
+
+
+
           <div className='lg:flex hidden items-center gap-2'>
             <button className='bg-[#1A1B25] border border-[#272835] text-white px-5 h-[40px] rounded-[1000px] text-[14px] leading-[21.7px] font-semibold'>Login</button>
             <button className='bg-[#5F57FF] px-4 h-[40px] rounded-[1000px] text-white text-[14px] leading-[21.7px] font-semibold'>Get Started</button>
