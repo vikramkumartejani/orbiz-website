@@ -5,11 +5,12 @@ import Trusted from '../components/Trusted'
 import Image from 'next/image'
 import FAQ from './FAQ'
 import OurCustomer from '../components/OurCustomer'
+import ExploreIntegrations from './ExploreIntegrations'
 
 const Features = () => {
   return (
     <div className='w-full'>
-      <div className='w-full bg-[#0D0D12]'>
+      <div className='bg-[#0D0D12] w-full '>
         <Navbar />
         <FeatureHero />
       </div>
@@ -42,6 +43,7 @@ const Features = () => {
           </div>
         </div>
       </div>
+      <ExploreIntegrations/>
       <OurCustomer/>
       <FAQ/>
     </div>

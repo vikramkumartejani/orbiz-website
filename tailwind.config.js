@@ -11,6 +11,7 @@ module.exports = {
         'footer': "url('/assets/footer-bg.svg')",
         'custom-bg': "linear-gradient(180deg, #1A1B25 0%, rgba(26, 27, 37, 0) 106.6%)",
         'custom-bg-one': "linear-gradient(180deg, rgba(248, 250, 251, 0) 0%, #F8FAFB 100%)",
+        'custom-two':"radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%)",
       },
       boxShadow: {
         'custom': ' 0px 1px 2px 0px #0D0D120A',

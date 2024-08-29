@@ -113,5 +113,32 @@ body {
 }
 
 .faq-content.open {
-  max-height: 500px; /* Adjust this value based on content */
+  max-height: 500px;  
+}
+
+
+.marquee-wrapper {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.marquee-items {
+  display: flex;
+  gap: 20px;
+  animation: marquee-animation 10s linear infinite;
+}
+
+.marquee-item {
+  flex-shrink: 0;
+}
+
+@keyframes marquee-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
