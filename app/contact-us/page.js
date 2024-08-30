@@ -76,7 +76,7 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
-          <div className="w-full md:max-w-[600px]" data-aos="fade-left">
+          <div className="w-full md:max-w-[600px]" data-aos="fade-up">
             <Form />
           </div>
         </div>

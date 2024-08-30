@@ -52,7 +52,7 @@ const Blogs = () => {
 
                 <div className='mt-10 md:mt-[70px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-8'>
                     {articles.map((article) => (
-                        <div key={article.id}>
+                        <div key={article.id} data-aos="fade-up">
                             <Image src={article.imageSrc} alt={article.altText} width={365} height={200} className='w-full' />
                             <div className='mt-4 md:mt-6 flex flex-col gap-2'>
                                 <h4 className='text-[#666D80] text-[16px] leading-[25px] font-medium'>{article.title}</h4>

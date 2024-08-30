@@ -139,11 +139,12 @@ const OurCustomer = () => {
           <div className="w-full max-w-[1160px] mx-auto">
             <div
               className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-              data-aos="fade-right"
+              // data-aos="fade-up"
             >
               {visibleCards.map((card, index) => (
                 <div
                   key={index}
+                  data-aos="fade-up"
                   className="bg-white px-3.5 py-5 lg:p-6 rounded-[16px]"
                 >
                   <div className="flex items-center gap-2">

@@ -57,7 +57,7 @@ const Form = () => {
             </Link>
           </p>
         </div>
-        <button className="mt-4 bg-[#5F57FF] h-[52px] w-full rounded-[1000px] shadow-custom-one text-[16px] font-custom font-semibold leading-[24.6px] transition-all duration-300 transform hover:scale-[101%] hover:shadow-lg hover:bg-[#6860f7]">
+        <button data-aos="fade-up" className="mt-4 bg-[#5F57FF] h-[52px] w-full rounded-[1000px] shadow-custom-one text-[16px] font-custom font-semibold leading-[24.6px] transition-all duration-300 transform hover:scale-[101%] hover:shadow-lg hover:bg-[#6860f7]">
           Send Message
         </button>
       </form>

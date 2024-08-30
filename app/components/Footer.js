@@ -25,12 +25,12 @@ const Footer = () => {
             Let’s Simply Finance.
           </h2>
           <div className="flex items-center md:flex-row flex-col justify-end gap-4 w-full md:w-1/2">
-            <Link href="#" data-aos="fade-up">
+            <Link href="#" data-aos="fade-up" className="md:w-fit w-full">
               <button className="shadow-custom bg-[#5F57FF] w-full md:w-[150px] h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]">
                 Get Started
               </button>
             </Link>
-            <Link href="/contact-su" data-aos="fade-up">
+            <Link href="/contact-su" className="md:w-fit w-full" data-aos="fade-up">
               <button className="shadow-custom bg-[#1A1B25] border border-[#272835] w-full md:w-[150px] h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold transition-all duration-300 transform hover:scale-105 hover:border-white">
                 Contact Us
               </button>
