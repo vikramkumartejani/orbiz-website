@@ -3,7 +3,7 @@ import React from "react";
 
 const OurCustomers = () => {
   return (
-    <div className="px-5">
+    <div className="px-5 overflow-hidden">
       <div className="max-w-[1200px] w-full mx-auto py-12 md:py-[88px]">
         <div className="flex lg:items-end lg:flex-row flex-col justify-between gap-4 w-full">
           <div data-aos="fade-right">

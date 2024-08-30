@@ -3,7 +3,7 @@ import React from "react";
 
 const GetStarted = () => {
   return (
-    <div className="mb-5 w-full px-5">
+    <div className="mb-5 w-full px-5 overflow-hidden">
       <div className="max-w-[1200px] w-full mx-auto py-[48px] md:py-[88px]">
         <div className="grid grid-cols-1 gap-10 md:gap-[112px]">
           <div className="grid md:grid-cols-2 items-center gap-10 md:gap-12 xl:gap-24">

@@ -5,19 +5,19 @@ import OurCustomers from "./components/OurCustomers";
 import Integrations from "./components/Integrations";
 import Hero from "./components/Hero";
 import AOS from "aos";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      duration: 1200,  
+      duration: 1200,
       offset: 200,
-      once: true, 
+      once: true,
     });
   }, []);
   return (
-    <div className="w-full overflow-x-hidden">
+    <div className="w-full">
       <Hero />
       <PaymentEvolution />
       <GetStarted />

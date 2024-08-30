@@ -3,7 +3,7 @@ import React from "react";
 
 const PaymentEvolution = () => {
   return (
-    <div className="w-full px-2 md:px-5 pb-5">
+    <div className="w-full px-2 md:px-5 pb-5 overflow-hidden">
       <div
         className="w-full border border-[#DFE1E7] rounded-[24px] shadow-custom-one px-4"
         data-aos="fade-up"
