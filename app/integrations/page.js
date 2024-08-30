@@ -32,7 +32,7 @@ const Integrations = () => {
   };
 
   return (
-    <div className="w-full">
+    <div className="w-full overflow-x-hidden">
       <Navbar />
       <div className="max-w-[1200px] mx-auto w-full relative px-5">
         <div

@@ -20,7 +20,7 @@ const Solutions = () => {
   }, []);
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <div className="bg-[#0D0D12] px-4 md:px-5">
         <Navbar />
         <SolutionsHero />

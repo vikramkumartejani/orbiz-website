@@ -16,7 +16,7 @@ const ContactUs = () => {
     });
   }, []);
   return (
-    <div className="bg-[#0D0D12] w-full px-5">
+    <div className="bg-[#0D0D12] w-full px-5 overflow-x-hidden">
       <Navbar />
       <div className="max-w-[1200px] mx-auto w-full py-10 md:py-14 text-white">
         <div className="w-full flex items-start justify-between md:flex-row flex-col gap-8 lg:gap-14">
