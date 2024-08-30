@@ -73,18 +73,15 @@ const OurCustomer = () => {
   const [showAll, setShowAll] = useState(false);
   const [visibleCards, setVisibleCards] = useState([]);
 
-  // Function to handle the "See All" button click
   const handleShowAll = () => {
     setShowAll(true);
   };
 
-  // Function to handle the "See Less" button click
   const handleShowLess = () => {
     setShowAll(false);
   };
 
-  // Determine the number of cards to display based on screen width
-  useEffect(() => {
+   useEffect(() => {
     const updateVisibleCards = () => {
       if (showAll) {
         setVisibleCards(cardsData);

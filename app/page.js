@@ -4,22 +4,20 @@ import GetStarted from "./components/GetStarted";
 import OurCustomers from "./components/OurCustomers";
 import Integrations from "./components/Integrations";
 import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import "aos/dist/aos.css"; 
 import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
     AOS.init({
-      duration: 1200, // Set your animation duration
-      once: true, // Whether animation should happen only once
-      // Additional options can be added here
+      duration: 1200,  
+      once: false, 
+      loop: true,
     });
   }, []);
   return (
     <div className="w-full overflow-x-hidden">
-      {/* <Navbar/> */}
       <Hero />
       <PaymentEvolution />
       <GetStarted />

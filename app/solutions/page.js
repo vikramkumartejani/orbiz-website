@@ -9,6 +9,7 @@ import Navbar from "../components/Navbar";
 import OptimizeRevenue from "./OptimizeRevenue";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
+import Blogs from "./Blogs";
 
 const Solutions = () => {
   useEffect(() => {
@@ -136,6 +137,7 @@ const Solutions = () => {
       <OptimizeRevenue />
       <ExploreIntegrations />
       <OurCustomer />
+      <Blogs/>
     </div>
   );
 };

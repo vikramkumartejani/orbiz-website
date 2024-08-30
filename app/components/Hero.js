@@ -6,7 +6,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div className="w-full px-2 md:px-5 py-2 md:py-5">
-      <div className="bg-[#0D0D12] text-white w-full rounded-[24px] pb-10 lg:pb-24">
+      <div className="bg-[#0D0D12] text-white w-full rounded-[24px] pb-10 lg:pb-24 px-4">
         <Navbar />
         <div className="pt-10 md:pt-24 w-full px-5">
           <div className="max-w-[1200px] mx-auto w-full flex lg:items-start items-center lg:justify-between lg:flex-row flex-col lg:gap-0 gap-10">

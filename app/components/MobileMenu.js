@@ -1,9 +1,8 @@
-import React, { useState, useRef } from 'react';
+'use client'
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { IoIosArrowDown } from 'react-icons/io';
-
-
 
 const MobileMenu = ({ isIntegrationsPage }) => {
     const [activeDropdown, setActiveDropdown] = useState(null);
@@ -12,60 +11,235 @@ const MobileMenu = ({ isIntegrationsPage }) => {
         setActiveDropdown((prevState) => (prevState === dropdown ? null : dropdown));
     };
 
+    const menuData = {
+        features: {
+            title: "Features",
+            mainTitle: "Features",
+            items: [
+                {
+                    title: "Help center",
+                    description: "Learn more about Attio's features.",
+                    icon: "/assets/icons/resources-help.svg",
+                },
+                {
+                    title: "Getting started",
+                    description: "Quick start guides and tutorials.",
+                    icon: "/assets/icons/resources-help.svg",
+                },
+                {
+                    title: "Templates",
+                    description: "Help to accelerate your GTM motion.",
+                    icon: "/assets/icons/resources-help.svg",
+                },
+                {
+                    title: "Blog",
+                    description: "Learn more about Attio, CRM, and GTM.",
+                    icon: "/assets/icons/resources-help.svg",
+                },
+                {
+                    title: "Developers",
+                    description: "API setup and endpoint references.",
+                    icon: "/assets/icons/resources-help.svg",
+                },
+            ],
+            additionalSection: [
+                {
+                    title: "Managing your data",
+                    description: "Manage your data in Attio.",
+                },
+                {
+                    title: "Email and calendar",
+                    description: "How we sync email and calendars.",
+                },
+                {
+                    title: "Imports and exports",
+                    description: "Import and export your data.",
+                },
+                {
+                    title: "Productivity and collaborating",
+                    description: "Collaborate with your team in real-time.",
+                },
+                {
+                    title: "Integrations and automations",
+                    description: "Connect Attio to your favorite apps.",
+                },
+            ],
+        },
+        solutions: {
+            title: "Solutions",
+            mainTitle: "Solutions",
+            items: [
+                {
+                    title: "Help center",
+                    description: "Learn more about Attio's features.",
+                    icon: "/assets/icons/resources-help.svg",
+                },
+                {
+                    title: "Getting started",
+                    description: "Quick start guides and tutorials.",
+                    icon: "/assets/icons/resources-help.svg",
+                },
+                {
+                    title: "Templates",
+                    description: "Help to accelerate your GTM motion.",
+                    icon: "/assets/icons/resources-help.svg",
+                },
+                {
+                    title: "Blog",
+                    description: "Learn more about Attio, CRM, and GTM.",
+                    icon: "/assets/icons/resources-help.svg",
+                },
+                {
+                    title: "Developers",
+                    description: "API setup and endpoint references.",
+                    icon: "/assets/icons/resources-help.svg",
+                },
+            ],
+            additionalSection: [
+                {
+                    title: "Managing your data",
+                    description: "Manage your data in Attio.",
+                },
+                {
+                    title: "Email and calendar",
+                    description: "How we sync email and calendars.",
+                },
+                {
+                    title: "Imports and exports",
+                    description: "Import and export your data.",
+                },
+                {
+                    title: "Productivity and collaborating",
+                    description: "Collaborate with your team in real-time.",
+                },
+                {
+                    title: "Integrations and automations",
+                    description: "Connect Attio to your favorite apps.",
+                },
+            ],
+        },
+        resources: {
+            title: "Resources",
+            mainTitle: "References",
+            items: [
+                {
+                    title: "Help center",
+                    description: "Learn more about Attio's features.",
+                    icon: "/assets/icons/resources-help.svg",
+                },
+                {
+                    title: "Getting started",
+                    description: "Quick start guides and tutorials.",
+                    icon: "/assets/icons/resources-help.svg",
+                },
+                {
+                    title: "Templates",
+                    description: "Help to accelerate your GTM motion.",
+                    icon: "/assets/icons/resources-help.svg",
+                },
+                {
+                    title: "Blog",
+                    description: "Learn more about Attio, CRM, and GTM.",
+                    icon: "/assets/icons/resources-help.svg",
+                },
+                {
+                    title: "Developers",
+                    description: "API setup and endpoint references.",
+                    icon: "/assets/icons/resources-help.svg",
+                },
+            ],
+            additionalSection: [
+                {
+                    title: "Managing your data",
+                    description: "Manage your data in Attio.",
+                },
+                {
+                    title: "Email and calendar",
+                    description: "How we sync email and calendars.",
+                },
+                {
+                    title: "Imports and exports",
+                    description: "Import and export your data.",
+                },
+                {
+                    title: "Productivity and collaborating",
+                    description: "Collaborate with your team in real-time.",
+                },
+                {
+                    title: "Integrations and automations",
+                    description: "Connect Attio to your favorite apps.",
+                },
+            ],
+        },
+    };
+
+    const renderDropdownItems = (menuKey) => {
+        const menu = menuData[menuKey];
+        return (
+            <div className="px-4 flex flex-col">
+                <div className="py-2">
+                     {menu.items.map((item, index) => (
+                        <div key={index} className="flex items-center gap-3 mt-3">
+                            <div className="border min-w-[40px] min-h-[40px] rounded-lg flex items-center justify-center">
+                                <Image
+                                    src={item.icon}
+                                    alt={item.title}
+                                    width={35}
+                                    height={35}
+                                />
+                            </div>
+                            <div>
+                                <h1 className="text-[13px] font-medium">{item.title}</h1>
+                                <p className="text-[13px] opacity-70">{item.description}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+                <div className="py-4 flex flex-col gap-3">
+                    {menu.additionalSection.map((section, index) => (
+                        <div key={index}>
+                            <h1 className="text-[13px] font-medium opacity-85">{section.title}</h1>
+                            <p className="text-[13px] opacity-70">{section.description}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        );
+    };
+
     return (
         <>
             <div className='py-6'>
-                <ul className='flex flex-col gap-3'>
+                <ul className='flex flex-col gap-5'>
                     <li className='relative'>
                         <div
                             className='flex items-center justify-between gap-1 text-base font-medium cursor-pointer'
                             onClick={() => handleDropdownToggle('solutions')}
                         >
-                            Solutions
+                            {menuData.solutions.mainTitle}
                             <IoIosArrowDown className='text-[20px]' />
                         </div>
-                        {activeDropdown === 'solutions' && (
-                            <div className='w-full px-0 py-2'>
-                                <Link href='/solutions/solution1' className='block py-1'>Solution 1</Link>
-                                <Link href='/solutions/solution2' className='block py-1'>Solution 2</Link>
-                                <Link href='/solutions/solution3' className='block py-1'>Solution 3</Link>
-                                <Link href='/solutions/solution4' className='block py-1'>Solution 4</Link>
-                            </div>
-                        )}
+                        {activeDropdown === 'solutions' && renderDropdownItems('solutions')}
                     </li>
                     <li className='relative'>
                         <div
                             className='flex items-center justify-between gap-1 text-base font-medium cursor-pointer'
                             onClick={() => handleDropdownToggle('features')}
                         >
-                            Features
+                            {menuData.features.mainTitle}
                             <IoIosArrowDown className='text-[20px]' />
                         </div>
-                        {activeDropdown === 'features' && (
-                            <div className='w-full px-0 py-2'>
-                                <Link href='/features/feature1' className='block py-1'>Feature 1</Link>
-                                <Link href='/features/feature2' className='block py-1'>Feature 2</Link>
-                                <Link href='/features/feature3' className='block py-1'>Feature 3</Link>
-                                <Link href='/features/feature4' className='block py-1'>Feature 4</Link>
-                            </div>
-                        )}
+                        {activeDropdown === 'features' && renderDropdownItems('features')}
                     </li>
                     <li className='relative'>
                         <div
                             className='flex items-center justify-between gap-1 text-base font-medium cursor-pointer'
-                            onClick={() => handleDropdownToggle('more')}
+                            onClick={() => handleDropdownToggle('resources')}
                         >
-                            More
+                            {menuData.resources.mainTitle}
                             <IoIosArrowDown className='text-[20px]' />
                         </div>
-                        {activeDropdown === 'more' && (
-                            <div className='w-full px-0 py-2'>
-                                <Link href='/more/option1' className='block py-1'>Option 1</Link>
-                                <Link href='/more/option2' className='block py-1'>Option 2</Link>
-                                <Link href='/more/option3' className='block py-1'>Option 3</Link>
-                                <Link href='/more/option4' className='block py-1'>Option 4</Link>
-                            </div>
-                        )}
+                        {activeDropdown === 'resources' && renderDropdownItems('resources')}
                     </li>
                     <li>
                         <Link href='/pricing' className='block text-base font-semibold'>
@@ -92,4 +266,3 @@ const MobileMenu = ({ isIntegrationsPage }) => {
 };
 
 export default MobileMenu;
-
