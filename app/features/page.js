@@ -18,7 +18,7 @@ const Features = () => {
      });
   }, []);
   return (
-    <div className="w-full overflow-x-hidden">
+    <div className="w-full ">
       <div className="bg-[#0D0D12] w-full ">
         <div className="px-4">
           <Navbar />

@@ -328,12 +328,12 @@ const Navbar = () => {
           </ul>
 
           <div className="lg:flex hidden items-center gap-2">
-            <button className="bg-[#1A1B25] border border-[#272835] text-white px-5 h-[40px] rounded-[1000px] hover:scale-100 scale-105 transition-all duration-300 text-[14px] leading-[21.7px] font-semibold">
+            <Link href='/' className="flex items-center justify-center bg-[#1A1B25] border border-[#272835] text-white px-5 h-[40px] rounded-[1000px] hover:scale-100 scale-105 transition-all duration-300 text-[14px] leading-[21.7px] font-semibold">
               Login
-            </button>
-            <button className="bg-[#5F57FF] px-4 h-[40px] rounded-[1000px] text-white text-[14px] leading-[21.7px] hover:scale-100 scale-105 transition-all duration-300 font-semibold">
+            </Link>
+            <Link href='/#get-started' className="flex items-center justify-center bg-[#5F57FF] px-4 h-[40px] rounded-[1000px] text-white text-[14px] leading-[21.7px] hover:scale-100 scale-105 transition-all duration-300 font-semibold">
               Get Started
-            </button>
+            </Link>
           </div>
           <button className="lg:hidden block" onClick={handleMobileMenuToggle}>
             <Image

@@ -47,9 +47,9 @@ const FeatureHero = () => {
               className="w-full mt-4 flex items-center gap-3 sm:flex-row flex-col"
               data-aos="fade-up"
             >
-              <button className="bg-[#5F57FF] shadow-custom w-full sm:w-[150px] h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]">
+              <Link href='#get-started' className="flex items-center justify-center bg-[#5F57FF] shadow-custom w-full sm:w-[150px] h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]">
                 Get Started
-              </button>
+              </Link>
               <Link
                 href="/contact-us"
                 className="flex items-center justify-center custom-bg border border-[#FFFFFF26] shadow-custom w-full sm:w-[150px] h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition-all duration-300 transform hover:scale-105 hover:border-white"

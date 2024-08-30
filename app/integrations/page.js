@@ -9,6 +9,7 @@ import Dropdown from "./Dropdown";
 import DropdownTabs from "./DropdownTabs";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
+import Link from "next/link";
 
 const Integrations = () => {
   useEffect(() => {
@@ -32,7 +33,7 @@ const Integrations = () => {
   };
 
   return (
-    <div className="w-full overflow-x-hidden">
+    <div className="w-full ">
       <div className="px-4">
       <Navbar />
       </div>
@@ -79,12 +80,12 @@ const Integrations = () => {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <button className="sm:w-[150px] w-full h-[52px] scale-105 hover:scale-100 transition-all duration-300 rounded-[1000px] bg-[#5F57FF] shadow-custom text-white text-[16px] font-semibold leading-[24px]">
+            <Link href='/#get-started' className="flex items-center justify-center sm:w-[150px] w-full h-[52px] scale-105 hover:scale-100 transition-all duration-300 rounded-[1000px] bg-[#5F57FF] shadow-custom text-white text-[16px] font-semibold leading-[24px]">
               Get Started
-            </button>
-            <button className="sm:w-[150px] w-full h-[52px] scale-105 hover:scale-100 transition-all duration-300 rounded-[1000px] bg-white border border-[#DFE1E7] shadow-custom text-[#0D0D12] text-[16px] font-semibold leading-[24px]">
+            </Link>
+            <Link href='/contact-us' className="flex items-center justify-center sm:w-[150px] w-full h-[52px] scale-105 hover:scale-100 transition-all duration-300 rounded-[1000px] bg-white border border-[#DFE1E7] shadow-custom text-[#0D0D12] text-[16px] font-semibold leading-[24px]">
               Contact Us
-            </button>
+            </Link>
           </div>
         </div>
       </div>
