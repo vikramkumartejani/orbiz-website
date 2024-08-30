@@ -33,13 +33,14 @@ const Integrations = () => {
 
   return (
     <div className="w-full overflow-x-hidden">
+      <div className="px-4">
       <Navbar />
+      </div>
       <div className="max-w-[1200px] mx-auto w-full relative px-5">
         <div
           className="absolute inset-0 bg-cover opacity-70 bg-bottom"
           style={{ backgroundImage: "url('/assets/icons/background.png')" }}
-          data-aos="fade-up"
-        ></div>
+         ></div>
         <div
           className="relative text-center flex flex-col gap-4 z-10 py-12 pb-12 sm:pb-20"
           data-aos="fade-up"
@@ -78,10 +79,10 @@ const Integrations = () => {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <button className="sm:w-[150px] w-full h-[52px] rounded-[1000px] bg-[#5F57FF] shadow-custom text-white text-[16px] font-semibold leading-[24px]">
+            <button className="sm:w-[150px] w-full h-[52px] scale-105 hover:scale-100 transition-all duration-300 rounded-[1000px] bg-[#5F57FF] shadow-custom text-white text-[16px] font-semibold leading-[24px]">
               Get Started
             </button>
-            <button className="sm:w-[150px] w-full h-[52px] rounded-[1000px] bg-white border border-[#DFE1E7] shadow-custom text-[#0D0D12] text-[16px] font-semibold leading-[24px]">
+            <button className="sm:w-[150px] w-full h-[52px] scale-105 hover:scale-100 transition-all duration-300 rounded-[1000px] bg-white border border-[#DFE1E7] shadow-custom text-[#0D0D12] text-[16px] font-semibold leading-[24px]">
               Contact Us
             </button>
           </div>
@@ -119,7 +120,7 @@ const Integrations = () => {
                 <Dropdown options={options} placeholder="Latest Updated" />
               </div>
             </div>
-            <div data-aos="fade-left">
+            <div>
               <TabsContent category={selectedCategory} />
             </div>
           </div>

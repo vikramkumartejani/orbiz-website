@@ -5,7 +5,7 @@ const OptimizeRevenue = () => {
   return (
     <div className="p-4 md:p-8">
       <div className="bg-[#F8FAFB] py-14 md:py-20 rounded-[24px] border border-[#ECEFF3]">
-        <div className="flex flex-col text-center gap-4">
+        <div className="flex flex-col text-center gap-4 px-5">
           <div
             className="shadow-custom border border-[#DFE1E7] bg-white rounded-[1000px] mx-auto px-3 py-1 max-w-[113px] flex items-center gap-1.5"
             data-aos="fade-up"
@@ -41,9 +41,7 @@ const OptimizeRevenue = () => {
         <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-[1160px] mx-auto w-full px-4">
           <div
             className="bg-[#FFFFFF] rounded-[16px] p-4 py-6 md:p-8"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
+            data-aos="fade-up"          >
             <Image
               src="/assets/icons/instant-payouts.svg"
               alt="instant-payouts"
@@ -60,12 +58,11 @@ const OptimizeRevenue = () => {
           </div>
           <div
             className="bg-[#FFFFFF] rounded-[16px] p-4 py-6 md:p-8"
-            data-aos="fade-left"
-            data-aos-delay="400"
+            data-aos="fade-up" 
           >
             <Image
-              src="/assets/icons/instant-payouts.svg"
-              alt="instant-payouts"
+              src="/assets/icons/free-transfer.svg"
+              alt="free-transfer"
               width={52}
               height={52}
             />
@@ -79,12 +76,11 @@ const OptimizeRevenue = () => {
           </div>
           <div
             className="bg-[#FFFFFF] rounded-[16px] p-4 py-6 md:p-8"
-            data-aos="fade-right"
-            data-aos-delay="500"
+            data-aos="fade-up" 
           >
             <Image
-              src="/assets/icons/instant-payouts.svg"
-              alt="instant-payouts"
+              src="/assets/icons/business.svg"
+              alt="business"
               width={52}
               height={52}
             />
@@ -98,12 +94,11 @@ const OptimizeRevenue = () => {
           </div>
           <div
             className="bg-[#FFFFFF] rounded-[16px] p-4 py-6 md:p-8"
-            data-aos="fade-left"
-            data-aos-delay="600"
+            data-aos="fade-up" 
           >
             <Image
-              src="/assets/icons/instant-payouts.svg"
-              alt="instant-payouts"
+              src="/assets/icons/access-to-capital.svg"
+              alt="access-to-capital"
               width={52}
               height={52}
             />

@@ -13,15 +13,16 @@ import "aos/dist/aos.css"; // Import AOS styles
 const Features = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1200, // Set your animation duration
-      once: true, // Whether animation should happen only once
-      // Additional options can be added here
-    });
+      duration: 1200,  
+      once: true,  
+     });
   }, []);
   return (
     <div className="w-full overflow-x-hidden">
-      <div className="bg-[#0D0D12] w-full">
-        <Navbar />
+      <div className="bg-[#0D0D12] w-full ">
+        <div className="px-4">
+          <Navbar />
+        </div>
         <FeatureHero />
       </div>
       <Trusted />

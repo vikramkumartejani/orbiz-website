@@ -4,8 +4,7 @@ import React from "react";
 
 const MarqueeSliderOne = ({ images }) => (
     <div
-        className="mt-10 md:mt-12 relative overflow-hidden max-w-[600px] mx-auto"
-        data-aos="fade-up"
+        className="mt-5 relative overflow-hidden max-w-[600px] mx-auto"
     >
         <div className="marquee-wrapper">
             <div className="marquee-items">
@@ -21,9 +20,7 @@ const MarqueeSliderOne = ({ images }) => (
 
 const MarqueeSliderTwo = ({ images }) => (
     <div
-        className="mt-10 md:mt-12 relative overflow-hidden"
-        data-aos="fade-up"
-        data-aos-delay="100"
+        className="mt-5 relative overflow-hidden"
     >
         <div className="marquee-wrapper">
             <div className="marquee-items">
@@ -39,9 +36,7 @@ const MarqueeSliderTwo = ({ images }) => (
 
 const MarqueeSliderThree = ({ images }) => (
     <div
-        className="mt-10 md:mt-12 relative overflow-hidden max-w-[600px] mx-auto"
-        data-aos="fade-up"
-        data-aos-delay="200"
+        className="mt-5 relative overflow-hidden max-w-[600px] mx-auto"
     >
         <div className="marquee-wrapper">
             <div className="marquee-items">
@@ -57,32 +52,33 @@ const MarqueeSliderThree = ({ images }) => (
 
 const ExploreIntegrations = () => {
     const images1 = [
-        { src: "/assets/icons/card.svg", alt: "AngelList" },
-        { src: "/assets/icons/card.svg", alt: "Loom" },
-        { src: "/assets/icons/card.svg", alt: "Retool" },
-        { src: "/assets/icons/card.svg", alt: "Ramp" },
-        { src: "/assets/icons/card.svg", alt: "Ramp" },
+        { src: "/assets/icons/drive.svg", alt: "drive" },
+        { src: "/assets/icons/in.svg", alt: "Loom" },
+        { src: "/assets/icons/card-one.svg", alt: "Retool" },
+        { src: "/assets/icons/card-two.svg", alt: "Ramp" },
+        { src: "/assets/icons/card-three.svg", alt: "Ramp" },
     ];
     const images2 = [
-        { src: "/assets/icons/card.svg", alt: "AngelList" },
-        { src: "/assets/icons/card.svg", alt: "Loom" },
-        { src: "/assets/icons/card.svg", alt: "Retool" },
-        { src: "/assets/icons/card.svg", alt: "Ramp" },
-        { src: "/assets/icons/card.svg", alt: "Ramp" },
+        { src: "/assets/icons/card-four.svg", alt: "" },
+        { src: "/assets/icons/card-five.svg", alt: "Loom" },
+        { src: "/assets/icons/card-six.svg", alt: "Retool" },
+        { src: "/assets/icons/card-seven.svg", alt: "Ramp" },
+        { src: "/assets/icons/card-eight.svg", alt: "Ramp" },
+        { src: "/assets/icons/card-nine.svg", alt: "Ramp" },
     ];
     const images3 = [
-        { src: "/assets/icons/card.svg", alt: "AngelList" },
-        { src: "/assets/icons/card.svg", alt: "Loom" },
-        { src: "/assets/icons/card.svg", alt: "Retool" },
-        { src: "/assets/icons/card.svg", alt: "Ramp" },
-        { src: "/assets/icons/card.svg", alt: "Ramp" },
+        { src: "/assets/icons/card-ten.svg", alt: "AngelList" },
+        { src: "/assets/icons/card-11.svg", alt: "Loom" },
+        { src: "/assets/icons/card-12.svg", alt: "Retool" },
+        { src: "/assets/icons/card-13.svg", alt: "Ramp" },
+        { src: "/assets/icons/card-14.svg", alt: "Ramp" },
     ];
 
     return (
         <div className="w-full md:pt-14 py-10 md:pb-20 flex md:flex-col flex-col-reverse">
-            <div className="w-full max-w-[768px] mx-auto relative overflow-hidden">
-                <div className="absolute inset-0 bg-custom-two w-full h-full z-20"></div>
-                <div className="flex flex-col items-center gap-3">
+            <div className="mt-10 md:mt-0 w-full max-w-[768px] mx-auto relative overflow-hidden">
+                <div className="absolute inset-0 bg-custom-two w-full h-full z-20" ></div>
+                <div className="flex flex-col items-center gap-2"  data-aos="fade-up">
                     <MarqueeSliderOne images={images1} />
                     <MarqueeSliderTwo images={images2} />
                     <MarqueeSliderThree images={images3} />

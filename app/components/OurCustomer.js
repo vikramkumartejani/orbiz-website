@@ -111,10 +111,10 @@ const OurCustomer = () => {
             data-aos="fade-up"
           >
             <Image
-              src="/assets/icons/file-text.svg"
+              src="/assets/icons/users.svg"
               alt="file-text"
-              width={13.33}
-              height={13.33}
+              width={16}
+              height={16}
               className="-mt-0.5"
             />
             <h1 className="text-[#5F57FF] text-[13px] leading-[21.7px] font-medium font-custom">
@@ -139,7 +139,6 @@ const OurCustomer = () => {
           <div className="w-full max-w-[1160px] mx-auto">
             <div
               className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-              // data-aos="fade-up"
             >
               {visibleCards.map((card, index) => (
                 <div
@@ -185,14 +184,14 @@ const OurCustomer = () => {
                 {!showAll ? (
                   <button
                     onClick={handleShowAll}
-                    className="bg-[#5F57FF] shadow-custom-one sm:w-fit w-full  px-4 h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition transform  hover:shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]"
+                    className="bg-[#5F57FF] shadow-custom-one sm:w-fit w-full  px-4 h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition transform hover:shadow-lg  duration-300  hover:scale-105  hover:bg-[#6860f7]"
                   >
                     See All Customer Stories
                   </button>
                 ) : (
                   <button
                     onClick={handleShowLess}
-                    className="bg-[#5F57FF] shadow-custom-one sm:w-fit w-full px-4 h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition transform hover:shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]"
+                    className="bg-[#5F57FF] shadow-custom-one sm:w-fit w-full px-4 h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition transform hover:shadow-lg duration-300  hover:scale-105 hover:bg-[#6860f7]"
                   >
                     See Less Customer Stories
                   </button>

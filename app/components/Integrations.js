@@ -57,26 +57,27 @@ const MarqueeSliderThree = ({ images }) => (
 
 const Integrations = () => {
   const images1 = [
-    { src: "/assets/icons/card.svg", alt: "AngelList" },
-    { src: "/assets/icons/card.svg", alt: "Loom" },
-    { src: "/assets/icons/card.svg", alt: "Retool" },
-    { src: "/assets/icons/card.svg", alt: "Ramp" },
-    { src: "/assets/icons/card.svg", alt: "Ramp" },
-  ];
-  const images2 = [
-    { src: "/assets/icons/card.svg", alt: "AngelList" },
-    { src: "/assets/icons/card.svg", alt: "Loom" },
-    { src: "/assets/icons/card.svg", alt: "Retool" },
-    { src: "/assets/icons/card.svg", alt: "Ramp" },
-    { src: "/assets/icons/card.svg", alt: "Ramp" },
-  ];
-  const images3 = [
-    { src: "/assets/icons/card.svg", alt: "AngelList" },
-    { src: "/assets/icons/card.svg", alt: "Loom" },
-    { src: "/assets/icons/card.svg", alt: "Retool" },
-    { src: "/assets/icons/card.svg", alt: "Ramp" },
-    { src: "/assets/icons/card.svg", alt: "Ramp" },
-  ];
+    { src: "/assets/icons/drive.svg", alt: "drive" },
+    { src: "/assets/icons/in.svg", alt: "Loom" },
+    { src: "/assets/icons/card-one.svg", alt: "Retool" },
+    { src: "/assets/icons/card-two.svg", alt: "Ramp" },
+    { src: "/assets/icons/card-three.svg", alt: "Ramp" },
+];
+const images2 = [
+    { src: "/assets/icons/card-four.svg", alt: "" },
+    { src: "/assets/icons/card-five.svg", alt: "Loom" },
+    { src: "/assets/icons/card-six.svg", alt: "Retool" },
+    { src: "/assets/icons/card-seven.svg", alt: "Ramp" },
+    { src: "/assets/icons/card-eight.svg", alt: "Ramp" },
+    { src: "/assets/icons/card-nine.svg", alt: "Ramp" },
+];
+const images3 = [
+    { src: "/assets/icons/card-ten.svg", alt: "AngelList" },
+    { src: "/assets/icons/card-11.svg", alt: "Loom" },
+    { src: "/assets/icons/card-12.svg", alt: "Retool" },
+    { src: "/assets/icons/card-13.svg", alt: "Ramp" },
+    { src: "/assets/icons/card-14.svg", alt: "Ramp" },
+];
 
   return (
     <div className="w-full px-2 py-5 md:p-5">

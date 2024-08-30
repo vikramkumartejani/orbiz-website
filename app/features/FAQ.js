@@ -28,7 +28,7 @@ const faqItems = [
 ];
 const FAQ = () => {
   useEffect(() => {
-    AOS.init({ duration: 1200 }); // You can adjust the duration or other settings here
+    AOS.init({ duration: 1200 });  
   }, []);
   const [openIndex, setOpenIndex] = useState(0);
 
@@ -81,7 +81,7 @@ const FAQ = () => {
             key={index}
             className="bg-white border border-[#DFE1E7] rounded-[12px] shadow-custom px-3.5 py-6 md:p-6"
             data-aos="fade-up"
-            data-aos-delay={`${400 + index * 100}`} // Staggered effect
+            data-aos-delay={`${400 + index * 100}`}  
           >
             <div className="flex items-center justify-between gap-4">
               <h1 className="text-[#0D0D12] text-[16px] md:text-[22px] md:leading-[31px] font-medium">
@@ -104,7 +104,7 @@ const FAQ = () => {
             <div
               className={`faq-content ${
                 openIndex === index ? "open" : ""
-              } transition-all duration-300 ease-out`}
+              } transition-all duration-500 ease`}
             >
               <p className="mt-2 md:mt-4 text-[#666D80] text-[14px] md:text-[17px] md:leading-[27px] font-normal">
                 {item.answer}

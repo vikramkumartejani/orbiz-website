@@ -328,16 +328,20 @@ const Navbar = () => {
           </ul>
 
           <div className="lg:flex hidden items-center gap-2">
-            <button className="bg-[#1A1B25] border border-[#272835] text-white px-5 h-[40px] rounded-[1000px] text-[14px] leading-[21.7px] font-semibold">
+            <button className="bg-[#1A1B25] border border-[#272835] text-white px-5 h-[40px] rounded-[1000px] hover:scale-100 scale-105 transition-all duration-300 text-[14px] leading-[21.7px] font-semibold">
               Login
             </button>
-            <button className="bg-[#5F57FF] px-4 h-[40px] rounded-[1000px] text-white text-[14px] leading-[21.7px] font-semibold">
+            <button className="bg-[#5F57FF] px-4 h-[40px] rounded-[1000px] text-white text-[14px] leading-[21.7px] hover:scale-100 scale-105 transition-all duration-300 font-semibold">
               Get Started
             </button>
           </div>
           <button className="lg:hidden block" onClick={handleMobileMenuToggle}>
             <Image
-              src="/assets/icons/menu.svg"
+             src={
+              isIntegrationsPage
+                ? "/assets/icons/menu-black.svg"
+                : "/assets/icons/menu.svg"
+            }
               alt="menu"
               width={24}
               height={24}

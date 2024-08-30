@@ -8,8 +8,8 @@ const SolutionsHero = () => {
       <div className="mx-auto w-full relative">
         <div
           className="absolute inset-0 bg-cover opacity-70 bg-bottom"
-          style={{ backgroundImage: "url('/assets/icons/background.png')" }}
-          data-aos="fade"
+          style={{ backgroundImage: "url('/assets/icons/background.png')", backgroundAttachment:'fixed' }}
+          // data-aos="fade"
         ></div>
         <div className="max-w-[1200px] mx-auto relative text-left flex lg:items-center justify-between lg:flex-row flex-col gap-8 lg:gap-4 z-10 py-12 md:py-16">
           <div className="flex items-start gap-4 flex-col" data-aos="fade-up">
@@ -19,7 +19,7 @@ const SolutionsHero = () => {
               data-aos-delay="100"
             >
               <Image
-                src="/assets/icons/file-text-one.svg"
+                src="/assets/icons/saas-solution.svg"
                 alt="file-text"
                 width={13.33}
                 height={13.33}
@@ -99,10 +99,9 @@ const SolutionsHero = () => {
           <div
             className="bg-custom-bg px-12 py-10 rounded-[20px] max-w-[450px] mx-auto"
             data-aos="fade-left"
-            data-aos-delay="600"
           >
             <Image
-              src="/assets/feature-hero.svg"
+              src="/assets/simplifying-payment.svg"
               alt="feature-hero"
               width={354}
               height={404}

@@ -105,7 +105,6 @@ body {
   }
 }
 
-
 /* Custom CSS for FAQ animations */
 .faq-content {
   max-height: 0;
@@ -114,9 +113,8 @@ body {
 }
 
 .faq-content.open {
-  max-height: 500px;  
+  max-height: 500px;
 }
-
 
 .marquee-wrapper {
   display: flex;
@@ -143,3 +141,19 @@ body {
     transform: translateX(-50%);
   }
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1A1B25;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f3f53;
+  border-radius: 10px;
+}
+
+ 

@@ -14,15 +14,15 @@ import Blogs from "./Blogs";
 const Solutions = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1200, // Set your animation duration
-      once: true, // Whether animation should happen only once
-      // Additional options can be added here
+      duration: 1200,
+      offset: 200,
+      once: true,
     });
   }, []);
 
   return (
-    <div className="overflow-x-hidden">
-      <div className="bg-[#0D0D12] px-4 md:px-5">
+    <div className="w-full overflow-x-hidden">
+      <div className="bg-[#0D0D12] px-4 md:px-5" >
         <Navbar />
         <SolutionsHero />
       </div>
@@ -34,8 +34,8 @@ const Solutions = () => {
             data-aos="fade-up"
           >
             <Image
-              src="/assets/create-invoices.svg"
-              alt="create-invoices"
+              src="/assets/power-any-billing.svg"
+              alt="power-any-billing.svg"
               width={532}
               height={430}
               className="w-full lg:w-[532px]"
@@ -47,7 +47,7 @@ const Solutions = () => {
                 data-aos-delay="100"
               >
                 <Image
-                  src="/assets/icons/file-text.svg"
+                  src="/assets/icons/pie-chart-blue.svg"
                   alt="file-text"
                   width={13.33}
                   height={13.33}
@@ -123,8 +123,8 @@ const Solutions = () => {
               </span>
             </div>
             <Image
-              src="/assets/operations.svg"
-              alt="operations"
+              src="/assets/get-paid.svg"
+              alt="get-paid"
               width={532}
               height={430}
               className="w-full lg:w-[532px]"

@@ -11,7 +11,7 @@ const FeatureHero = () => {
           style={{ backgroundImage: "url('/assets/icons/background.png')" }}
         ></div>
         <div
-          className="max-w-[1200px] mx-auto relative text-left flex lg:items-center justify-between lg:flex-row flex-col gap-8 lg:gap-4 px-5 z-10 py-12 md:py-20"
+          className="max-w-[1200px] mx-auto relative text-left flex lg:items-center justify-between lg:flex-row flex-col gap-8 lg:gap-4 px-5 z-10 py-10 md:py-20"
           data-aos="fade-up"
         >
           <div className="flex items-start gap-4 flex-col">
@@ -98,8 +98,8 @@ const FeatureHero = () => {
               data-aos="fade-up"
             >
               <Image
-                src="/assets/icons/collect-more-revenue.svg"
-                alt="collect-more-revenue"
+                src="/assets/icons/realtime-notifications.svg"
+                alt="Realtime Notifications"
                 width={44}
                 height={44}
               />
@@ -116,8 +116,8 @@ const FeatureHero = () => {
               data-aos="fade-up"
             >
               <Image
-                src="/assets/icons/collect-more-revenue.svg"
-                alt="collect-more-revenue"
+                src="/assets/icons/easy-management.svg"
+                alt="easy-management"
                 width={44}
                 height={44}
               />

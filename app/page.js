@@ -12,8 +12,8 @@ export default function Home() {
   useEffect(() => {
     AOS.init({
       duration: 1200,  
-      once: false, 
-      loop: true,
+      offset: 200,
+      once: true, 
     });
   }, []);
   return (

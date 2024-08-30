@@ -14,7 +14,7 @@ const Blogs = () => {
         },
         {
             id: 2,
-            imageSrc: '/assets/finance.svg',
+            imageSrc: '/assets/marketing-sales.svg',
             altText: 'finance',
             title: 'Finance',
             headline: 'Finance AI trends: filtering the hype to find the value',
@@ -23,7 +23,7 @@ const Blogs = () => {
         },
         {
             id: 3,
-            imageSrc: '/assets/finance.svg',
+            imageSrc: '/assets/finance-one.svg',
             altText: 'finance',
             title: 'Finance',
             headline: 'Finance AI trends: filtering the hype to find the value',
