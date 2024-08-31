@@ -179,8 +179,8 @@ const MobileMenu = ({ isIntegrationsPage }) => {
             <div className="flex flex-col">
                 <div className="py-2">
                     {menu.items.map((item, index) => (
-                        <div>
-                            <Link href='/' key={index} className="flex items-center gap-3 rounded-md p-2 hover:bg-[#2f2d2d83]">
+                        <div key={index}>
+                            <Link href='/' className="flex items-center gap-3 rounded-md p-2 hover:bg-[#2f2d2d83]">
                                 <div className="border min-w-[40px] min-h-[40px] rounded-lg flex items-center justify-center">
                                     <Image
                                         src={item.icon}
