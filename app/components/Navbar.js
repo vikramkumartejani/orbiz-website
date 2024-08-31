@@ -238,9 +238,8 @@ const Navbar = () => {
             </Link>
           </div>
           <ul
-            className={`lg:flex hidden items-center gap-5 ${
-              isIntegrationsPage ? "text-black" : "text-white"
-            }`}
+            className={`lg:flex hidden items-center gap-5 ${isIntegrationsPage ? "text-black" : "text-white"
+              }`}
           >
             {Object.entries(menuData).map(([key, menu]) => (
               <li
@@ -264,34 +263,36 @@ const Navbar = () => {
                   >
                     <div className="px-4 flex">
                       <div className="border-r py-4 pr-4">
-                        <h1 className="text-[16px] font-semibold">
+                        <h1 className="text-[16px] font-semibold mb-3">
                           {menu.mainTitle}
                         </h1>
                         {menu.items.map((item, index) => (
-                          <div
-                            key={index}
-                            className="flex items-center gap-3 mt-3"
-                          >
-                            <div className="border min-w-[40px] min-h-[40px] rounded-lg flex items-center justify-center">
-                              <Image
-                                src={item.icon}
-                                alt={item.title}
-                                width={35}
-                                height={35}
-                              />
-                            </div>
-                            <div>
-                              <h1 className="text-[13px] font-medium">
-                                {item.title}
-                              </h1>
-                              <p className="text-[13px] opacity-70">
-                                {item.description}
-                              </p>
-                            </div>
+                          <div className="">
+                            <Link href='/'
+                              key={index}
+                              className="flex items-center gap-3 hover:bg-gray-100 rounded-md p-2"
+                            >
+                              <div className="border min-w-[40px] min-h-[40px] rounded-lg flex items-center justify-center">
+                                <Image
+                                  src={item.icon}
+                                  alt={item.title}
+                                  width={35}
+                                  height={35}
+                                />
+                              </div>
+                              <div>
+                                <h1 className="text-[13px] font-medium">
+                                  {item.title}
+                                </h1>
+                                <p className="text-[13px] opacity-70">
+                                  {item.description}
+                                </p>
+                              </div>
+                            </Link>
                           </div>
                         ))}
                       </div>
-                      {/* Right section for additionalSection */}
+
                       <div className="p-4 flex flex-col gap-3">
                         {menu.additionalSection.map((section, index) => (
                           <div key={index}>
@@ -327,21 +328,21 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <div className="lg:flex hidden items-center gap-2">
-            <Link href='/' className="flex items-center justify-center bg-[#1A1B25] border border-[#272835] text-white px-5 h-[40px] rounded-[1000px] hover:scale-100 scale-105 transition-all duration-300 text-[14px] leading-[21.7px] font-semibold">
+          <div className="lg:flex hidden items-center gap-4">
+            <Link href='/login' className="hover:border-white flex items-center justify-center bg-[#1A1B25] w-[83px] border border-[#272835] text-white px-5 h-[40px] rounded-[1000px] hover:scale-100 scale-105 transition-all duration-300 text-[14px] leading-[21.7px] font-semibold">
               Login
             </Link>
-            <Link href='/#get-started' className="flex items-center justify-center bg-[#5F57FF] px-4 h-[40px] rounded-[1000px] text-white text-[14px] leading-[21.7px] hover:scale-100 scale-105 transition-all duration-300 font-semibold">
+            <Link href='/#get-started' className="flex items-center justify-center bg-[#5F57FF] w-[120px] h-[40px] rounded-[1000px] text-white text-[14px] leading-[21.7px] hover:scale-100 scale-105 transition-all duration-300 font-semibold">
               Get Started
             </Link>
           </div>
           <button className="lg:hidden block" onClick={handleMobileMenuToggle}>
             <Image
-             src={
-              isIntegrationsPage
-                ? "/assets/icons/menu-black.svg"
-                : "/assets/icons/menu.svg"
-            }
+              src={
+                isIntegrationsPage
+                  ? "/assets/icons/menu-black.svg"
+                  : "/assets/icons/menu.svg"
+              }
               alt="menu"
               width={24}
               height={24}

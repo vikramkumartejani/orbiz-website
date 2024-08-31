@@ -105,7 +105,7 @@ const Footer = () => {
               </h3>
               <li>
                 <Link
-                  href=""
+                  href="/"
                   className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
                 >
                   Payment Link
