@@ -95,6 +95,7 @@ const FAQ = () => {
                   src={`/assets/icons/${
                     openIndex === index ? "minus" : "plus"
                   }-circle.svg`}
+                  alt="icon"
                   width={24}
                   height={24}
                   className="min-h-[24px] min-w-[24px]"

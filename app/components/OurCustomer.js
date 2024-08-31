@@ -184,14 +184,14 @@ const OurCustomer = () => {
                 {!showAll ? (
                   <button
                     onClick={handleShowAll}
-                    className="bg-[#5F57FF] shadow-custom-one sm:w-fit w-full  px-4 h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition transform hover:shadow-lg  duration-300  hover:scale-105  hover:bg-[#6860f7]"
+                    className="bg-[#5F57FF] shadow-custom-one sm:w-fit w-full px-5 h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition transform hover:shadow-lg  duration-300  hover:scale-105  hover:bg-[#6860f7]"
                   >
                     See All Customer Stories
                   </button>
                 ) : (
                   <button
                     onClick={handleShowLess}
-                    className="bg-[#5F57FF] shadow-custom-one sm:w-fit w-full px-4 h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition transform hover:shadow-lg duration-300  hover:scale-105 hover:bg-[#6860f7]"
+                    className="bg-[#5F57FF] shadow-custom-one sm:w-fit w-full px-5 h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition transform hover:shadow-lg duration-300  hover:scale-105 hover:bg-[#6860f7]"
                   >
                     See Less Customer Stories
                   </button>
