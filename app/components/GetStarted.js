@@ -39,7 +39,7 @@ const GetStarted = () => {
                 Increase authorization rates, optimize your checkout conversion,
                 and offer local payment methods in every market.
               </p>
-              <Link href='/#get-started' className="flex items-center justify-center text-white mt-1 xl:mt-[26px] bg-[#5F57FF] shadow-custom-one w-full sm:w-[150px] h-[52px] sm:h-[40px] lg:h-[52px] rounded-[1000px] text-[16px] leading-[24.8px] font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]">
+              <Link href='/#get-started' className="flex items-center justify-center text-white mt-1 xl:mt-[26px] bg-[#5F57FF] shadow-custom-one w-full sm:w-[150px] h-[52px] sm:h-[40px] lg:h-[52px] rounded-[1000px] text-[16px] leading-[24.8px] font-semibold transition-all duration-300 transform scale-100 hover:scale-95 hover:shadow-lg">
                 Get Started
               </Link>
             </div>
@@ -69,7 +69,7 @@ const GetStarted = () => {
                 egestas montes mauris. Auctor vitae neque urna nam nunc
                 pellentesque.
               </p>
-              <Link href='/#get-started' className="flex items-center justify-center text-white mt-1 xl:mt-[26px] bg-[#5F57FF] shadow-custom-one w-full sm:w-[150px] h-[52px] sm:h-[40px] lg:h-[52px] rounded-[1000px] text-[16px] leading-[24.8px] font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]">
+              <Link href='/#get-started' className="flex items-center justify-center text-white mt-1 xl:mt-[26px] bg-[#5F57FF] shadow-custom-one w-full sm:w-[150px] h-[52px] sm:h-[40px] lg:h-[52px] rounded-[1000px] text-[16px] leading-[24.8px] font-semibold transition-all duration-300 transform scale-100 hover:scale-95 hover:shadow-lg">
                 Get Started
               </Link>
             </div>

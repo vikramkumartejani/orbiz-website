@@ -120,8 +120,8 @@ const Integrations = () => {
                 </div>
               </div>
             </div>
-            <Link href="/integrations" data-aos="fade-up">
-              <button className="bg-[#5F57FF] relative mt-10 w-full sm:w-[200px] h-[48px] rounded-[1000px] text-white text-[16px] leading-[24.9px] font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]">
+            <Link href="/integrations" data-aos="fade-up" className="w-full sm:w-fit">
+              <button className="bg-[#5F57FF] relative mt-10 min-w-full sm:w-[200px] h-[48px] rounded-[1000px] text-white text-[16px] leading-[24.9px] font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]">
                 Explore Integrations
               </button>
             </Link>

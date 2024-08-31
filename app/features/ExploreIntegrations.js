@@ -85,7 +85,7 @@ const ExploreIntegrations = () => {
                 </div>
             </div>
 
-            <div className="md:mt-10 flex flex-col gap-4 items-center text-center px-5">
+            <div className="w-full md:mt-10 flex flex-col gap-4 items-center text-center px-5">
                 <div
                     className="shadow-custom border border-[#DFE1E7] bg-white rounded-[1000px] mx-auto px-3 py-1 max-w-[118px] flex items-center gap-1.5"
                     data-aos="fade-up"
@@ -115,7 +115,7 @@ const ExploreIntegrations = () => {
                 >
                     Connect over 80+ partner tools available. Focus on what matters.
                 </p>
-                <Link href="/integrations" data-aos="fade-up" data-aos-delay="300">
+                <Link href="/integrations" data-aos="fade-up" data-aos-delay="300" className="w-full sm:w-fit">
                     <button className="mt-4 bg-[#5F57FF] px-6 w-full sm:w-[210px] h-[48px] rounded-[1000px] text-white text-[16px] leading-[24px] font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]">
                         Explore Integrations
                     </button>

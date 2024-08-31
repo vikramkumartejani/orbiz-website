@@ -176,26 +176,28 @@ const MobileMenu = ({ isIntegrationsPage }) => {
     const renderDropdownItems = (menuKey) => {
         const menu = menuData[menuKey];
         return (
-            <div className="px-4 flex flex-col">
+            <div className="flex flex-col">
                 <div className="py-2">
-                     {menu.items.map((item, index) => (
-                        <div key={index} className="flex items-center gap-3 mt-3">
-                            <div className="border min-w-[40px] min-h-[40px] rounded-lg flex items-center justify-center">
-                                <Image
-                                    src={item.icon}
-                                    alt={item.title}
-                                    width={35}
-                                    height={35}
-                                />
-                            </div>
-                            <div>
-                                <h1 className="text-[13px] font-medium">{item.title}</h1>
-                                <p className="text-[13px] opacity-70">{item.description}</p>
-                            </div>
+                    {menu.items.map((item, index) => (
+                        <div>
+                            <Link href='/' key={index} className="flex items-center gap-3 rounded-md p-2 hover:bg-[#2f2d2d83]">
+                                <div className="border min-w-[40px] min-h-[40px] rounded-lg flex items-center justify-center">
+                                    <Image
+                                        src={item.icon}
+                                        alt={item.title}
+                                        width={35}
+                                        height={35}
+                                    />
+                                </div>
+                                <div>
+                                    <h1 className="text-[13px] font-medium">{item.title}</h1>
+                                    <p className="text-[13px] opacity-70">{item.description}</p>
+                                </div>
+                            </Link>
                         </div>
                     ))}
                 </div>
-                <div className="py-4 flex flex-col gap-3">
+                <div className="p-3 flex flex-col gap-3">
                     {menu.additionalSection.map((section, index) => (
                         <div key={index}>
                             <h1 className="text-[13px] font-medium opacity-85">{section.title}</h1>
