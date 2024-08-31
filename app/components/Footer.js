@@ -296,25 +296,25 @@ const Footer = () => {
 
         <div className="flex items-center gap-2 sm:gap-14 justify-between sm:justify-center">
           <Link
-            href="/"
+            href="/privacy-policy"
             className="text-[#666D80] text-[14px] sm:text-[16px] sm:leading-[25.6px] font-normal"
           >
             Privacy Policy
           </Link>
           <Link
-            href="/"
+            href="/cookies"
             className="text-[#666D80] text-[14px] sm:text-[16px] sm:leading-[25.6px] font-normal"
           >
             Cookies
           </Link>
           <Link
-            href="/"
+            href="/security"
             className="text-[#666D80] text-[14px] sm:text-[16px] sm:leading-[25.6px] font-normal"
           >
             Security
           </Link>
           <Link
-            href="/"
+            href="/legal-document"
             className="text-[#666D80] text-[14px] sm:text-[16px] sm:leading-[25.6px] font-normal"
           >
             Legal Document
