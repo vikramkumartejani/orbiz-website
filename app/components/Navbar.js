@@ -267,9 +267,8 @@ const Navbar = () => {
                           {menu.mainTitle}
                         </h1>
                         {menu.items.map((item, index) => (
-                          // <div className="">
+                          <div  key={index}>
                             <Link href='/'
-                              key={index}
                               className="flex items-center gap-3 hover:bg-gray-100 rounded-md p-2"
                             >
                               <div className="border min-w-[40px] min-h-[40px] rounded-lg flex items-center justify-center">
@@ -289,7 +288,7 @@ const Navbar = () => {
                                 </p>
                               </div>
                             </Link>
-                          // </div>
+                           </div>
                         ))}
                       </div>
 
