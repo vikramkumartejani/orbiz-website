@@ -121,7 +121,7 @@ const Integrations = () => {
                 <Dropdown options={options} placeholder="Latest Updated" />
               </div>
             </div>
-            <div>
+            <div >
               <TabsContent category={selectedCategory} />
             </div>
           </div>
