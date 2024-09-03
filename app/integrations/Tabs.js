@@ -45,7 +45,7 @@ export default function Tabs({ onSelectCategory }) {
       <div className='py-8'>
         <div className=' border-dashed border border-[#DFE1E7]'></div>
       </div>
-      <div>
+      <div  data-aos="fade-up">
         <h1 className='text-[#0D0D12] text-[16px] leading-[25px] font-medium mb-1'>Request App</h1>
         <p className='text-[#666D80] text-[14px] font-normal leading-[21px] max-w-[200px]'>Can’t find what you’re looking for? Let us know.</p>
         <button className='text-[#0D0D12] text-[14px] leading-[21px] scale-105 hover:scale-100 transition-all duration-300 font-semibold border border-[#DFE1E7] bg-[#FFFFFF] w-[120px] h-[40px] rounded-[1000px] mt-4'>Request App</button>
