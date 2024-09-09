@@ -2,11 +2,10 @@
 import Navbar from "../components/Navbar";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import Tabs from "./Tabs";
-import TabsContent from "./TabsContent";
-import { IoIosArrowDown } from "react-icons/io";
-import Dropdown from "./Dropdown";
-import DropdownTabs from "./DropdownTabs";
+import Tabs from "../components/Tabs";
+import TabsContent from "../components/TabsContent";
+import Dropdown from "../components/Dropdown";
+import DropdownTabs from "../components/DropdownTabs";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import Link from "next/link";
@@ -35,13 +34,13 @@ const Integrations = () => {
   return (
     <div className="w-full ">
       <div className="px-4">
-      <Navbar />
+        <Navbar />
       </div>
       <div className="max-w-[1200px] mx-auto w-full relative px-5">
         <div
           className="absolute inset-0 bg-cover opacity-70 bg-bottom"
           style={{ backgroundImage: "url('/assets/icons/background.png')" }}
-         ></div>
+        ></div>
         <div
           className="relative text-center flex flex-col gap-4 z-10 py-12 pb-12 sm:pb-20"
           data-aos="fade-up"
@@ -80,10 +79,16 @@ const Integrations = () => {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <Link href='/#get-started' className="flex items-center justify-center sm:w-[150px] w-full h-[52px] scale-105 hover:scale-100 transition-all duration-300 rounded-[1000px] bg-[#5F57FF] shadow-custom text-white text-[16px] font-semibold leading-[24px]">
+            <Link
+              href="/#get-started"
+              className="flex items-center justify-center sm:w-[150px] w-full h-[52px] scale-105 hover:scale-100 transition-all duration-300 rounded-[1000px] bg-[#5F57FF] shadow-custom text-white text-[16px] font-semibold leading-[24px]"
+            >
               Get Started
             </Link>
-            <Link href='/contact-us' className="flex items-center justify-center sm:w-[150px] w-full h-[52px] scale-105 hover:scale-100 transition-all duration-300 rounded-[1000px] bg-white border border-[#DFE1E7] shadow-custom text-[#0D0D12] text-[16px] font-semibold leading-[24px]">
+            <Link
+              href="/contact-us"
+              className="flex items-center justify-center sm:w-[150px] w-full h-[52px] scale-105 hover:scale-100 transition-all duration-300 rounded-[1000px] bg-white border border-[#DFE1E7] shadow-custom text-[#0D0D12] text-[16px] font-semibold leading-[24px]"
+            >
               Contact Us
             </Link>
           </div>
@@ -92,7 +97,7 @@ const Integrations = () => {
       <div className="bg-white max-w-[1200px] w-full mx-auto py-20 px-5">
         <div className="flex items-start md:gap-8 lg:gap-14 w-full">
           <div data-aos="fade-right">
-            <Tabs onSelectCategory={handleCategoryChange} />
+            <Tabs onSelectCategory={handleCategoryChange} requestApp={true} />
           </div>
 
           <div className="w-full">
@@ -121,7 +126,7 @@ const Integrations = () => {
                 <Dropdown options={options} placeholder="Latest Updated" />
               </div>
             </div>
-            <div >
+            <div>
               <TabsContent category={selectedCategory} />
             </div>
           </div>

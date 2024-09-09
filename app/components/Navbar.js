@@ -9,7 +9,7 @@ import { RxCross2 } from "react-icons/rx";
 
 const Navbar = () => {
   const pathname = usePathname();
-  const isIntegrationsPage = pathname === "/integrations";
+  const isIntegrationsPage = pathname === "/integrations" || "/blog";
 
   const [openDropdown, setOpenDropdown] = useState(null);
   const [hovered, setHovered] = useState(false);
@@ -238,8 +238,9 @@ const Navbar = () => {
             </Link>
           </div>
           <ul
-            className={`lg:flex hidden items-center gap-5 ${isIntegrationsPage ? "text-black" : "text-white"
-              }`}
+            className={`lg:flex hidden items-center gap-5 ${
+              isIntegrationsPage ? "text-black" : "text-white"
+            }`}
           >
             {Object.entries(menuData).map(([key, menu]) => (
               <li
@@ -267,8 +268,9 @@ const Navbar = () => {
                           {menu.mainTitle}
                         </h1>
                         {menu.items.map((item, index) => (
-                          <div  key={index}>
-                            <Link href='/'
+                          <div key={index}>
+                            <Link
+                              href="/"
                               className="flex items-center gap-3 hover:bg-gray-100 rounded-md p-2"
                             >
                               <div className="border min-w-[40px] min-h-[40px] rounded-lg flex items-center justify-center">
@@ -288,7 +290,7 @@ const Navbar = () => {
                                 </p>
                               </div>
                             </Link>
-                           </div>
+                          </div>
                         ))}
                       </div>
 
@@ -328,10 +330,16 @@ const Navbar = () => {
           </ul>
 
           <div className="lg:flex hidden items-center gap-4">
-            <Link href='/login' className="hover:border-white flex items-center justify-center bg-[#1A1B25] w-[83px] border border-[#272835] text-white px-5 h-[40px] rounded-[1000px] hover:scale-100 scale-105 transition-all duration-300 text-[14px] leading-[21.7px] font-semibold">
+            <Link
+              href="/login"
+              className="hover:border-white flex items-center justify-center bg-[#1A1B25] w-[83px] border border-[#272835] text-white px-5 h-[40px] rounded-[1000px] hover:scale-100 scale-105 transition-all duration-300 text-[14px] leading-[21.7px] font-semibold"
+            >
               Login
             </Link>
-            <Link href='/#get-started' className="flex items-center justify-center bg-[#5F57FF] w-[120px] h-[40px] rounded-[1000px] text-white text-[14px] leading-[21.7px] hover:scale-100 scale-105 transition-all duration-300 font-semibold">
+            <Link
+              href="/#get-started"
+              className="flex items-center justify-center bg-[#5F57FF] w-[120px] h-[40px] rounded-[1000px] text-white text-[14px] leading-[21.7px] hover:scale-100 scale-105 transition-all duration-300 font-semibold"
+            >
               Get Started
             </Link>
           </div>
