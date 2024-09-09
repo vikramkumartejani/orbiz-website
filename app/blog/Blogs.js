@@ -21,12 +21,16 @@ const Blogs = () => {
               />
             </Link>
             <div className="flex flex-col gap-2 justify-center">
-              <h4 className="text-[#666D80] text-[16px] leading-[25px] font-medium">
-                {blog.title}
-              </h4>
-              <h2 className="text-[#0D0D12] text-[24px] leading-[30px] font-medium">
-                {blog.headline}
-              </h2>
+              <Link href={`/blog/${blog.id}`}>
+                <h4 className="text-[#666D80] text-[16px] leading-[25px] font-medium">
+                  {blog.title}
+                </h4>
+              </Link>
+              <Link href={`/blog/${blog.id}`}>
+                <h2 className="text-[#0D0D12] text-[24px] leading-[30px] font-medium">
+                  {blog.headline}
+                </h2>
+              </Link>
               <div className="flex items-center flex-wrap gap-2">
                 <h3 className="text-[#666D80] text-[16px] leading-[25px]">
                   {blog.date}
