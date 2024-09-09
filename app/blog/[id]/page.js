@@ -2,6 +2,7 @@ import Navbar from "@/app/components/Navbar";
 import React from "react";
 import BlogDetails from "./BlogDetails";
 import SubscribeSection from "./SubscriptionSection";
+import RelatedContent from "./RelatedContent";
 
 const page = () => {
   return (
@@ -10,8 +11,8 @@ const page = () => {
         <Navbar />
       </div>
       <div className="px-4">
-        <div className="flex flex-col items-start justify-between py-8 lg:py-[64px] bg-white max-w-[1200px] mx-auto">
-          <div className="flex md:flex-row flex-col xl:gap-[64px] lg:gap-[50px] gap-[30px]">
+        <div className="flex flex-col items-start justify-between py-[48px] lg:py-[64px] bg-white max-w-[1200px] mx-auto">
+          <div className="flex md:flex-row flex-col xl:gap-[64px] lg:gap-[50px] gap-[32px]">
             <div
               data-aos="fade-up"
               className="md:w-1/2 w-full flex flex-col justify-start gap-[16px]"
@@ -40,7 +41,7 @@ const page = () => {
               />
             </div>
           </div>
-          <div className="flex justify-between w-full items-center mt-[56px]">
+          <div className="flex md:flex-row flex-col items-center md:justify-between justify-center w-full md:mt-[56px] mt-[32px]">
             <p
               data-aos="fade-right"
               className="text-[16px] font-[400] text-[#666D80] leading-[25.6px]"
@@ -60,7 +61,10 @@ const page = () => {
 
         <div className="bg-white max-w-[1200px] w-full mx-auto pt-[64px] md:pb-[112px] pb-[56px]">
           <div className="flex md:flex-row flex-col items-start md:gap-8 lg:gap-14 w-full">
-            <div className="md:order-1 order-2 flex" data-aos="fade-right">
+            <div
+              className="md:w-auto w-full md:order-1 order-2 flex"
+              data-aos="fade-right"
+            >
               <SubscribeSection />
             </div>
 
@@ -68,6 +72,10 @@ const page = () => {
               <BlogDetails />
             </div>
           </div>
+        </div>
+
+        <div className="max-w-[1200px] w-full mx-auto md:py-[88px] py-[64px]">
+          <RelatedContent />
         </div>
       </div>
     </div>

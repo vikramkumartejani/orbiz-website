@@ -4,8 +4,8 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const SubscribeSection = () => {
   return (
-    <div>
-      <div className="p-[24px] bg-[#F0F0FF] rounded">
+    <div className="md:w-auto w-full">
+      <div className="p-[24px] bg-[#F0F0FF] rounded md:w-auto w-full">
         <h2 className="text-[20px] font-[500] text-[#0D0D12] leading-[28px] mb-[8px]">
           Never miss new content
         </h2>
