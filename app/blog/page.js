@@ -36,11 +36,14 @@ const Blog = () => {
         <Navbar />
       </div>
       <div className="max-w-[1200px] mx-auto w-full relative px-5 md:py-[56px] py-[40px]">
-        <h1 className="text-inter md:text-[48px] text-[38px] md:leading-[60px] font-[500] text-[#0D0D12]">
+        <h1
+          className="md:text-[48px] text-[38px] md:leading-[60px] font-[500] text-[#0D0D12]"
+          data-aos="fade-down"
+        >
           The Orbiz Blog
         </h1>
       </div>
-      <div className="bg-white max-w-[1200px] w-full mx-auto pb-[112px] px-5">
+      <div className="bg-white max-w-[1200px] w-full mx-auto md:pb-[112px] pb-[56px] px-5">
         <div className="flex items-start md:gap-8 lg:gap-14 w-full">
           <div data-aos="fade-right">
             <Tabs onSelectCategory={handleCategoryChange} requestApp={false} />
