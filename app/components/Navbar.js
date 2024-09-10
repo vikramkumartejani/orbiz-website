@@ -10,7 +10,9 @@ import { RxCross2 } from "react-icons/rx";
 const Navbar = () => {
   const pathname = usePathname();
   const isIntegrationsPage =
-    pathname === "/integrations" || pathname.startsWith("/blog");
+    pathname === "/integrations" ||
+    pathname.startsWith("/blog") ||
+    pathname === "/career";
 
   const [openDropdown, setOpenDropdown] = useState(null);
   const [hovered, setHovered] = useState(false);
