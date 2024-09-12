@@ -335,7 +335,11 @@ const Navbar = () => {
           <div className="lg:flex hidden items-center gap-4">
             <Link
               href="/login"
-              className="hover:border-white flex items-center justify-center bg-[#1A1B25] w-[83px] border border-[#272835] text-white px-5 h-[40px] rounded-[1000px] hover:scale-100 scale-105 transition-all duration-300 text-[14px] leading-[21.7px] font-semibold"
+              className={`hover:border-white flex items-center justify-center ${
+                isIntegrationsPage
+                  ? "bg-white text-black border-[#DFE1E7]"
+                  : "bg-[#1A1B25] text-white border-[#272835]"
+              } w-[83px] border px-5 h-[40px] rounded-[1000px] hover:scale-100 scale-105 transition-all duration-300 text-[14px] leading-[21.7px] font-semibold`}
             >
               Login
             </Link>

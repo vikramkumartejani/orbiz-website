@@ -2,22 +2,22 @@ import Image from "next/image";
 
 const CardData = [
   {
-    name: "Notion",
+    name: "Dream Big",
     description:
-      "Hendrerit fames metus leo ut orci pretium. Sit vitae montes egestas montes mauris.",
-    icon: "/assets/icons/notion.svg",
+      "Get realtime updates when users start or end subscriptions, or have low funds in their wallet.",
+    icon: "/assets/icons/award-icon.svg",
   },
   {
-    name: "Mailchimps",
+    name: "Inspire Customer Love",
     description:
-      "Hendrerit fames metus leo ut orci pretium. Sit vitae montes egestas montes mauris.",
-    icon: "/assets/icons/notion.svg",
+      "Get realtime updates when users start or end subscriptions, or have low funds in their wallet.",
+    icon: "/assets/icons/hearts.svg",
   },
   {
-    name: "Mailchimps",
+    name: "Growth Mindset",
     description:
-      "Hendrerit fames metus leo ut orci pretium. Sit vitae montes egestas montes mauris.",
-    icon: "/assets/icons/notion.svg",
+      "Get realtime updates when users start or end subscriptions, or have low funds in their wallet.",
+    icon: "/assets/icons/zap-fast.svg",
   },
 ];
 
@@ -26,13 +26,21 @@ export default function Card() {
     <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-[48px]">
       {CardData.map((item) => (
         <div key={item.name} data-aos="fade-up">
-          <Image
-            src={item.icon}
-            alt="icon"
-            className="text-2xl"
-            width={48}
-            height={48}
-          />
+          <div
+            className="w-[44px] h-[44px] flex items-center justify-center rounded-full bg-white border border-[#DFE1E7]"
+            style={{
+              boxShadow: `0px 1px 2px 0px rgba(13, 13, 18, 0.04), 
+                          0px 1px 3px 0px rgba(13, 13, 18, 0.05)`,
+            }}
+          >
+            <Image
+              src={item.icon}
+              alt="icon"
+              className="text-2xl"
+              width={20}
+              height={20}
+            />
+          </div>
           <div className="mt-6">
             <h2 className="text-[#0D0D12] text-[24px] leading-[31px] font-medium mb-2">
               {item.name}
