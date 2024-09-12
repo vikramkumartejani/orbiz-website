@@ -26,45 +26,45 @@ const AboutOrbiz = () => {
             background.
           </h1>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 items-start justify-between md:pt-[80px] pt-[30px] md:gap-6 gap-[40px]">
-          <div class="flex flex-col rounded-[16px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 items-start justify-between md:pt-[80px] pt-[30px] md:gap-6 gap-[40px]">
+          <div className="flex flex-col rounded-[16px]">
             <div className="md:h-[340px] sm:h-[300px]">
               <img
                 src="/assets/about-orbiz-img1.png"
                 alt="Image 1"
-                class="rounded-[16px] w-full h-full object-cover"
+                className="rounded-[16px] w-full h-full object-cover"
               />
             </div>
-            <p class="text-[18px] text-[#666D80] leading-[27.9px] font-[400] md:mt-[24px] mt-[15px]">
+            <p className="text-[18px] text-[#666D80] leading-[27.9px] font-[400] md:mt-[24px] mt-[15px]">
               Create a cohesive culture where backgrounds and experiences are
               better understood and welcomed.
             </p>
           </div>
 
-          <div class="flex flex-col rounded-[16px]">
+          <div className="flex flex-col rounded-[16px]">
             <div className="lg:h-[550px] h-[450px] md:mt-[-32px]">
               <img
                 src="/assets/about-orbiz-img2.png"
                 alt="Image 2"
-                class="rounded-[16px] w-full h-full object-cover"
+                className="rounded-[16px] w-full h-full object-cover"
               />
             </div>
-            <p class="text-[18px] text-[#666D80] leading-[27.9px] font-[400] md:mt-[24px] mt-[15px]">
+            <p className="text-[18px] text-[#666D80] leading-[27.9px] font-[400] md:mt-[24px] mt-[15px]">
               We are increasing awareness of differing experiences through
               Cultural Heritage Months, company events, and comprehensive
               diversity training.
             </p>
           </div>
 
-          <div class="flex flex-col rounded-[16px]">
+          <div className="flex flex-col rounded-[16px]">
             <div className="md:h-[340px] sm:h-[300px]">
               <img
                 src="/assets/about-orbiz-img3.png"
                 alt="Image 3"
-                class="rounded-[16px] w-full h-full object-cover"
+                className="rounded-[16px] w-full h-full object-cover"
               />
             </div>
-            <p class="text-[18px] text-[#666D80] leading-[27.9px] font-[400] md:mt-[24px] mt-[15px]">
+            <p className="text-[18px] text-[#666D80] leading-[27.9px] font-[400] md:mt-[24px] mt-[15px]">
               Simplify global travel and expenses with automation that makes
               compliance easy.
             </p>

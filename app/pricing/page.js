@@ -58,61 +58,61 @@ const Pricing = () => {
               elementum euismod.
             </p>
           </div>
-          <div class="flex md:flex-row flex-col justify-center gap-[32px] relative z-[6] md:max-w-[1000px] mx-auto mb-[-130px]">
+          <div className="flex md:flex-row flex-col justify-center gap-[32px] relative z-[6] md:max-w-[1000px] mx-auto mb-[-130px]">
             <div
               data-aos="fade-right"
-              class="bg-white rounded-[24px] lg:px-[32px] py-[32px] md:px-[24px] px-[14px] md:w-1/2 border border-[#DFE1E7]"
+              className="bg-white rounded-[24px] lg:px-[32px] py-[32px] md:px-[24px] px-[14px] md:w-1/2 border border-[#DFE1E7]"
               style={{
                 boxShadow: `0px 4px 8px -1px rgba(13, 13, 18, 0.05), 
                           0px 5px 10px -2px rgba(13, 13, 18, 0.10)`,
               }}
             >
-              <h2 class="md:text-[24px] text-[18px] font-[500] text-[#5F57FF]">
+              <h2 className="md:text-[24px] text-[18px] font-[500] text-[#5F57FF]">
                 Starter
               </h2>
-              <div class="flex md:gap-[10px] gap-[6px] mt-[12px] md:text-[52px] text-[40px] font-[500] md:leading-[65px] leading-[42px] tracking-[-1%]">
+              <div className="flex md:gap-[10px] gap-[6px] mt-[12px] md:text-[52px] text-[40px] font-[500] md:leading-[65px] leading-[42px] tracking-[-1%]">
                 $49{" "}
-                <p class="md:text-[16px] text-[14px] text-[#666D80] font-[400] leading-[25.6px] mt-auto">
+                <p className="md:text-[16px] text-[14px] text-[#666D80] font-[400] leading-[25.6px] mt-auto">
                   per month
                 </p>
               </div>
-              <p class="md:text-[16px] text-[15px] text-[#666D80] font-[400] leading-[25.6px] mt-1">
+              <p className="md:text-[16px] text-[15px] text-[#666D80] font-[400] leading-[25.6px] mt-1">
                 Access a complete payments platform with simple, pay-as-you-go
                 pricing.
               </p>
-              <button class="bg-[#5F57FF] text-white rounded-full py-[13.5px] px-4 md:mt-[32px] mt-[20px] w-full">
+              <button className="bg-[#5F57FF] text-white rounded-full py-[13.5px] px-4 md:mt-[32px] mt-[20px] w-full">
                 Start Free Trial
               </button>
 
               <div className="flex w-full min-h-[1px] border border-dashed border-t-[#DFE1E7]  md:my-[32px] my-[20px]"></div>
 
-              <p class="text-[#0D0D12] font-[500]">This Plan Includes:</p>
-              <ul class="mt-[16px] flex flex-col gap-[16px]">
-                <li class="flex items-center gap-[12px] text-[#666D80]">
+              <p className="text-[#0D0D12] font-[500]">This Plan Includes:</p>
+              <ul className="mt-[16px] flex flex-col gap-[16px]">
+                <li className="flex items-center gap-[12px] text-[#666D80]">
                   <span className="min-w-[20px] min-h-[20px]">
                     <IoIosCheckmarkCircleOutline color="#40C4AA" size={20} />
                   </span>
                   Business Accounts
                 </li>
-                <li class="flex items-center gap-[12px] text-[#666D80]">
+                <li className="flex items-center gap-[12px] text-[#666D80]">
                   <span className="min-w-[20px] min-h-[20px]">
                     <IoIosCheckmarkCircleOutline color="#40C4AA" size={20} />
                   </span>
                   Embeddable Checkout
                 </li>
-                <li class="flex items-center gap-[12px] text-[#666D80]">
+                <li className="flex items-center gap-[12px] text-[#666D80]">
                   <span className="min-w-[20px] min-h-[20px]">
                     <IoIosCheckmarkCircleOutline color="#40C4AA" size={20} />
                   </span>
                   Custom UI Tool
                 </li>
-                <li class="flex items-center gap-[12px] text-[#666D80]">
+                <li className="flex items-center gap-[12px] text-[#666D80]">
                   <span className="min-w-[20px] min-h-[20px]">
                     <IoIosCheckmarkCircleOutline color="#40C4AA" size={20} />
                   </span>
                   Invoice Support
                 </li>
-                <li class="flex items-center gap-[12px] text-[#666D80]">
+                <li className="flex items-center gap-[12px] text-[#666D80]">
                   <span className="min-w-[20px] min-h-[20px]">
                     <IoIosCheckmarkCircleOutline color="#40C4AA" size={20} />
                   </span>
@@ -123,7 +123,7 @@ const Pricing = () => {
 
             <div
               data-aos="fade-left"
-              class="rounded-[24px] lg:px-[32px] py-[32px] md:px-[24px] px-[14px] md:w-1/2 text-white border-2 border-[#322CA0]"
+              className="rounded-[24px] lg:px-[32px] py-[32px] md:px-[24px] px-[14px] md:w-1/2 text-white border-2 border-[#322CA0]"
               style={{
                 background: `linear-gradient(0deg, #5F57FF, #5F57FF), 
                              linear-gradient(217.75deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%)`,
@@ -131,53 +131,57 @@ const Pricing = () => {
                             0px 5px 10px -2px rgba(13, 13, 18, 0.10)`,
               }}
             >
-              <h2 class="md:text-[24px] text-[18px] font-[500]">Custom plan</h2>
-              <div class="mt-[12px] md:text-[48px] text-[40px] font-[500] leading-[65px] tracking-[-1px] text-white">
+              <h2 className="md:text-[24px] text-[18px] font-[500]">
+                Custom plan
+              </h2>
+              <div className="mt-[12px] md:text-[48px] text-[40px] font-[500] leading-[65px] tracking-[-1px] text-white">
                 Get in Touch
               </div>
-              <p class="text-[15px] text-[#E5E4FB] font-[400] leading-[25.6px] mt-1">
+              <p className="text-[15px] text-[#E5E4FB] font-[400] leading-[25.6px] mt-1">
                 Design a custom package—available for businesses with large
                 payments volume or unique business models.
               </p>
-              <button class="bg-white text-[#536DFE] rounded-full py-[13.5px] px-4 md:mt-[32px] mt-[20px] w-full">
+              <button className="bg-white text-[#536DFE] rounded-full py-[13.5px] px-4 md:mt-[32px] mt-[20px] w-full">
                 Contact Sales
               </button>
 
               <div className="flex w-full min-h-[1px] border border-dashed border-t-[#A19DF1] md:my-[32px] my-[20px]"></div>
 
-              <p class="text-white font-[500]">Everything in Starter Plus:</p>
-              <ul class="mt-[16px] flex flex-col gap-[16px]">
-                <li class="flex items-center gap-[12px] text-[#E5E4FB]">
+              <p className="text-white font-[500]">
+                Everything in Starter Plus:
+              </p>
+              <ul className="mt-[16px] flex flex-col gap-[16px]">
+                <li className="flex items-center gap-[12px] text-[#E5E4FB]">
                   <span className="min-w-[20px] min-h-[20px]">
                     <GoPlusCircle size={20} />
                   </span>
                   150+ Currencies
                 </li>
-                <li class="flex items-center gap-[12px] text-[#E5E4FB]">
+                <li className="flex items-center gap-[12px] text-[#E5E4FB]">
                   <span className="min-w-[20px] min-h-[20px]">
                     <GoPlusCircle size={20} />
                   </span>
                   Control Payout Timing
                 </li>
-                <li class="flex items-center gap-[12px] text-[#E5E4FB]">
+                <li className="flex items-center gap-[12px] text-[#E5E4FB]">
                   <span className="min-w-[20px] min-h-[20px]">
                     <GoPlusCircle size={20} />
                   </span>
                   Unified Payouts
                 </li>
-                <li class="flex items-center gap-[12px] text-[#E5E4FB]">
+                <li className="flex items-center gap-[12px] text-[#E5E4FB]">
                   <span className="min-w-[20px] min-h-[20px]">
                     <GoPlusCircle size={20} />
                   </span>
                   Subsidiary Support
                 </li>
-                <li class="flex items-center gap-[12px] text-[#E5E4FB]">
+                <li className="flex items-center gap-[12px] text-[#E5E4FB]">
                   <span className="min-w-[20px] min-h-[20px]">
                     <GoPlusCircle size={20} />
                   </span>
                   Secure Dashboard Access
                 </li>
-                <li class="flex items-center gap-[12px] text-[#E5E4FB]">
+                <li className="flex items-center gap-[12px] text-[#E5E4FB]">
                   <span className="min-w-[20px] min-h-[20px]">
                     <GoPlusCircle size={20} />
                   </span>
