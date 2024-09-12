@@ -74,9 +74,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className="max-w-[1200px] w-full mx-auto md:py-[88px] py-[64px]">
-          <RelatedContent />
-        </div>
+        <div className="max-w-[1200px] w-full mx-auto md:py-[88px] py-[64px]"></div>
       </div>
     </div>
   );
