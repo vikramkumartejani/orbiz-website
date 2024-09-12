@@ -1,8 +1,5 @@
 import Navbar from "@/app/components/Navbar";
 import React from "react";
-import BlogDetails from "./BlogDetails";
-import SubscribeSection from "./SubscriptionSection";
-import RelatedContent from "./RelatedContent";
 
 const page = () => {
   return (
@@ -70,9 +67,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className="max-w-[1200px] w-full mx-auto md:py-[88px] py-[64px]">
-          <RelatedContent />
-        </div>
+        <div className="max-w-[1200px] w-full mx-auto md:py-[88px] py-[64px]"></div>
       </div>
     </div>
   );
