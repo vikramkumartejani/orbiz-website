@@ -4,7 +4,7 @@ import FeatureHero from "./FeatureHero";
 import Navbar from "../components/Navbar";
 import Trusted from "../components/Trusted";
 import Image from "next/image";
-import FAQ from "./FAQ";
+import FAQ from "../components/FAQ";
 import OurCustomer from "../components/OurCustomer";
 import ExploreIntegrations from "./ExploreIntegrations";
 import AOS from "aos";
@@ -13,9 +13,9 @@ import "aos/dist/aos.css"; // Import AOS styles
 const Features = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1200,  
-      once: true,  
-     });
+      duration: 1200,
+      once: true,
+    });
   }, []);
   return (
     <div className="w-full ">
