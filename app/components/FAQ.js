@@ -28,7 +28,7 @@ const faqItems = [
 ];
 const FAQ = () => {
   useEffect(() => {
-    AOS.init({ duration: 1200 });  
+    AOS.init({ duration: 1200 });
   }, []);
   const [openIndex, setOpenIndex] = useState(0);
 
@@ -56,14 +56,12 @@ const FAQ = () => {
         <h1
           className="text-[#0D0D12] text-[40px] sm:text-[52px] sm:leading-[65px] tracking-[-0.01em] font-medium"
           data-aos="fade-up"
-          data-aos-delay="100"
         >
           Frequently Asked Questions
         </h1>
         <p
           className="text-[#666D80] text-[16px] sm:text-[18px] sm:leading-[27px] font-normal max-w-[630px] mx-auto"
           data-aos="fade-up"
-          data-aos-delay="200"
         >
           Hendrerit fames metus leo ut orci pretium. Sit vitae montes egestas
           montes mauris. Auctor vitae neque urna nam nunc pellentesque.
@@ -74,14 +72,12 @@ const FAQ = () => {
       <div
         className="mt-8 md:mt-14 max-w-[901px] w-full mx-auto flex flex-col gap-4"
         data-aos="fade-up"
-        data-aos-delay="300"
       >
         {faqItems.map((item, index) => (
           <div
             key={index}
             className="bg-white border border-[#DFE1E7] rounded-[12px] shadow-custom px-3.5 py-6 md:p-6"
             data-aos="fade-up"
-            data-aos-delay={`${400 + index * 100}`}  
           >
             <div className="flex items-center justify-between gap-4">
               <h1 className="text-[#0D0D12] text-[16px] md:text-[22px] md:leading-[31px] font-medium">

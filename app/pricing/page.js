@@ -17,7 +17,7 @@ const Pricing = () => {
         <Navbar />
       </div>
       <div className="bg-[#0D0D12] px-4">
-        <div className="relative text-left flex lg:items-center justify-between flex-col gap-8 lg:gap-4 z-10 pt-12 md:pt-[56] mb-[130px]">
+        <div className="relative text-left flex lg:items-center justify-between flex-col gap-8 lg:gap-4 z-10 pt-12 md:pt-[56] md:mb-[130px] mb-[70px]">
           <div
             className="absolute inset-0 opacity-70 bottom-0  bg-bottom z-[5]"
             style={{

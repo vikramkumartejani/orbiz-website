@@ -6,13 +6,13 @@ const ComparisonPlan = () => {
       <div className="flex flex-col items-center pt-[100px] max-w-[1200px] mx-auto">
         <h1
           data-aos="fade-up"
-          className="text-[48px] font-[500] leading-[60px] text-center text-[#0D0D12] mb-[16px] max-w-[711px]"
+          className="md:text-[48px] text-[40px] font-[500] leading-[60px] text-center text-[#0D0D12] mb-[16px] max-w-[711px]"
         >
           Comparison Plan
         </h1>
         <p
           data-aos="fade-right"
-          className="text-[18px] text-[#666D80] leading-[28.8px] text-center mb-[64px] max-w-[711px]"
+          className="md:text-[18px] text-[16px] text-[#666D80] leading-[28.8px] text-center md:mb-[64px] mb-[30px] max-w-[711px]"
         >
           Nisl tincidunt sed felis sed. Viverra purus dis nam ac auctor. Arcu
           dolor adipiscing lectus consectetur vestibulum quis eleifend cursus.
