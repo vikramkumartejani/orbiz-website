@@ -2,7 +2,6 @@ import Navbar from "@/app/components/Navbar";
 import React from "react";
 import BlogDetails from "./BlogDetails";
 import SubscribeSection from "./SubscriptionSection";
-import RelatedContent from "./RelatedContent";
 
 const page = () => {
   return (
