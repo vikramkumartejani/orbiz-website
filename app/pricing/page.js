@@ -25,7 +25,7 @@ const Pricing = () => {
               backgroundRepeat: "no-repeat",
             }}
           ></div>
-          <div className="relatieve z-[6] max-w-[1200px] mx-auto flex flex-col items-center gap-4 flex-col">
+          <div className="relatieve z-[6] max-w-[1200px] mx-auto flex flex-col items-center gap-4">
             <div
               className="overflow-hidden shadow-custom border border-[#272835] bg-[#1A1B25] rounded-[1000px] px-[14px] py-1 flex items-center gap-[4px]"
               data-aos="fade-down"

@@ -17,29 +17,40 @@ const MobileMenu = ({ isIntegrationsPage }) => {
             mainTitle: "Features",
             items: [
                 {
-                    title: "Help center",
+                    title: "Payment Link",
                     description: "Learn more about Attio's features.",
                     icon: "/assets/icons/resources-help.svg",
+                    "link": "/payment-link"
                 },
                 {
-                    title: "Getting started",
+                    title: "Recurring Billing",
                     description: "Quick start guides and tutorials.",
                     icon: "/assets/icons/resources-help.svg",
+                    "link": "/recurring-billing"
                 },
                 {
-                    title: "Templates",
+                    title: "Invoice Management",
                     description: "Help to accelerate your GTM motion.",
                     icon: "/assets/icons/resources-help.svg",
+                    "link": "/invoice-management"
                 },
                 {
-                    title: "Blog",
+                    title: "Checkout",
                     description: "Learn more about Attio, CRM, and GTM.",
                     icon: "/assets/icons/resources-help.svg",
+                    "link": "/checkout"
                 },
                 {
-                    title: "Developers",
+                    title: "Integrations",
                     description: "API setup and endpoint references.",
                     icon: "/assets/icons/resources-help.svg",
+                    "link": "/integrations"
+                },
+                {
+                    title: "Pricing",
+                    description: "API setup and endpoint references.",
+                    icon: "/assets/icons/resources-help.svg",
+                    "link": "/pricing"
                 },
             ],
             additionalSection: [
@@ -70,29 +81,34 @@ const MobileMenu = ({ isIntegrationsPage }) => {
             mainTitle: "Solutions",
             items: [
                 {
-                    title: "Help center",
+                    title: "eCommerce",
                     description: "Learn more about Attio's features.",
                     icon: "/assets/icons/resources-help.svg",
+                    "link": "/ecommerce"
                 },
                 {
-                    title: "Getting started",
+                    title: "Finance Automation",
                     description: "Quick start guides and tutorials.",
                     icon: "/assets/icons/resources-help.svg",
+                    "link": "/finance-automation"
                 },
                 {
-                    title: "Templates",
+                    title: "Crypto",
                     description: "Help to accelerate your GTM motion.",
                     icon: "/assets/icons/resources-help.svg",
+                    "link": "/crypto"
                 },
                 {
-                    title: "Blog",
+                    title: "Global Business",
                     description: "Learn more about Attio, CRM, and GTM.",
                     icon: "/assets/icons/resources-help.svg",
+                    "link": "/global-business"
                 },
                 {
-                    title: "Developers",
+                    title: "Marketplaces",
                     description: "API setup and endpoint references.",
                     icon: "/assets/icons/resources-help.svg",
+                    "link": "/marketplaces"
                 },
             ],
             additionalSection: [
@@ -123,30 +139,30 @@ const MobileMenu = ({ isIntegrationsPage }) => {
             mainTitle: "References",
             items: [
                 {
-                    title: "Help center",
+                    title: "Tutorials",
                     description: "Learn more about Attio's features.",
                     icon: "/assets/icons/resources-help.svg",
-                },
-                {
-                    title: "Getting started",
-                    description: "Quick start guides and tutorials.",
-                    icon: "/assets/icons/resources-help.svg",
-                },
-                {
-                    title: "Templates",
-                    description: "Help to accelerate your GTM motion.",
-                    icon: "/assets/icons/resources-help.svg",
+                    "link": "/tutorials"
                 },
                 {
                     title: "Blog",
-                    description: "Learn more about Attio, CRM, and GTM.",
+                    description: "Quick start guides and tutorials.",
                     icon: "/assets/icons/resources-help.svg",
+                    "link": "/blog"
                 },
                 {
-                    title: "Developers",
-                    description: "API setup and endpoint references.",
+                    title: "Community",
+                    description: "Help to accelerate your GTM motion.",
                     icon: "/assets/icons/resources-help.svg",
+                    "link": "/community"
                 },
+                {
+                    title: "Privacy Policy",
+                    description: "Learn more about Attio, CRM, and GTM.",
+                    icon: "/assets/icons/resources-help.svg",
+                    "link": "/privacy-policy"
+                },
+                
             ],
             additionalSection: [
                 {
@@ -180,7 +196,7 @@ const MobileMenu = ({ isIntegrationsPage }) => {
                 <div className="py-2">
                     {menu.items.map((item, index) => (
                         <div key={index}>
-                            <Link href='/' className="flex items-center gap-3 rounded-md p-2 hover:bg-[#2f2d2d83]">
+                            <Link href={`/${item.title.toLowerCase().replace(/ /g, '-')}`} className="flex items-center gap-3 rounded-md p-2 hover:bg-[#2f2d2d83]">
                                 <div className="border min-w-[40px] min-h-[40px] rounded-lg flex items-center justify-center">
                                     <Image
                                         src={item.icon}
@@ -208,6 +224,7 @@ const MobileMenu = ({ isIntegrationsPage }) => {
             </div>
         );
     };
+    
 
     return (
         <>
