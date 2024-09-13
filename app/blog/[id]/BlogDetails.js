@@ -7,7 +7,7 @@ const BlogDetails = () => {
       data-aos="fade-up"
       data-aos-delay="200"
     >
-      <div className="flex flex-col gap-[16px]">
+      <div className="flex flex-col gap-[16px]" data-aos="fade-up">
         <p className="font-[400] text-[18px] text-[#36394A]">
           To a certain extent, there’s a limit to what company executives can
           control. They can put in place an expert sales and marketing team.
@@ -38,7 +38,7 @@ const BlogDetails = () => {
         </p>
       </div>
 
-      <div className="flex flex-col gap-[16px]">
+      <div className="flex flex-col gap-[16px]" data-aos="fade-up">
         <h4 className="text-[#0D0D12] text-[40px] font-[500]">
           What Is an Expense Forecast?
         </h4>
@@ -63,7 +63,7 @@ const BlogDetails = () => {
         </p>
       </div>
 
-      <div className="flex flex-col gap-[16px]">
+      <div className="flex flex-col gap-[16px]" data-aos="fade-up">
         <h4 className="text-[#0D0D12] text-[40px] font-[500]">
           Why Is Expense Forecasting Important?
         </h4>
@@ -82,7 +82,7 @@ const BlogDetails = () => {
         </p>
       </div>
 
-      <div className="flex flex-col gap-[16px]">
+      <div className="flex flex-col gap-[16px]" data-aos="fade-up">
         <h4 className="text-[#0D0D12] text-[40px] font-[500]">
           How to Forecast Expenses
         </h4>
@@ -154,7 +154,7 @@ const BlogDetails = () => {
         </p>
       </div>
 
-      <div className="flex flex-col gap-[16px]">
+      <div className="flex flex-col gap-[16px]" data-aos="fade-up">
         <h4 className="text-[#0D0D12] text-[40px] font-[500]">
           How to Forecast Expenses
         </h4>

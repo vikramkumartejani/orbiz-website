@@ -27,7 +27,7 @@ const AboutOrbiz = () => {
           </h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 items-start justify-between md:pt-[80px] pt-[30px] md:gap-6 gap-[40px]">
-          <div className="flex flex-col rounded-[16px]">
+          <div className="flex flex-col rounded-[16px]" data-aos="fade-right">
             <div className="md:h-[340px] sm:h-[300px]">
               <img
                 src="/assets/about-orbiz-img1.png"
@@ -41,7 +41,7 @@ const AboutOrbiz = () => {
             </p>
           </div>
 
-          <div className="flex flex-col rounded-[16px]">
+          <div className="flex flex-col rounded-[16px]" data-aos="fade-up">
             <div className="lg:h-[550px] h-[450px] md:mt-[-32px]">
               <img
                 src="/assets/about-orbiz-img2.png"
@@ -56,7 +56,7 @@ const AboutOrbiz = () => {
             </p>
           </div>
 
-          <div className="flex flex-col rounded-[16px]">
+          <div className="flex flex-col rounded-[16px]" data-aos="fade-left">
             <div className="md:h-[340px] sm:h-[300px]">
               <img
                 src="/assets/about-orbiz-img3.png"

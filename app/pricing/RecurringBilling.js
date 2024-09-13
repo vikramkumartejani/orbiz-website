@@ -11,71 +11,71 @@ const recurringBilling = [
   {
     label: "Credit and debit cards",
     icons: [
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="credit1" />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="credit2" />,
     ],
   },
   {
     label: "International card payments",
     icons: [
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="intl1" />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="intl2" />,
     ],
   },
   {
     label: "Links",
     icons: [
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="link1" />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="link2" />,
     ],
   },
   {
     label: "Links",
     icons: [
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="link3" />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="link4" />,
     ],
   },
   {
     label: "Settle and pay out in additional currencies",
     icons: [
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="currency1" />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="currency2" />,
     ],
   },
   {
     label: "3D Secure authentication",
     icons: [
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="auth1" />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="auth2" />,
     ],
   },
   {
     label: "Card account updater",
     icons: [
-      <IoIosCloseCircleOutline color="#DF1C41" size={24} />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
+      <IoIosCloseCircleOutline color="#DF1C41" size={24} key="cardClose1" />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="cardCheck1" />,
     ],
   },
   {
     label: "Adaptive Acceptance",
     icons: [
-      <IoIosCloseCircleOutline color="#DF1C41" size={24} />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
+      <IoIosCloseCircleOutline color="#DF1C41" size={24} key="adaptiveClose1" />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="adaptiveCheck1" />,
     ],
   },
   {
     label: "Network tokens",
     icons: [
-      <IoIosCloseCircleOutline color="#DF1C41" size={24} />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
+      <IoIosCloseCircleOutline color="#DF1C41" size={24} key="networkClose1" />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="networkCheck1" />,
     ],
   },
   {
     label: "Disputes",
     icons: [
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="dispute1" />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="dispute2" />,
     ],
   },
 ];
@@ -98,7 +98,7 @@ const RecurringBilling = () => {
             isOpen ? "rotate-[180deg]" : ""
           } transition-all duration-300 ease-in-out`}
         >
-          <MdKeyboardArrowDown size={20} />
+          {isOpen ? <MdKeyboardArrowUp size={20} /> : <MdKeyboardArrowDown size={20} />}
         </span>
       </div>
 

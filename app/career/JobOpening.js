@@ -34,9 +34,10 @@ const JobOpening = () => {
             montes mauris. Auctor vitae neque urna nam nunc pellentesque.
           </p>
         </div>
-        <div className="">
+        <div className="" data-aos="fade-up">
           <Link
             href="/career"
+            data-aos="fade-up"
             className="gap-6 flex justify-between w-full items-center border-y border-y-[#DFE1E7] py-[24px]"
           >
             <span className="flex flex-col gap-[12px]">
@@ -53,6 +54,7 @@ const JobOpening = () => {
           </Link>
           <Link
             href="/career"
+            data-aos="fade-up"
             className="gap-6 flex justify-between w-full items-center border-y border-y-[#DFE1E7] py-[24px]"
           >
             <span className="flex flex-col gap-[12px]">
@@ -69,6 +71,7 @@ const JobOpening = () => {
           </Link>
           <Link
             href="/career"
+            data-aos="fade-up"
             className="gap-6 flex justify-between w-full items-center border-y border-y-[#DFE1E7] py-[24px]"
           >
             <span className="flex flex-col gap-[12px]">
@@ -84,7 +87,7 @@ const JobOpening = () => {
             </span>
           </Link>
         </div>
-        <p className="text-[18px] font-[400] leading-[27.9px] text-[#666D80]">
+        <p className="text-[18px] font-[400] leading-[27.9px] text-[#666D80]" data-aos="fade-up">
           Don’s see opportunity that suits you?{" "}
           <a href="#" className="underline text-[#5F57FF]">
             {" "}

@@ -105,7 +105,7 @@ const Footer = () => {
               </h3>
               <li>
                 <Link
-                  href="/"
+                  href="/pricing"
                   className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
                 >
                   Payment Link
@@ -137,7 +137,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href=""
+                  href="/integrations"
                   className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
                 >
                   Integrations
@@ -145,7 +145,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href=""
+                  href="/pricing"
                   className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
                 >
                   Pricing
@@ -194,7 +194,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href=""
+                  href="/marketplace"
                   className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
                 >
                   Marketplaces
@@ -219,7 +219,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href=""
+                  href="/blog"
                   className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
                 >
                   Blog
@@ -268,7 +268,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href=""
+                  href="/career"
                   className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
                 >
                   Careers
@@ -284,7 +284,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href=""
+                  href="/contact-us"
                   className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
                 >
                   Contact Us

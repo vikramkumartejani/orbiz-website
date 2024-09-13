@@ -1,5 +1,8 @@
 import Navbar from "@/app/components/Navbar";
 import React from "react";
+import SubscribeSection from "./SubscriptionSection";
+import RelatedContent from "./RelatedContent";
+import BlogDetails from "./BlogDetails";
 
 const page = () => {
   return (
@@ -61,13 +64,19 @@ const page = () => {
             <div
               className="md:w-auto w-full md:order-1 order-2 flex"
               data-aos="fade-right"
-            ></div>
+            >
+              <SubscribeSection />
+            </div>
 
-            <div className="w-full md:order-2 order-1 flex"></div>
+            <div className="w-full md:order-2 order-1 flex">
+              <BlogDetails/>
+            </div>
           </div>
         </div>
 
-        <div className="max-w-[1200px] w-full mx-auto md:py-[88px] py-[64px]"></div>
+        <div className="max-w-[1200px] w-full mx-auto md:py-[88px] py-[64px]">
+          <RelatedContent />
+        </div>
       </div>
     </div>
   );

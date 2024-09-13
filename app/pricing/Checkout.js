@@ -4,84 +4,82 @@ import {
   IoIosCheckmarkCircleOutline,
   IoIosCloseCircleOutline,
 } from "react-icons/io";
-import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
-// Data array to store all the payment information
 const checkoutData = [
   {
     label: "Credit and debit cards",
     icons: [
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark1" />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark2" />,
     ],
   },
   {
     label: "International card payments",
     icons: [
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark3" />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark4" />,
     ],
   },
   {
     label: "Links",
     icons: [
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark5" />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark6" />,
     ],
   },
   {
     label: "Links",
     icons: [
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark7" />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark8" />,
     ],
   },
   {
     label: "Settle and pay out in additional currencies",
     icons: [
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark9" />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark10" />,
     ],
   },
   {
     label: "3D Secure authentication",
     icons: [
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark11" />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark12" />,
     ],
   },
   {
     label: "Card account updater",
     icons: [
-      <IoIosCloseCircleOutline color="#DF1C41" size={24} />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
+      <IoIosCloseCircleOutline color="#DF1C41" size={24} key="close1" />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark13" />,
     ],
   },
   {
     label: "Adaptive Acceptance",
     icons: [
-      <IoIosCloseCircleOutline color="#DF1C41" size={24} />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
+      <IoIosCloseCircleOutline color="#DF1C41" size={24} key="close2" />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark14" />,
     ],
   },
   {
     label: "Network tokens",
     icons: [
-      <IoIosCloseCircleOutline color="#DF1C41" size={24} />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
+      <IoIosCloseCircleOutline color="#DF1C41" size={24} key="close3" />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark15" />,
     ],
   },
   {
     label: "Disputes",
     icons: [
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark16" />,
+      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark17" />,
     ],
   },
 ];
 
 const Checkout = () => {
-  // State to control the dropdown visibility
   const [isOpen, setIsOpen] = useState(false);
 
   return (
