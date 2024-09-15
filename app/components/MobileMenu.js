@@ -162,7 +162,7 @@ const MobileMenu = ({ isIntegrationsPage }) => {
                     icon: "/assets/icons/resources-help.svg",
                     "link": "/privacy-policy"
                 },
-                
+
             ],
             additionalSection: [
                 {
@@ -224,7 +224,7 @@ const MobileMenu = ({ isIntegrationsPage }) => {
             </div>
         );
     };
-    
+
 
     return (
         <>
@@ -265,9 +265,24 @@ const MobileMenu = ({ isIntegrationsPage }) => {
                             Pricing
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link href='/customers' className='block text-base font-semibold'>
                             Customers
+                        </Link>
+                    </li> */}
+                    <li>
+                        <Link href='/blog' className='block text-base font-semibold'>
+                            Blog
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href='/career' className='block text-base font-semibold'>
+                            Career
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href='/contact-us' className='block text-base font-semibold'>
+                            Contact Us
                         </Link>
                     </li>
                 </ul>
