@@ -62,14 +62,14 @@ const FeatureHero = () => {
             </div>
           </div>
           <div
-            className="bg-custom-bg px-12 py-10 rounded-[20px] max-w-[450px] mx-auto"
+            className=" rounded-[20px] max-w-[450px] mx-auto"
             data-aos="fade-left"
           >
             <Image
-              src="/assets/feature-hero.svg"
+              src="/assets/feature-hero.png"
               alt="feature-hero"
-              width={354}
-              height={404}
+              width={450}
+              height={500}
             />
           </div>
         </div>

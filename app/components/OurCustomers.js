@@ -2,6 +2,53 @@ import Image from "next/image";
 import React from "react";
 
 const OurCustomers = () => {
+  // Testimonial data stored in an array
+  const testimonials = [
+    {
+      quote:
+        "For a freelancer, traditional banks are really archaic. With Earney, I know exactly how much I pay for every service I need.",
+      name: "Soós Annamária",
+      role: "Operations and Supply Chain Management",
+      imageSrc: "/assets/profile.png",
+    },
+    // Duplicate or add more testimonials if necessary
+    {
+      quote:
+        "For a freelancer, traditional banks are really archaic. With Earney, I know exactly how much I pay for every service I need.",
+      name: "Soós Annamária",
+      role: "Operations and Supply Chain Management",
+      imageSrc: "/assets/profile.png",
+    },
+    {
+      quote:
+        "For a freelancer, traditional banks are really archaic. With Earney, I know exactly how much I pay for every service I need.",
+      name: "Soós Annamária",
+      role: "Operations and Supply Chain Management",
+      imageSrc: "/assets/profile.png",
+    },
+    {
+      quote:
+        "For a freelancer, traditional banks are really archaic. With Earney, I know exactly how much I pay for every service I need.",
+      name: "Soós Annamária",
+      role: "Operations and Supply Chain Management",
+      imageSrc: "/assets/profile.png",
+    },
+    {
+      quote:
+        "For a freelancer, traditional banks are really archaic. With Earney, I know exactly how much I pay for every service I need.",
+      name: "Soós Annamária",
+      role: "Operations and Supply Chain Management",
+      imageSrc: "/assets/profile.png",
+    },
+    {
+      quote:
+        "For a freelancer, traditional banks are really archaic. With Earney, I know exactly how much I pay for every service I need.",
+      name: "Soós Annamária",
+      role: "Operations and Supply Chain Management",
+      imageSrc: "/assets/profile.png",
+    },
+  ];
+
   return (
     <div className="px-5 overflow-hidden">
       <div className="max-w-[1200px] w-full mx-auto py-12 md:py-[88px]">
@@ -40,147 +87,34 @@ const OurCustomers = () => {
         </div>
 
         <div className="pt-10 md:pt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-6">
-          <div
-            className="bg-whitish border border-[#ECEFF3] rounded-[16px] p-5 md:p-4 xl:p-6"
-            data-aos="fade-up"
-          >
-            <p className="text-heading text-[19px] leading-[28px] font-medium mb-8">
-              “For a freelancer, traditional banks are really archaic. With
-              Earney, I know exactly how much I pay for every service I need.”
-            </p>
-            <div className="flex items-center gap-2">
-              <Image
-                src="/assets/profile.svg"
-                alt="profile"
-                width={40}
-                height={40}
-              />
-              <div>
-                <h1 className="text-heading text-[15px] leading-[25.6px] font-medium">
-                  Soós Annamária
-                </h1>
-                <h3 className="text-secondaryText text-[14px] leading-[21.7px] font-normal">
-                  Operations and Supply Chain Management
-                </h3>
+          {/* Mapping over the testimonial array */}
+          {testimonials.map((testimonial, index) => (
+            <div
+              key={index}
+              className="bg-whitish border border-[#ECEFF3] rounded-[16px] p-5 md:p-4 xl:p-6"
+              data-aos="fade-up"
+            >
+              <p className="text-heading text-[19px] leading-[28px] font-medium mb-8">
+                {testimonial.quote}
+              </p>
+              <div className="flex items-center gap-2">
+                <Image
+                  src={testimonial.imageSrc}
+                  alt="profile"
+                  width={40}
+                  height={40}
+                />
+                <div>
+                  <h1 className="text-heading text-[15px] leading-[25.6px] font-medium">
+                    {testimonial.name}
+                  </h1>
+                  <h3 className="text-secondaryText text-[14px] leading-[21.7px] font-normal">
+                    {testimonial.role}
+                  </h3>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="p-5 md:p-4 xl:p-6" data-aos="fade-up">
-            <p className="text-heading text-[19px] leading-[28px] font-medium mb-8">
-              “For a freelancer, traditional banks are really archaic. With
-              Earney, I know exactly how much I pay for every service I need.”
-            </p>
-            <div className="flex items-center gap-2">
-              <Image
-                src="/assets/profile.svg"
-                alt="profile"
-                width={40}
-                height={40}
-              />
-              <div>
-                <h1 className="text-heading text-[15px] leading-[25.6px] font-medium">
-                  Soós Annamária
-                </h1>
-                <h3 className="text-secondaryText text-[14px] leading-[21.7px] font-normal">
-                  Operations and Supply Chain Management
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div
-            className="bg-whitish border border-[#ECEFF3] rounded-[16px] p-5 md:p-4 xl:p-6"
-            data-aos="fade-up"
-          >
-            <p className="text-heading text-[19px] leading-[28px] font-medium mb-8">
-              “For a freelancer, traditional banks are really archaic. With
-              Earney, I know exactly how much I pay for every service I need.”
-            </p>
-            <div className="flex items-center gap-2">
-              <Image
-                src="/assets/profile.svg"
-                alt="profile"
-                width={40}
-                height={40}
-              />
-              <div>
-                <h1 className="text-heading text-[15px] leading-[25.6px] font-medium">
-                  Soós Annamária
-                </h1>
-                <h3 className="text-secondaryText text-[14px] leading-[21.7px] font-normal">
-                  Operations and Supply Chain Management
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-5 md:p-4 xl:p-6" data-aos="fade-up">
-            <p className="text-heading text-[19px] leading-[28px] font-medium mb-8">
-              “For a freelancer, traditional banks are really archaic. With
-              Earney, I know exactly how much I pay for every service I need.”
-            </p>
-            <div className="flex items-center gap-2">
-              <Image
-                src="/assets/profile.svg"
-                alt="profile"
-                width={40}
-                height={40}
-              />
-              <div>
-                <h1 className="text-heading text-[15px] leading-[25.6px] font-medium">
-                  Soós Annamária
-                </h1>
-                <h3 className="text-secondaryText text-[14px] leading-[21.7px] font-normal">
-                  Operations and Supply Chain Management
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div
-            className="bg-whitish border border-[#ECEFF3] rounded-[16px] p-5 md:p-4 xl:p-6"
-            data-aos="fade-up"
-          >
-            <p className="text-heading text-[19px] leading-[28px] font-medium mb-8">
-              “For a freelancer, traditional banks are really archaic. With
-              Earney, I know exactly how much I pay for every service I need.”
-            </p>
-            <div className="flex items-center gap-2">
-              <Image
-                src="/assets/profile.svg"
-                alt="profile"
-                width={40}
-                height={40}
-              />
-              <div>
-                <h1 className="text-heading text-[15px] leading-[25.6px] font-medium">
-                  Soós Annamária
-                </h1>
-                <h3 className="text-secondaryText text-[14px] leading-[21.7px] font-normal">
-                  Operations and Supply Chain Management
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div className="p-5 md:p-4 xl:p-6" data-aos="fade-up">
-            <p className="text-heading text-[19px] leading-[28px] font-medium mb-8">
-              “For a freelancer, traditional banks are really archaic. With
-              Earney, I know exactly how much I pay for every service I need.”
-            </p>
-            <div className="flex items-center gap-2">
-              <Image
-                src="/assets/profile.svg"
-                alt="profile"
-                width={40}
-                height={40}
-              />
-              <div>
-                <h1 className="text-heading text-[15px] leading-[25.6px] font-medium">
-                  Soós Annamária
-                </h1>
-                <h3 className="text-secondaryText text-[14px] leading-[21.7px] font-normal">
-                  Operations and Supply Chain Management
-                </h3>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

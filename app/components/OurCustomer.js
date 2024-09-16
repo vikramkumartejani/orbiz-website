@@ -7,7 +7,7 @@ const cardsData = [
     rating: "4.8",
     review:
       "“Payments are the main interaction point between Accenture’s financial services clients and their customers, and are core to our relationships beyond that sector too.”",
-    profileImg: "/assets/icons/profile-rating.svg",
+    profileImg: "/assets/icons/profile-rating.png",
     name: "Charolette Hanlin",
     position: "Co-Founder, Heroes Digital",
   },
@@ -15,7 +15,7 @@ const cardsData = [
     rating: "4.8",
     review:
       "“Payments are the main interaction point between Accentures financial services clients and their customers, and are core to our relationships beyond that sector too.”",
-    profileImg: "/assets/icons/profile-rating.svg",
+    profileImg: "/assets/icons/profile-rating.png",
     name: "Charolette Hanlin",
     position: "Co-Founder, Heroes Digital",
   },
@@ -23,7 +23,7 @@ const cardsData = [
     rating: "4.8",
     review:
       "“Payments are the main interaction point between Accentures financial services clients and their customers, and are core to our relationships beyond that sector too.”",
-    profileImg: "/assets/icons/profile-rating.svg",
+    profileImg: "/assets/icons/profile-rating.png",
     name: "Charolette Hanlin",
     position: "Co-Founder, Heroes Digital",
   },
@@ -31,7 +31,7 @@ const cardsData = [
     rating: "4.8",
     review:
       "“Payments are the main interaction point between Accentures financial services clients and their customers, and are core to our relationships beyond that sector too.”",
-    profileImg: "/assets/icons/profile-rating.svg",
+    profileImg: "/assets/icons/profile-rating.png",
     name: "Charolette Hanlin",
     position: "Co-Founder, Heroes Digital",
   },
@@ -39,7 +39,7 @@ const cardsData = [
     rating: "4.8",
     review:
       "“Payments are the main interaction point between Accentures financial services clients and their customers, and are core to our relationships beyond that sector too.”",
-    profileImg: "/assets/icons/profile-rating.svg",
+    profileImg: "/assets/icons/profile-rating.png",
     name: "Charolette Hanlin",
     position: "Co-Founder, Heroes Digital",
   },
@@ -47,7 +47,7 @@ const cardsData = [
     rating: "4.8",
     review:
       "“Payments are the main interaction point between Accentures financial services clients and their customers, and are core to our relationships beyond that sector too.”",
-    profileImg: "/assets/icons/profile-rating.svg",
+    profileImg: "/assets/icons/profile-rating.png",
     name: "Charolette Hanlin",
     position: "Co-Founder, Heroes Digital",
   },
@@ -55,7 +55,7 @@ const cardsData = [
     rating: "4.8",
     review:
       "“Payments are the main interaction point between Accentures financial services clients and their customers, and are core to our relationships beyond that sector too.”",
-    profileImg: "/assets/icons/profile-rating.svg",
+    profileImg: "/assets/icons/profile-rating.png",
     name: "Charolette Hanlin",
     position: "Co-Founder, Heroes Digital",
   },
@@ -63,7 +63,7 @@ const cardsData = [
     rating: "4.8",
     review:
       "“Payments are the main interaction point between Accentures financial services clients and their customers, and are core to our relationships beyond that sector too.”",
-    profileImg: "/assets/icons/profile-rating.svg",
+    profileImg: "/assets/icons/profile-rating.png",
     name: "Charolette Hanlin",
     position: "Co-Founder, Heroes Digital",
   },

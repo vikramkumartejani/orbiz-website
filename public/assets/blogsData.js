@@ -1,7 +1,7 @@
 const blogs = [
   {
     id: 1,
-    imageSrc: "/assets/finance.svg",
+    imageSrc: "/assets/finance.png",
     altText: "finance",
     title: "Finance",
     headline: "Finance AI trends: filtering the hype to find the value",
@@ -10,7 +10,7 @@ const blogs = [
   },
   {
     id: 2,
-    imageSrc: "/assets/marketing-sales.svg",
+    imageSrc: "/assets/marketing-sales.png",
     altText: "marketing",
     title: "Marketing & Sales",
     headline: "AI in Marketing: A new era of personalized experiences",
@@ -19,7 +19,7 @@ const blogs = [
   },
   {
     id: 3,
-    imageSrc: "/assets/finance-one.svg",
+    imageSrc: "/assets/finance-one.png",
     altText: "finance",
     title: "Investment",
     headline: "Investment strategies in the age of AI",
@@ -28,7 +28,7 @@ const blogs = [
   },
   {
     id: 4,
-    imageSrc: "/assets/marketing-sales.svg",
+    imageSrc: "/assets/marketing-sales.png",
     altText: "marketing",
     title: "Marketing & Sales",
     headline: "How AI is changing consumer behavior",

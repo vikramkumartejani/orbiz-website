@@ -61,7 +61,7 @@ const page = () => {
             >
               <img
                 className="md:h-[520px] w-full md:w-[470px] object-cover rounded-[15px]"
-                src="/assets/career-img.svg"
+                src="/assets/career-img.png"
               />
             </div>
           </div>
