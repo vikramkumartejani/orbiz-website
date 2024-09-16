@@ -17,11 +17,13 @@ const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [hovered, setHovered] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [leaveTimeout, setLeaveTimeout] = useState(null);
 
   const dropdownRef = useRef(null);
   const dropdownTriggerRef = useRef(null);
   const mobileMenuRef = useRef(null);
 
+  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -42,18 +44,28 @@ const Navbar = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [hovered]);
 
+  useEffect(() => {
+    return () => {
+      // Clean up timeout when component unmounts
+      if (leaveTimeout) {
+        clearTimeout(leaveTimeout);
+      }
+    };
+  }, [leaveTimeout]);
+
   const handleMouseEnter = (menu) => {
-    setOpenDropdown(menu);
-    setHovered(true);
+    if (leaveTimeout) {
+      clearTimeout(leaveTimeout); // Clear the timeout if mouse re-enters within 1000ms
+      setLeaveTimeout(null);
+    }
+    setOpenDropdown(menu); // Open the dropdown
   };
 
   const handleMouseLeave = () => {
-    setHovered(false);
-    setTimeout(() => {
-      if (!hovered) {
-        setOpenDropdown(null);
-      }
+    const timeout = setTimeout(() => {
+      setOpenDropdown(null); // Close the dropdown after 1000ms if mouse doesn't re-enter
     }, 300);
+    setLeaveTimeout(timeout); // Save the timeout ID so it can be cleared if needed
   };
 
   const handleMobileMenuToggle = () => {
@@ -265,7 +277,7 @@ const Navbar = () => {
                 key={key}
                 className="relative"
                 onMouseEnter={() => handleMouseEnter(key)}
-                onMouseLeave={handleMouseLeave}
+                onMouseLeave={handleMouseLeave} // Close on leave from the trigger or dropdown
                 ref={dropdownTriggerRef}
               >
                 <Link
@@ -279,6 +291,7 @@ const Navbar = () => {
                   <div
                     ref={dropdownRef}
                     className="absolute top-10 left-0 w-[650px] z-30 bg-white border rounded-lg text-black shadow-lg flex transition-opacity duration-300 opacity-100"
+                    onMouseLeave={handleMouseLeave} // Close when mouse leaves the dropdown
                   >
                     <div className="px-4 flex">
                       <div className="border-r py-4 pr-4">
