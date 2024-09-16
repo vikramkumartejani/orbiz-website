@@ -123,7 +123,7 @@ const Solutions = () => {
               </span>
             </div>
             <Image
-              src="/assets/get-paid.svg"
+              src="/assets/get-paid.png"
               alt="get-paid"
               width={532}
               height={430}
