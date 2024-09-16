@@ -19,7 +19,7 @@ const Features = () => {
   }, []);
   return (
     <div className="w-full ">
-      <div className="bg-[#0D0D12] w-full ">
+      <div className="bg-heading w-full ">
         <div className="px-4">
           <Navbar />
         </div>
@@ -41,7 +41,7 @@ const Features = () => {
             />
             <div className="flex flex-col gap-4">
               <div
-                className="shadow-custom border border-[#DFE1E7] bg-white rounded-[1000px] px-3 py-1 max-w-[175px] flex items-center gap-1.5"
+                className="shadow-custom border border-borderColor bg-white rounded-[1000px] px-3 py-1 max-w-[175px] flex items-center gap-1.5"
                 data-aos="fade-right"
               >
                 <Image
@@ -51,25 +51,25 @@ const Features = () => {
                   height={13.33}
                   className="-mt-0.5"
                 />
-                <h1 className="text-[#5F57FF] text-[13px] leading-[21.7px] font-medium font-custom">
+                <h1 className="text-btn text-[13px] leading-[21.7px] font-medium font-custom">
                   Create Invoices
                 </h1>
               </div>
               <h1
-                className="lg:max-w-[464px] text-[#0D0D12] text-[35px] sm:text-[52px] sm:leading-[65px] tracking-[-0.01em] font-medium"
+                className="lg:max-w-[464px] text-heading text-[35px] sm:text-[52px] sm:leading-[65px] tracking-[-0.01em] font-medium"
                 data-aos="fade-up"
               >
                 Simplify Create Your Invoices in Seconds
               </h1>
               <p
-                className="text-[#666D80] text-[16px] leading-[27.9px] font-normal lg:max-w-[470px]"
+                className="text-secondaryText text-[16px] leading-[27.9px] font-normal lg:max-w-[470px]"
                 data-aos="fade-up"
               >
                 Get your instant online store just by creating Orbiz account.
                 Add products, and start selling!
               </p>
               <span data-aos="fade-up">
-                <button className="sm:mt-[24px] bg-[#5F57FF] w-full sm:w-[194px] h-[52px] rounded-[1000px] shadow-custom text-white text-[15px] leading-[24px] font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]">
+                <button className="sm:mt-[24px] bg-btn w-full sm:w-[194px] h-[52px] rounded-[1000px] shadow-custom text-white text-[15px] leading-[24px] font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]">
                   Create your Invoices
                 </button>
               </span>
@@ -81,7 +81,7 @@ const Features = () => {
           >
             <div className="flex flex-col gap-4">
               <div
-                className="shadow-custom border border-[#DFE1E7] bg-white rounded-[1000px] px-3 py-1 max-w-[110px] flex items-center gap-1.5"
+                className="shadow-custom border border-borderColor bg-white rounded-[1000px] px-3 py-1 max-w-[110px] flex items-center gap-1.5"
                 data-aos="fade-left"
               >
                 <Image
@@ -91,18 +91,18 @@ const Features = () => {
                   height={13.33}
                   className="-mt-0.5"
                 />
-                <h1 className="text-[#5F57FF] text-[13px] leading-[21.7px] font-medium font-custom">
+                <h1 className="text-btn text-[13px] leading-[21.7px] font-medium font-custom">
                   Operations
                 </h1>
               </div>
               <h1
-                className="lg:max-w-[464px] text-[#0D0D12] text-[35px] sm:text-[52px] sm:leading-[65px] tracking-[-0.01em] font-medium"
+                className="lg:max-w-[464px] text-heading text-[35px] sm:text-[52px] sm:leading-[65px] tracking-[-0.01em] font-medium"
                 data-aos="fade-up"
               >
                 Simplifies Invoice Operations Easily
               </h1>
               <p
-                className="text-[#666D80] text-[16px] leading-[27.9px] font-normal lg:max-w-[470px]"
+                className="text-secondaryText text-[16px] leading-[27.9px] font-normal lg:max-w-[470px]"
                 data-aos="fade-up"
               >
                 Hendrerit fames metus leo ut orci pretium. Sit vitae montes
@@ -110,7 +110,7 @@ const Features = () => {
                 pellentesque.
               </p>
               <span data-aos="fade-up">
-                <button className="md:mt-[24px] bg-[#5F57FF] w-full sm:w-[194px] h-[52px] rounded-[1000px] shadow-custom text-white text-[15px] leading-[24px] font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]">
+                <button className="md:mt-[24px] bg-btn w-full sm:w-[194px] h-[52px] rounded-[1000px] shadow-custom text-white text-[15px] leading-[24px] font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]">
                   Create your Invoices
                 </button>
               </span>

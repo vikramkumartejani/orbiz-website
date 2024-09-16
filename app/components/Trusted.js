@@ -59,7 +59,7 @@ const Trusted = () => {
       data-aos="fade-up"
     >
       <h3
-        className="text-center text-[#818898] text-[18px] sm:text-[20px] leading-[28px] font-medium"
+        className="text-center text-dropdownFilterText text-[18px] sm:text-[20px] leading-[28px] font-medium"
         data-aos="fade-up"
       >
         Trusted by beloved partner and customer

@@ -13,10 +13,10 @@ import RecurringBilling from "./RecurringBilling";
 const Pricing = () => {
   return (
     <div className="w-full bg-[]">
-      <div className="px-4 bg-[#0D0D12]">
+      <div className="px-4 bg-heading">
         <Navbar />
       </div>
-      <div className="bg-[#0D0D12] px-4">
+      <div className="bg-heading px-4">
         <div className="relative text-left flex lg:items-center justify-between flex-col gap-8 lg:gap-4 z-10 pt-12 md:pt-[56] md:mb-[130px] mb-[70px]">
           <div
             className="absolute inset-0 opacity-70 bottom-0  bg-bottom z-[5]"
@@ -27,7 +27,7 @@ const Pricing = () => {
           ></div>
           <div className="relatieve z-[6] max-w-[1200px] mx-auto flex flex-col items-center gap-4">
             <div
-              className="overflow-hidden shadow-custom border border-[#272835] bg-[#1A1B25] rounded-[1000px] px-[14px] py-1 flex items-center gap-[4px]"
+              className="overflow-hidden shadow-custom border border-borderColor2 bg-[#1A1B25] rounded-[1000px] px-[14px] py-1 flex items-center gap-[4px]"
               data-aos="fade-down"
               data-aos-delay="100"
             >
@@ -51,7 +51,7 @@ const Pricing = () => {
             </h1>
             <p
               data-aos="fade-up"
-              className="text-[18px] text-center font-[400] md:leading-[27.9px] text-[#666D80] pb-[64px] md:max-w-[666px]"
+              className="text-[18px] text-center font-[400] md:leading-[27.9px] text-secondaryText pb-[64px] md:max-w-[666px]"
             >
               Vestibulum velit neque placerat accumsan aliquam lectus elementum
               sed. Ante dolor dignissim lectus in. Lorem risus nibh in sit
@@ -61,58 +61,58 @@ const Pricing = () => {
           <div className="flex md:flex-row flex-col justify-center gap-[32px] relative z-[6] md:max-w-[1000px] mx-auto mb-[-130px]">
             <div
               data-aos="fade-right"
-              className="bg-white rounded-[24px] lg:px-[32px] py-[32px] md:px-[24px] px-[14px] md:w-1/2 border border-[#DFE1E7]"
+              className="bg-white rounded-[24px] lg:px-[32px] py-[32px] md:px-[24px] px-[14px] md:w-1/2 border border-borderColor"
               style={{
                 boxShadow: `0px 4px 8px -1px rgba(13, 13, 18, 0.05), 
                           0px 5px 10px -2px rgba(13, 13, 18, 0.10)`,
               }}
             >
-              <h2 className="md:text-[24px] text-[18px] font-[500] text-[#5F57FF]">
+              <h2 className="md:text-[24px] text-[18px] font-[500] text-btn">
                 Starter
               </h2>
               <div className="flex md:gap-[10px] gap-[6px] mt-[12px] md:text-[52px] text-[40px] font-[500] md:leading-[65px] leading-[42px] tracking-[-1%]">
                 $49{" "}
-                <p className="md:text-[16px] text-[14px] text-[#666D80] font-[400] leading-[25.6px] mt-auto">
+                <p className="md:text-[16px] text-[14px] text-secondaryText font-[400] leading-[25.6px] mt-auto">
                   per month
                 </p>
               </div>
-              <p className="md:text-[16px] text-[15px] text-[#666D80] font-[400] leading-[25.6px] mt-1">
+              <p className="md:text-[16px] text-[15px] text-secondaryText font-[400] leading-[25.6px] mt-1">
                 Access a complete payments platform with simple, pay-as-you-go
                 pricing.
               </p>
-              <button className="bg-[#5F57FF] text-white rounded-full py-[13.5px] px-4 md:mt-[32px] mt-[20px] w-full">
+              <button className="bg-btn text-white rounded-full py-[13.5px] px-4 md:mt-[32px] mt-[20px] w-full">
                 Start Free Trial
               </button>
 
-              <div className="flex w-full min-h-[1px] border border-dashed border-t-[#DFE1E7]  md:my-[32px] my-[20px]"></div>
+              <div className="flex w-full min-h-[1px] border border-dashed border-t-borderColor  md:my-[32px] my-[20px]"></div>
 
-              <p className="text-[#0D0D12] font-[500]">This Plan Includes:</p>
+              <p className="text-heading font-[500]">This Plan Includes:</p>
               <ul className="mt-[16px] flex flex-col gap-[16px]">
-                <li className="flex items-center gap-[12px] text-[#666D80]">
+                <li className="flex items-center gap-[12px] text-secondaryText">
                   <span className="min-w-[20px] min-h-[20px]">
                     <IoIosCheckmarkCircleOutline color="#40C4AA" size={20} />
                   </span>
                   Business Accounts
                 </li>
-                <li className="flex items-center gap-[12px] text-[#666D80]">
+                <li className="flex items-center gap-[12px] text-secondaryText">
                   <span className="min-w-[20px] min-h-[20px]">
                     <IoIosCheckmarkCircleOutline color="#40C4AA" size={20} />
                   </span>
                   Embeddable Checkout
                 </li>
-                <li className="flex items-center gap-[12px] text-[#666D80]">
+                <li className="flex items-center gap-[12px] text-secondaryText">
                   <span className="min-w-[20px] min-h-[20px]">
                     <IoIosCheckmarkCircleOutline color="#40C4AA" size={20} />
                   </span>
                   Custom UI Tool
                 </li>
-                <li className="flex items-center gap-[12px] text-[#666D80]">
+                <li className="flex items-center gap-[12px] text-secondaryText">
                   <span className="min-w-[20px] min-h-[20px]">
                     <IoIosCheckmarkCircleOutline color="#40C4AA" size={20} />
                   </span>
                   Invoice Support
                 </li>
-                <li className="flex items-center gap-[12px] text-[#666D80]">
+                <li className="flex items-center gap-[12px] text-secondaryText">
                   <span className="min-w-[20px] min-h-[20px]">
                     <IoIosCheckmarkCircleOutline color="#40C4AA" size={20} />
                   </span>

@@ -16,7 +16,7 @@ const ContactUs = () => {
     });
   }, []);
   return (
-    <div className="bg-[#0D0D12] w-full px-5">
+    <div className="bg-heading w-full px-5">
       <Navbar />
       <div className="max-w-[1200px] mx-auto w-full py-10 md:py-14 text-white">
         <div className="w-full flex items-start justify-between md:flex-row flex-col gap-8 lg:gap-14">
@@ -24,10 +24,10 @@ const ContactUs = () => {
             className="w-full md:max-w-[504px] py-6 lg:py-8"
             data-aos="fade-right"
           >
-            <h1 className="text-[#F8FAFB] text-[40px] sm:text-[52px] sm:leading-[65px] tracking-[-0.01em] font-medium">
+            <h1 className="text-whitish text-[40px] sm:text-[52px] sm:leading-[65px] tracking-[-0.01em] font-medium">
               Let’s Talk
             </h1>
-            <p className="text-[#666D80] text-[17.5px] leading-[27.9px] font-normal font-custom mt-4">
+            <p className="text-secondaryText text-[17.5px] leading-[27.9px] font-normal font-custom mt-4">
               Vestibulum velit neque placerat accumsan aliquam lectus elementum
               sed. Ante dolor dignissim lectus in. Lorem risus nibh in sit
               elementum euismod.
@@ -40,7 +40,7 @@ const ContactUs = () => {
                   width={32}
                   height={32}
                 />
-                <h2 className="text-[#F8FAFB] text-[16px] sm:text-[16px] leading-[25px] font-medium">
+                <h2 className="text-whitish text-[16px] sm:text-[16px] leading-[25px] font-medium">
                   orbitzfinancial@mail.com
                 </h2>
               </div>
@@ -55,7 +55,7 @@ const ContactUs = () => {
                   width={32}
                   height={32}
                 />
-                <h2 className="text-[#F8FAFB] text-[16px] sm:text-[16px] leading-[25px] font-medium">
+                <h2 className="text-whitish text-[16px] sm:text-[16px] leading-[25px] font-medium">
                   +1 3245 8907
                 </h2>
               </div>
@@ -70,7 +70,7 @@ const ContactUs = () => {
                   width={32}
                   height={32}
                 />
-                <h2 className="text-[#F8FAFB] text-[16px] sm:text-[18px] leading-[25px] font-medium">
+                <h2 className="text-whitish text-[16px] sm:text-[18px] leading-[25px] font-medium">
                   3517 W. Gray St. Utica, Pennsylvania 57867
                 </h2>
               </div>

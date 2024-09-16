@@ -3,11 +3,11 @@ import React from "react";
 
 const AboutOrbiz = () => {
   return (
-    <section className="bg-[#0D0D12] px-4">
+    <section className="bg-heading px-4">
       <div className="max-w-[1200px] mx-auto relative text-left flex lg:items-center justify-between flex-col gap-8 lg:gap-4 z-10 py-12 md:py-[88px]">
         <div className="flex items-start gap-4 flex-col">
           <div
-            className="shadow-custom border border-[#272835] bg-[#1A1B25] rounded-[1000px] px-[14px] py-1 flex items-center gap-[4px]"
+            className="shadow-custom border border-borderColor2 bg-[#1A1B25] rounded-[1000px] px-[14px] py-1 flex items-center gap-[4px]"
             data-aos="fade-right"
             data-aos-delay="100"
           >
@@ -35,7 +35,7 @@ const AboutOrbiz = () => {
                 className="rounded-[16px] w-full h-full object-cover"
               />
             </div>
-            <p className="text-[18px] text-[#666D80] leading-[27.9px] font-[400] md:mt-[24px] mt-[15px]">
+            <p className="text-[18px] text-secondaryText leading-[27.9px] font-[400] md:mt-[24px] mt-[15px]">
               Create a cohesive culture where backgrounds and experiences are
               better understood and welcomed.
             </p>
@@ -49,7 +49,7 @@ const AboutOrbiz = () => {
                 className="rounded-[16px] w-full h-full object-cover"
               />
             </div>
-            <p className="text-[18px] text-[#666D80] leading-[27.9px] font-[400] md:mt-[24px] mt-[15px]">
+            <p className="text-[18px] text-secondaryText leading-[27.9px] font-[400] md:mt-[24px] mt-[15px]">
               We are increasing awareness of differing experiences through
               Cultural Heritage Months, company events, and comprehensive
               diversity training.
@@ -64,7 +64,7 @@ const AboutOrbiz = () => {
                 className="rounded-[16px] w-full h-full object-cover"
               />
             </div>
-            <p className="text-[18px] text-[#666D80] leading-[27.9px] font-[400] md:mt-[24px] mt-[15px]">
+            <p className="text-[18px] text-secondaryText leading-[27.9px] font-[400] md:mt-[24px] mt-[15px]">
               Simplify global travel and expenses with automation that makes
               compliance easy.
             </p>

@@ -21,25 +21,28 @@ const GetStarted = () => {
               data-aos="fade-left"
               data-aos-delay="100"
             >
-              <div className="border border-[#DFE1E7] shadow-custom-one rounded-[1000px] w-[115px] h-[30px] flex items-center justify-center gap-1.5">
+              <div className="border border-border shadow-custom-one rounded-[1000px] w-[115px] h-[30px] flex items-center justify-center gap-1.5">
                 <Image
                   src="/assets/icons/credit-card.svg"
                   alt="credit-card"
                   width={16}
                   height={16}
                 />
-                <h4 className="text-[#5F57FF] text-[14px] leading-[21.7px] font-medium">
+                <h4 className="text-btn text-[14px] leading-[21.7px] font-medium">
                   Payment
                 </h4>
               </div>
-              <h1 className="text-[#0D0D12] text-[30px] lg:text-[52px] lg:leading-[65px] tracking-[-0.01em] font-medium">
+              <h1 className="text-heading text-[30px] lg:text-[52px] lg:leading-[65px] tracking-[-0.01em] font-medium">
                 Embrace and Enhance Payment Globally
               </h1>
-              <p className="text-[#666D80] text-[16px] sm:text-[18px] sm:leading-[27.9px] font-normal">
+              <p className="text-secondaryText text-[16px] sm:text-[18px] sm:leading-[27.9px] font-normal">
                 Increase authorization rates, optimize your checkout conversion,
                 and offer local payment methods in every market.
               </p>
-              <Link href='/#get-started' className="flex items-center justify-center text-white mt-1 xl:mt-[26px] bg-[#5F57FF] shadow-custom-one w-full sm:w-[150px] h-[52px] sm:h-[40px] lg:h-[52px] rounded-[1000px] text-[16px] leading-[24.8px] font-semibold transition-all duration-300 transform scale-100 hover:scale-95 hover:shadow-lg">
+              <Link
+                href="/#get-started"
+                className="flex items-center justify-center text-white mt-1 xl:mt-[26px] bg-btn shadow-custom-one w-full sm:w-[150px] h-[52px] sm:h-[40px] lg:h-[52px] rounded-[1000px] text-[16px] leading-[24.8px] font-semibold transition-all duration-300 transform scale-100 hover:scale-95 hover:shadow-lg"
+              >
                 Get Started
               </Link>
             </div>
@@ -50,26 +53,29 @@ const GetStarted = () => {
               data-aos="fade-right"
               data-aos-delay="200"
             >
-              <div className="border border-[#DFE1E7] shadow-custom-one rounded-[1000px] w-[115px] h-[30px] flex items-center justify-center gap-1.5">
+              <div className="border border-border shadow-custom-one rounded-[1000px] w-[115px] h-[30px] flex items-center justify-center gap-1.5">
                 <Image
                   src="/assets/icons/file-text.svg"
                   alt="file-text"
                   width={16}
                   height={16}
                 />
-                <h4 className="text-[#5F57FF] text-[14px] leading-[21.7px] font-medium">
+                <h4 className="text-btn text-[14px] leading-[21.7px] font-medium">
                   Invoices
                 </h4>
               </div>
-              <h1 className="text-[#0D0D12] text-[30px] lg:text-[52px] lg:leading-[65px] tracking-[-0.01em] font-medium">
+              <h1 className="text-heading text-[30px] lg:text-[52px] lg:leading-[65px] tracking-[-0.01em] font-medium">
                 Converting Invoices That Get You Paid Fast
               </h1>
-              <p className="text-[#666D80] text-[16px] sm:text-[18px] sm:leading-[27.9px] font-normal">
+              <p className="text-secondaryText text-[16px] sm:text-[18px] sm:leading-[27.9px] font-normal">
                 Hendrerit fames metus leo ut orci pretium. Sit vitae montes
                 egestas montes mauris. Auctor vitae neque urna nam nunc
                 pellentesque.
               </p>
-              <Link href='/#get-started' className="flex items-center justify-center text-white mt-1 xl:mt-[26px] bg-[#5F57FF] shadow-custom-one w-full sm:w-[150px] h-[52px] sm:h-[40px] lg:h-[52px] rounded-[1000px] text-[16px] leading-[24.8px] font-semibold transition-all duration-300 transform scale-100 hover:scale-95 hover:shadow-lg">
+              <Link
+                href="/#get-started"
+                className="flex items-center justify-center text-white mt-1 xl:mt-[26px] bg-btn shadow-custom-one w-full sm:w-[150px] h-[52px] sm:h-[40px] lg:h-[52px] rounded-[1000px] text-[16px] leading-[24.8px] font-semibold transition-all duration-300 transform scale-100 hover:scale-95 hover:shadow-lg"
+              >
                 Get Started
               </Link>
             </div>

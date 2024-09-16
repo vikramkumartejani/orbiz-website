@@ -12,7 +12,7 @@ const JobOpening = () => {
           className="w-full flex flex-col justify-start gap-[16px]"
         >
           <div
-            className="border border-[#DFE1E7] shadow-custom-one rounded-[1000px] w-[107px] h-[30px] flex items-center justify-center gap-1.5"
+            className="border border-borderColor shadow-custom-one rounded-[1000px] w-[107px] h-[30px] flex items-center justify-center gap-1.5"
             data-aos="fade-up"
             data-aos-delay="100"
           >
@@ -22,14 +22,14 @@ const JobOpening = () => {
               width={16}
               height={16}
             />
-            <h4 className="text-[#5F57FF] text-[14px] leading-[21.7px] font-medium">
+            <h4 className="text-btn text-[14px] leading-[21.7px] font-medium">
               Our Jobs
             </h4>
           </div>
-          <h1 className="lg:text-[48px] text-[38px] font-[500] lg:leading-[60px] leading-[50px] text-[#0D0D12] py-[16px]">
+          <h1 className="lg:text-[48px] text-[38px] font-[500] lg:leading-[60px] leading-[50px] text-heading py-[16px]">
             Jobs Opening
           </h1>
-          <p className="text-[18px] font-[400] md:leading-[27.9px] text-[#666D80] md:max-w-[601px]">
+          <p className="text-[18px] font-[400] md:leading-[27.9px] text-secondaryText md:max-w-[601px]">
             Hendrerit fames metus leo ut orci pretium. Sit vitae montes egestas
             montes mauris. Auctor vitae neque urna nam nunc pellentesque.
           </p>
@@ -38,14 +38,14 @@ const JobOpening = () => {
           <Link
             href="/career"
             data-aos="fade-up"
-            className="gap-6 flex justify-between w-full items-center border-y border-y-[#DFE1E7] py-[24px]"
+            className="gap-6 flex justify-between w-full items-center border-y border-y-borderColor py-[24px]"
           >
             <span className="flex flex-col gap-[12px]">
-              <h3 className="md:text-[24px] text-[22px] font-[500] leading-[31.2px] text-[#0D0D12]">
+              <h3 className="md:text-[24px] text-[22px] font-[500] leading-[31.2px] text-heading">
                 Product Designer
               </h3>
-              <p className="text-[#666D80] text-[16px] font-[400] leading-[25.6px]">
-                Full-time <span className="text-[#DFE1E7]">•</span> Remote
+              <p className="text-secondaryText text-[16px] font-[400] leading-[25.6px]">
+                Full-time <span className="text-borderColor">•</span> Remote
               </p>
             </span>
             <span className="rotate-[45deg] min-w-[24px] min-h-[24px]">
@@ -55,14 +55,14 @@ const JobOpening = () => {
           <Link
             href="/career"
             data-aos="fade-up"
-            className="gap-6 flex justify-between w-full items-center border-y border-y-[#DFE1E7] py-[24px]"
+            className="gap-6 flex justify-between w-full items-center border-y border-y-borderColor py-[24px]"
           >
             <span className="flex flex-col gap-[12px]">
-              <h3 className="md:text-[24px] text-[22px] font-[500] leading-[31.2px] text-[#0D0D12]">
+              <h3 className="md:text-[24px] text-[22px] font-[500] leading-[31.2px] text-heading">
                 Backend Engineer
               </h3>
-              <p className="text-[#666D80] text-[16px] font-[400] leading-[25.6px]">
-                Full-time <span className="text-[#DFE1E7]">•</span> Remote
+              <p className="text-secondaryText text-[16px] font-[400] leading-[25.6px]">
+                Full-time <span className="text-borderColor">•</span> Remote
               </p>
             </span>
             <span className="rotate-[45deg] min-w-[24px] min-h-[24px]">
@@ -72,14 +72,14 @@ const JobOpening = () => {
           <Link
             href="/career"
             data-aos="fade-up"
-            className="gap-6 flex justify-between w-full items-center border-y border-y-[#DFE1E7] py-[24px]"
+            className="gap-6 flex justify-between w-full items-center border-y border-y-borderColor py-[24px]"
           >
             <span className="flex flex-col gap-[12px]">
-              <h3 className="md:text-[24px] text-[22px] font-[500] leading-[31.2px] text-[#0D0D12]">
+              <h3 className="md:text-[24px] text-[22px] font-[500] leading-[31.2px] text-heading">
                 Data Analyst
               </h3>
-              <p className="text-[#666D80] text-[16px] font-[400] leading-[25.6px]">
-                Full-time <span className="text-[#DFE1E7]">•</span> Remote
+              <p className="text-secondaryText text-[16px] font-[400] leading-[25.6px]">
+                Full-time <span className="text-borderColor">•</span> Remote
               </p>
             </span>
             <span className="rotate-[45deg] min-w-[24px] min-h-[24px]">
@@ -87,9 +87,12 @@ const JobOpening = () => {
             </span>
           </Link>
         </div>
-        <p className="text-[18px] font-[400] leading-[27.9px] text-[#666D80]" data-aos="fade-up">
+        <p
+          className="text-[18px] font-[400] leading-[27.9px] text-secondaryText"
+          data-aos="fade-up"
+        >
           Don’s see opportunity that suits you?{" "}
-          <a href="#" className="underline text-[#5F57FF]">
+          <a href="#" className="underline text-btn">
             {" "}
             Get notified when new roles added
           </a>

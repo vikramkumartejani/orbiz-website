@@ -17,13 +17,13 @@ const page = () => {
               data-aos="fade-up"
               className="md:w-1/2 w-full flex flex-col justify-start gap-[16px]"
             >
-              <p className="text-[16px] font-[500] md:leading-[25.6px] text-[#666D80]">
+              <p className="text-[16px] font-[500] md:leading-[25.6px] text-secondaryText">
                 Finance
               </p>
-              <h1 className="text-[48px] font-[500] md:leading-[60px] text-[#0D0D12]">
+              <h1 className="text-[48px] font-[500] md:leading-[60px] text-heading">
                 Step-by-Step Expense Forecasting: A Guide For SaaS
               </h1>
-              <p className="text-[18px] font-[400] md:leading-[27.9px] text-[#666D80]">
+              <p className="text-[18px] font-[400] md:leading-[27.9px] text-secondaryText">
                 How long is your cash going to last? It’s a critical question
                 for any finance leader to answer for the business. But you don’t
                 just need an answer that’s a snapshot in time — you need to
@@ -44,15 +44,15 @@ const page = () => {
           <div className="flex md:flex-row flex-col items-center md:justify-between justify-center w-full md:mt-[56px] mt-[32px]">
             <p
               data-aos="fade-right"
-              className="text-[16px] font-[400] text-[#666D80] leading-[25.6px]"
+              className="text-[16px] font-[400] text-secondaryText leading-[25.6px]"
             >
               by Mileana Vanessa
             </p>
             <div data-aos="fade-left" className="flex gap-1">
-              <p className="text-[16px] font-[400] text-[#666D80] leading-[25.6px]">
+              <p className="text-[16px] font-[400] text-secondaryText leading-[25.6px]">
                 Published on January 11, 2024
               </p>
-              <p className="text-[16px] font-[400] text-[#666D80] leading-[25.6px]">
+              <p className="text-[16px] font-[400] text-secondaryText leading-[25.6px]">
                 • 11 min read
               </p>
             </div>
@@ -69,7 +69,7 @@ const page = () => {
             </div>
 
             <div className="w-full md:order-2 order-1 flex">
-              <BlogDetails/>
+              <BlogDetails />
             </div>
           </div>
         </div>

@@ -16,7 +16,7 @@ const FeatureHero = () => {
         >
           <div className="flex items-start gap-4 flex-col">
             <div
-              className="shadow-custom border border-[#272835] bg-[#1A1B25] rounded-[1000px] px-3 py-1 max-w-[175px] flex items-center gap-1.5"
+              className="shadow-custom border border-borderColor2 bg-[#1A1B25] rounded-[1000px] px-3 py-1 max-w-[175px] flex items-center gap-1.5"
               data-aos="fade-right"
             >
               <Image
@@ -37,7 +37,7 @@ const FeatureHero = () => {
               Easily Manage Your Invoice with Orbiz
             </h1>
             <p
-              className="text-[#666D80] text-[18px] leading-[27.9px] font-normal lg:max-w-[540px] font-custom"
+              className="text-secondaryText text-[18px] leading-[27.9px] font-normal lg:max-w-[540px] font-custom"
               data-aos="fade-up"
             >
               Get paid faster with Orbiz invoicing tool and save precious time
@@ -47,7 +47,10 @@ const FeatureHero = () => {
               className="w-full mt-4 flex items-center gap-3 sm:flex-row flex-col"
               data-aos="fade-up"
             >
-              <Link href='#get-started' className="flex items-center justify-center bg-[#5F57FF] shadow-custom w-full sm:w-[150px] h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]">
+              <Link
+                href="#get-started"
+                className="flex items-center justify-center bg-btn shadow-custom w-full sm:w-[150px] h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]"
+              >
                 Get Started
               </Link>
               <Link
@@ -76,7 +79,7 @@ const FeatureHero = () => {
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             <div
-              className="flex flex-col items-start text-[#F8FAFB]"
+              className="flex flex-col items-start text-whitish"
               data-aos="fade-up"
             >
               <Image
@@ -88,13 +91,13 @@ const FeatureHero = () => {
               <h3 className="mt-5 text-[18px] leading-[27px] font-medium">
                 Collect More Revenue
               </h3>
-              <p className="mt-2 text-[#666D80] text-[16px] leading-[25px] font-normal">
+              <p className="mt-2 text-secondaryText text-[16px] leading-[25px] font-normal">
                 Get realtime updates when users start or end subscriptions, or
                 have low funds in their wallet.
               </p>
             </div>
             <div
-              className="flex flex-col items-start text-[#F8FAFB]"
+              className="flex flex-col items-start text-whitish"
               data-aos="fade-up"
             >
               <Image
@@ -106,13 +109,13 @@ const FeatureHero = () => {
               <h3 className="mt-5 text-[18px] leading-[27px] font-medium">
                 Realtime Notifications
               </h3>
-              <p className="mt-2 text-[#666D80] text-[16px] leading-[25px] font-normal">
+              <p className="mt-2 text-secondaryText text-[16px] leading-[25px] font-normal">
                 Get realtime updates when users start or end subscriptions, or
                 have low funds in their wallet.
               </p>
             </div>
             <div
-              className="flex flex-col items-start text-[#F8FAFB]"
+              className="flex flex-col items-start text-whitish"
               data-aos="fade-up"
             >
               <Image
@@ -124,7 +127,7 @@ const FeatureHero = () => {
               <h3 className="mt-5 text-[18px] leading-[27px] font-medium">
                 Easy Management
               </h3>
-              <p className="mt-2 text-[#666D80] text-[16px] leading-[25px] font-normal">
+              <p className="mt-2 text-secondaryText text-[16px] leading-[25px] font-normal">
                 Get realtime updates when users start or end subscriptions, or
                 have low funds in their wallet.
               </p>

@@ -22,7 +22,7 @@ const Solutions = () => {
 
   return (
     <div className="w-full">
-      <div className="bg-[#0D0D12] px-4 md:px-5">
+      <div className="bg-heading px-4 md:px-5">
         <Navbar />
         <SolutionsHero />
       </div>
@@ -42,7 +42,7 @@ const Solutions = () => {
             />
             <div className="flex flex-col gap-4">
               <div
-                className="shadow-custom border border-[#DFE1E7] bg-white rounded-[1000px] px-3 py-1 max-w-[101px] flex items-center gap-1.5"
+                className="shadow-custom border border-borderColor bg-white rounded-[1000px] px-3 py-1 max-w-[101px] flex items-center gap-1.5"
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
@@ -53,19 +53,19 @@ const Solutions = () => {
                   height={13.33}
                   className="-mt-0.5"
                 />
-                <h1 className="text-[#5F57FF] text-[13px] leading-[21.7px] font-medium font-custom">
+                <h1 className="text-btn text-[13px] leading-[21.7px] font-medium font-custom">
                   Revenue
                 </h1>
               </div>
               <h1
-                className="lg:max-w-[464px] text-[#0D0D12] text-[35px] sm:text-[52px] sm:leading-[65px] tracking-[-0.01em] font-medium"
+                className="lg:max-w-[464px] text-heading text-[35px] sm:text-[52px] sm:leading-[65px] tracking-[-0.01em] font-medium"
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
                 Power Any Billing Model with Orbiz
               </h1>
               <p
-                className="text-[#666D80] text-[16px] leading-[27.9px] font-normal lg:max-w-[470px]"
+                className="text-secondaryText text-[16px] leading-[27.9px] font-normal lg:max-w-[470px]"
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
@@ -73,7 +73,7 @@ const Solutions = () => {
                 Add products, and start selling!
               </p>
               <span data-aos="fade-up" data-aos-delay="400">
-                <button className="sm:mt-[24px] bg-[#5F57FF] w-full sm:w-[146px] h-[52px] rounded-[1000px] shadow-custom text-white text-[15px] leading-[24px] font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]">
+                <button className="sm:mt-[24px] bg-btn w-full sm:w-[146px] h-[52px] rounded-[1000px] shadow-custom text-white text-[15px] leading-[24px] font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]">
                   Get Started
                 </button>
               </span>
@@ -86,7 +86,7 @@ const Solutions = () => {
           >
             <div className="flex flex-col gap-4">
               <div
-                className="shadow-custom border border-[#DFE1E7] bg-white rounded-[1000px] px-3 py-1 max-w-[100px] flex items-center gap-1.5"
+                className="shadow-custom border border-borderColor bg-white rounded-[1000px] px-3 py-1 max-w-[100px] flex items-center gap-1.5"
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
@@ -97,19 +97,19 @@ const Solutions = () => {
                   height={13.33}
                   className="-mt-0.5"
                 />
-                <h1 className="text-[#5F57FF] text-[13px] leading-[21.7px] font-medium font-custom">
+                <h1 className="text-btn text-[13px] leading-[21.7px] font-medium font-custom">
                   Get Paid
                 </h1>
               </div>
               <h1
-                className="lg:max-w-[464px] text-[#0D0D12] text-[35px] sm:text-[52px] sm:leading-[65px] tracking-[-0.01em] font-medium"
+                className="lg:max-w-[464px] text-heading text-[35px] sm:text-[52px] sm:leading-[65px] tracking-[-0.01em] font-medium"
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
                 Get Paid with Prebuilt Invoices
               </h1>
               <p
-                className="text-[#666D80] text-[16px] leading-[27.9px] font-normal lg:max-w-[470px]"
+                className="text-secondaryText text-[16px] leading-[27.9px] font-normal lg:max-w-[470px]"
                 data-aos="fade-up"
                 data-aos-delay="300"
               >
@@ -117,7 +117,7 @@ const Solutions = () => {
                 Add products, and start selling!
               </p>
               <span data-aos="fade-up" data-aos-delay="300">
-                <button className="md:mt-[24px] bg-[#5F57FF] w-full sm:w-[146px] h-[52px] rounded-[1000px] shadow-custom text-white text-[15px] leading-[24px] font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]">
+                <button className="md:mt-[24px] bg-btn w-full sm:w-[146px] h-[52px] rounded-[1000px] shadow-custom text-white text-[15px] leading-[24px] font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]">
                   Get Started
                 </button>
               </span>

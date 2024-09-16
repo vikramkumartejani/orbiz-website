@@ -8,13 +8,16 @@ const SolutionsHero = () => {
       <div className="mx-auto w-full relative">
         <div
           className="absolute inset-0 bg-cover opacity-70 bg-bottom"
-          style={{ backgroundImage: "url('/assets/icons/background.png')", backgroundAttachment:'fixed' }}
+          style={{
+            backgroundImage: "url('/assets/icons/background.png')",
+            backgroundAttachment: "fixed",
+          }}
           // data-aos="fade"
         ></div>
         <div className="max-w-[1200px] mx-auto relative text-left flex lg:items-center justify-between lg:flex-row flex-col gap-8 lg:gap-4 z-10 py-12 md:py-16">
           <div className="flex items-start gap-4 flex-col" data-aos="fade-up">
             <div
-              className="shadow-custom border border-[#272835] bg-[#1A1B25] rounded-[1000px] px-3 py-1 max-w-[130px] flex items-center gap-1.5"
+              className="shadow-custom border border-borderColor2 bg-[#1A1B25] rounded-[1000px] px-3 py-1 max-w-[130px] flex items-center gap-1.5"
               data-aos="fade-up"
               data-aos-delay="100"
             >
@@ -37,7 +40,7 @@ const SolutionsHero = () => {
               Simplifying Payment Built for SaaS
             </h1>
             <p
-              className="text-[#666D80] text-[18px] leading-[27.9px] font-normal lg:max-w-[588px] font-custom"
+              className="text-secondaryText text-[18px] leading-[27.9px] font-normal lg:max-w-[588px] font-custom"
               data-aos="fade-up"
               data-aos-delay="300"
             >
@@ -50,7 +53,10 @@ const SolutionsHero = () => {
               data-aos="fade-up"
               data-aos-delay="400"
             >
-              <Link href='/#get-started' className="flex items-center justify-center bg-[#5F57FF] shadow-custom w-full sm:w-[150px] h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]">
+              <Link
+                href="/#get-started"
+                className="flex items-center justify-center bg-btn shadow-custom w-full sm:w-[150px] h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]"
+              >
                 Get Started
               </Link>
               <Link
@@ -65,7 +71,7 @@ const SolutionsHero = () => {
               data-aos="fade-up"
               data-aos-delay="500"
             >
-              <p className="text-[#666D80] text-[16px] leading-[25px] font-medium">
+              <p className="text-secondaryText text-[16px] leading-[25px] font-medium">
                 Trusted by beloved partner and customer
               </p>
               <div className="flex items-center gap-8 mt-8">

@@ -27,7 +27,7 @@ const page = () => {
               className="md:w-1/2 w-full flex flex-col justify-start gap-[16px]"
             >
               <div
-                className="border border-[#DFE1E7] shadow-custom-one rounded-[1000px] w-[107px] h-[30px] flex items-center justify-center gap-1.5"
+                className="border border-borderColor shadow-custom-one rounded-[1000px] w-[107px] h-[30px] flex items-center justify-center gap-1.5"
                 data-aos="fade-up"
                 data-aos-delay="100"
               >
@@ -37,20 +37,20 @@ const page = () => {
                   width={16}
                   height={16}
                 />
-                <h4 className="text-[#5F57FF] text-[14px] leading-[21.7px] font-medium">
+                <h4 className="text-btn text-[14px] leading-[21.7px] font-medium">
                   Careers
                 </h4>
               </div>
-              <h1 className="lg:text-[58px] text-[40px] font-[500] lg:leading-[60px] leading-[50px] text-[#0D0D12] py-[16px]">
+              <h1 className="lg:text-[58px] text-[40px] font-[500] lg:leading-[60px] leading-[50px] text-heading py-[16px]">
                 We Dream Big, in Life And at Work
               </h1>
-              <p className="text-[18px] font-[400] md:leading-[27.9px] text-[#666D80] pb-[38px] md:max-w-[499px]">
+              <p className="text-[18px] font-[400] md:leading-[27.9px] text-secondaryText pb-[38px] md:max-w-[499px]">
                 Helping our customers reach their full potential starts with
                 helping our team reach theirs.
               </p>
               <Link
                 href="/career/#job-opening"
-                className="flex items-center justify-center bg-[#5F57FF] shadow-custom px-[24px] py-[13.5px] w-fit rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]"
+                className="flex items-center justify-center bg-btn shadow-custom px-[24px] py-[13.5px] w-fit rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]"
               >
                 See Open Positions
               </Link>

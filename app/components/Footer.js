@@ -15,23 +15,31 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className="w-full bg-[#0D0D12] h-full">
+    <div className="w-full bg-heading h-full">
       <div className="text-white px-5 max-w-[1200px] w-full mx-auto py-12 md:py-20">
         <div
-          className="w-full flex md:items-center justify-between md:flex-row flex-col gap-6 pb-12 border-b border-[#272835]"
+          className="w-full flex md:items-center justify-between md:flex-row flex-col gap-6 pb-12 border-b border-borderColor2"
           data-aos="fade-up"
         >
-          <h2 className="text-[#F6F8FA] text-[40px] sm:text-[48px] leading-[54px] sm:leading-[60px] font-medium">
+          <h2 className="text-footerLink text-[40px] sm:text-[48px] leading-[54px] sm:leading-[60px] font-medium">
             Let’s Simply Finance.
           </h2>
           <div className="flex items-center md:flex-row flex-col justify-end gap-4 w-full md:w-1/2">
-            <Link href="/#get-started" data-aos="fade-up" className="md:w-fit w-full">
-              <button className="shadow-custom bg-[#5F57FF] w-full md:w-[150px] h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]">
+            <Link
+              href="/#get-started"
+              data-aos="fade-up"
+              className="md:w-fit w-full"
+            >
+              <button className="shadow-custom bg-btn w-full md:w-[150px] h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]">
                 Get Started
               </button>
             </Link>
-            <Link href="/contact-us" className="md:w-fit w-full" data-aos="fade-up">
-              <button className="shadow-custom bg-[#1A1B25] border border-[#272835] w-full md:w-[150px] h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold transition-all duration-300 transform hover:scale-105 hover:border-white">
+            <Link
+              href="/contact-us"
+              className="md:w-fit w-full"
+              data-aos="fade-up"
+            >
+              <button className="shadow-custom bg-[#1A1B25] border border-borderColor2 w-full md:w-[150px] h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold transition-all duration-300 transform hover:scale-105 hover:border-white">
                 Contact Us
               </button>
             </Link>
@@ -46,17 +54,17 @@ const Footer = () => {
               width={102}
               height={36}
             />
-            <h3 className="mt-6 text-[#666D80] text-[16px] leading-[25.6px] font-normal">
+            <h3 className="mt-6 text-secondaryText text-[16px] leading-[25.6px] font-normal">
               Orbiz Financial Technologies, LLC 2024
             </h3>
             <div className="mt-8 lg:mt-[96px] flex sm:flex-col flex-row sm:items-start items-center justify-between gap-4">
-              <h3 className="sm:mb-4 text-[#666D80] text-[16px] leading-[25.6px] font-normal">
+              <h3 className="sm:mb-4 text-secondaryText text-[16px] leading-[25.6px] font-normal">
                 Follow us on:
               </h3>
               <div className="flex items-center gap-3">
                 <Link
                   href="/"
-                  className="w-[32px] h-[32px] bg-[#272835] rounded-full flex items-center justify-center"
+                  className="w-[32px] h-[32px] bg-borderColor2 rounded-full flex items-center justify-center"
                   data-aos="zoom-in"
                 >
                   <Image
@@ -68,7 +76,7 @@ const Footer = () => {
                 </Link>
                 <Link
                   href="/"
-                  className="w-[32px] h-[32px] bg-[#272835] rounded-full flex items-center justify-center"
+                  className="w-[32px] h-[32px] bg-borderColor2 rounded-full flex items-center justify-center"
                   data-aos="zoom-in"
                 >
                   <Image
@@ -80,7 +88,7 @@ const Footer = () => {
                 </Link>
                 <Link
                   href="/"
-                  className="w-[32px] h-[32px] bg-[#272835] rounded-full flex items-center justify-center"
+                  className="w-[32px] h-[32px] bg-borderColor2 rounded-full flex items-center justify-center"
                   data-aos="zoom-in"
                 >
                   <Image
@@ -100,13 +108,13 @@ const Footer = () => {
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <h3 className="text-[#666D80] text-[16px] leading-[25.6px] font-medium mb-1">
+              <h3 className="text-secondaryText text-[16px] leading-[25.6px] font-medium mb-1">
                 Features
               </h3>
               <li>
                 <Link
                   href="/pricing"
-                  className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
+                  className="text-footerLink text-[16px] leading-[25.6px] font-medium"
                 >
                   Payment Link
                 </Link>
@@ -114,7 +122,7 @@ const Footer = () => {
               <li>
                 <Link
                   href=""
-                  className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
+                  className="text-footerLink text-[16px] leading-[25.6px] font-medium"
                 >
                   Recurring Billing
                 </Link>
@@ -122,7 +130,7 @@ const Footer = () => {
               <li>
                 <Link
                   href=""
-                  className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
+                  className="text-footerLink text-[16px] leading-[25.6px] font-medium"
                 >
                   Invoice Management
                 </Link>
@@ -130,7 +138,7 @@ const Footer = () => {
               <li>
                 <Link
                   href=""
-                  className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
+                  className="text-footerLink text-[16px] leading-[25.6px] font-medium"
                 >
                   Checkout
                 </Link>
@@ -138,7 +146,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/integrations"
-                  className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
+                  className="text-footerLink text-[16px] leading-[25.6px] font-medium"
                 >
                   Integrations
                 </Link>
@@ -146,7 +154,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/pricing"
-                  className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
+                  className="text-footerLink text-[16px] leading-[25.6px] font-medium"
                 >
                   Pricing
                 </Link>
@@ -157,13 +165,13 @@ const Footer = () => {
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <h3 className="text-[#666D80] text-[16px] leading-[25.6px] font-medium mb-1">
+              <h3 className="text-secondaryText text-[16px] leading-[25.6px] font-medium mb-1">
                 Solutions
               </h3>
               <li>
                 <Link
                   href=""
-                  className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
+                  className="text-footerLink text-[16px] leading-[25.6px] font-medium"
                 >
                   eCommerce
                 </Link>
@@ -171,7 +179,7 @@ const Footer = () => {
               <li>
                 <Link
                   href=""
-                  className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
+                  className="text-footerLink text-[16px] leading-[25.6px] font-medium"
                 >
                   Finance Automation
                 </Link>
@@ -179,7 +187,7 @@ const Footer = () => {
               <li>
                 <Link
                   href=""
-                  className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
+                  className="text-footerLink text-[16px] leading-[25.6px] font-medium"
                 >
                   Crypto
                 </Link>
@@ -187,7 +195,7 @@ const Footer = () => {
               <li>
                 <Link
                   href=""
-                  className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
+                  className="text-footerLink text-[16px] leading-[25.6px] font-medium"
                 >
                   Global Business
                 </Link>
@@ -195,7 +203,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/marketplace"
-                  className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
+                  className="text-footerLink text-[16px] leading-[25.6px] font-medium"
                 >
                   Marketplaces
                 </Link>
@@ -206,13 +214,13 @@ const Footer = () => {
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <h3 className="text-[#666D80] text-[16px] leading-[25.6px] font-medium mb-1">
+              <h3 className="text-secondaryText text-[16px] leading-[25.6px] font-medium mb-1">
                 Resources
               </h3>
               <li>
                 <Link
                   href=""
-                  className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
+                  className="text-footerLink text-[16px] leading-[25.6px] font-medium"
                 >
                   Tutorials
                 </Link>
@@ -220,7 +228,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/blog"
-                  className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
+                  className="text-footerLink text-[16px] leading-[25.6px] font-medium"
                 >
                   Blog
                 </Link>
@@ -228,7 +236,7 @@ const Footer = () => {
               <li>
                 <Link
                   href=""
-                  className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
+                  className="text-footerLink text-[16px] leading-[25.6px] font-medium"
                 >
                   Community
                 </Link>
@@ -236,7 +244,7 @@ const Footer = () => {
               <li>
                 <Link
                   href=""
-                  className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
+                  className="text-footerLink text-[16px] leading-[25.6px] font-medium"
                 >
                   Privacy Policy
                 </Link>
@@ -247,13 +255,13 @@ const Footer = () => {
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <h3 className="text-[#666D80] text-[16px] leading-[25.6px] font-medium mb-1">
+              <h3 className="text-secondaryText text-[16px] leading-[25.6px] font-medium mb-1">
                 About
               </h3>
               <li>
                 <Link
                   href=""
-                  className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
+                  className="text-footerLink text-[16px] leading-[25.6px] font-medium"
                 >
                   Company
                 </Link>
@@ -261,7 +269,7 @@ const Footer = () => {
               <li>
                 <Link
                   href=""
-                  className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
+                  className="text-footerLink text-[16px] leading-[25.6px] font-medium"
                 >
                   Company
                 </Link>
@@ -269,7 +277,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/career"
-                  className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
+                  className="text-footerLink text-[16px] leading-[25.6px] font-medium"
                 >
                   Careers
                 </Link>
@@ -277,7 +285,7 @@ const Footer = () => {
               <li>
                 <Link
                   href=""
-                  className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
+                  className="text-footerLink text-[16px] leading-[25.6px] font-medium"
                 >
                   FAQ
                 </Link>
@@ -285,7 +293,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/contact-us"
-                  className="text-[#F6F8FA] text-[16px] leading-[25.6px] font-medium"
+                  className="text-footerLink text-[16px] leading-[25.6px] font-medium"
                 >
                   Contact Us
                 </Link>
@@ -297,25 +305,25 @@ const Footer = () => {
         <div className="flex items-center gap-2 sm:gap-14 justify-between sm:justify-center">
           <Link
             href="/privacy-policy"
-            className="text-[#666D80] text-[14px] sm:text-[16px] sm:leading-[25.6px] font-normal"
+            className="text-secondaryText text-[14px] sm:text-[16px] sm:leading-[25.6px] font-normal"
           >
             Privacy Policy
           </Link>
           <Link
             href="/cookies"
-            className="text-[#666D80] text-[14px] sm:text-[16px] sm:leading-[25.6px] font-normal"
+            className="text-secondaryText text-[14px] sm:text-[16px] sm:leading-[25.6px] font-normal"
           >
             Cookies
           </Link>
           <Link
             href="/security"
-            className="text-[#666D80] text-[14px] sm:text-[16px] sm:leading-[25.6px] font-normal"
+            className="text-secondaryText text-[14px] sm:text-[16px] sm:leading-[25.6px] font-normal"
           >
             Security
           </Link>
           <Link
             href="/legal-document"
-            className="text-[#666D80] text-[14px] sm:text-[16px] sm:leading-[25.6px] font-normal"
+            className="text-secondaryText text-[14px] sm:text-[16px] sm:leading-[25.6px] font-normal"
           >
             Legal Document
           </Link>

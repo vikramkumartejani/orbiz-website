@@ -60,7 +60,6 @@ const Navbar = () => {
     setMobileMenuOpen((prevState) => !prevState);
   };
 
-
   const menuData = {
     features: {
       title: "Features",
@@ -70,37 +69,37 @@ const Navbar = () => {
           title: "Payment Link",
           description: "Learn more about Attio's features.",
           icon: "/assets/icons/resources-help.svg",
-          "link": "/payment-link"
+          link: "/payment-link",
         },
         {
           title: "Recurring Billing",
           description: "Quick start guides and tutorials.",
           icon: "/assets/icons/resources-help.svg",
-          "link": "/recurring-billing"
+          link: "/recurring-billing",
         },
         {
           title: "Invoice Management",
           description: "Help to accelerate your GTM motion.",
           icon: "/assets/icons/resources-help.svg",
-          "link": "/invoice-management"
+          link: "/invoice-management",
         },
         {
           title: "Checkout",
           description: "Learn more about Attio, CRM, and GTM.",
           icon: "/assets/icons/resources-help.svg",
-          "link": "/checkout"
+          link: "/checkout",
         },
         {
           title: "Integrations",
           description: "API setup and endpoint references.",
           icon: "/assets/icons/resources-help.svg",
-          "link": "/integrations"
+          link: "/integrations",
         },
         {
           title: "Pricing",
           description: "API setup and endpoint references.",
           icon: "/assets/icons/resources-help.svg",
-          "link": "/pricing"
+          link: "/pricing",
         },
       ],
       additionalSection: [
@@ -134,31 +133,31 @@ const Navbar = () => {
           title: "eCommerce",
           description: "Learn more about Attio's features.",
           icon: "/assets/icons/resources-help.svg",
-          "link": "/ecommerce"
+          link: "/ecommerce",
         },
         {
           title: "Finance Automation",
           description: "Quick start guides and tutorials.",
           icon: "/assets/icons/resources-help.svg",
-          "link": "/finance-automation"
+          link: "/finance-automation",
         },
         {
           title: "Crypto",
           description: "Help to accelerate your GTM motion.",
           icon: "/assets/icons/resources-help.svg",
-          "link": "/crypto"
+          link: "/crypto",
         },
         {
           title: "Global Business",
           description: "Learn more about Attio, CRM, and GTM.",
           icon: "/assets/icons/resources-help.svg",
-          "link": "/global-business"
+          link: "/global-business",
         },
         {
           title: "Marketplaces",
           description: "API setup and endpoint references.",
           icon: "/assets/icons/resources-help.svg",
-          "link": "/marketplaces"
+          link: "/marketplaces",
         },
       ],
       additionalSection: [
@@ -192,27 +191,26 @@ const Navbar = () => {
           title: "Tutorials",
           description: "Learn more about Attio's features.",
           icon: "/assets/icons/resources-help.svg",
-          "link": "/tutorials"
+          link: "/tutorials",
         },
         {
           title: "Blog",
           description: "Quick start guides and tutorials.",
           icon: "/assets/icons/resources-help.svg",
-          "link": "/blog"
+          link: "/blog",
         },
         {
           title: "Community",
           description: "Help to accelerate your GTM motion.",
           icon: "/assets/icons/resources-help.svg",
-          "link": "/community"
+          link: "/community",
         },
         {
           title: "Privacy Policy",
           description: "Learn more about Attio, CRM, and GTM.",
           icon: "/assets/icons/resources-help.svg",
-          "link": "/privacy-policy"
+          link: "/privacy-policy",
         },
-
       ],
       additionalSection: [
         {
@@ -258,8 +256,9 @@ const Navbar = () => {
             </Link>
           </div>
           <ul
-            className={`lg:flex hidden items-center gap-5 ${isIntegrationsPage ? "text-black" : "text-white"
-              }`}
+            className={`lg:flex hidden items-center gap-5 ${
+              isIntegrationsPage ? "text-black" : "text-white"
+            }`}
           >
             {Object.entries(menuData).map(([key, menu]) => (
               <li
@@ -288,7 +287,12 @@ const Navbar = () => {
                         </h1>
                         {menu.items.map((item, index) => (
                           <div key={index}>
-                            <Link href={`/${item.title.toLowerCase().replace(/ /g, '-')}`} className="flex items-center gap-3 rounded-md p-2 hover:bg-[#2f2d2d83]">
+                            <Link
+                              href={`/${item.title
+                                .toLowerCase()
+                                .replace(/ /g, "-")}`}
+                              className="flex items-center gap-3 rounded-md p-2 hover:bg-[#2f2d2d83]"
+                            >
                               <div className="border min-w-[40px] min-h-[40px] rounded-lg flex items-center justify-center">
                                 <Image
                                   src={item.icon}
@@ -348,16 +352,17 @@ const Navbar = () => {
           <div className="lg:flex hidden items-center gap-4">
             <Link
               href="/login"
-              className={`hover:border-white flex items-center justify-center ${isIntegrationsPage
-                ? "bg-white text-black border-[#DFE1E7]"
-                : "bg-[#1A1B25] text-white border-[#272835]"
-                } w-[83px] border px-5 h-[40px] rounded-[1000px] hover:scale-100 scale-105 transition-all duration-300 text-[14px] leading-[21.7px] font-semibold`}
+              className={`hover:border-white flex items-center justify-center ${
+                isIntegrationsPage
+                  ? "bg-white text-black border-borderColor"
+                  : "bg-[#1A1B25] text-white border-borderColor2"
+              } w-[83px] border px-5 h-[40px] rounded-[1000px] hover:scale-100 scale-105 transition-all duration-300 text-[14px] leading-[21.7px] font-semibold`}
             >
               Login
             </Link>
             <Link
               href="/#get-started"
-              className="flex items-center justify-center bg-[#5F57FF] w-[120px] h-[40px] rounded-[1000px] text-white text-[14px] leading-[21.7px] hover:scale-100 scale-105 transition-all duration-300 font-semibold"
+              className="flex items-center justify-center bg-btn w-[120px] h-[40px] rounded-[1000px] text-white text-[14px] leading-[21.7px] hover:scale-100 scale-105 transition-all duration-300 font-semibold"
             >
               Get Started
             </Link>

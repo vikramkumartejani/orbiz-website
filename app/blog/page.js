@@ -37,7 +37,7 @@ const Blog = () => {
       </div>
       <div className="max-w-[1200px] mx-auto w-full relative px-5 md:py-[56px] py-[40px]">
         <h1
-          className="md:text-[48px] text-[38px] md:leading-[60px] font-[500] text-[#0D0D12]"
+          className="md:text-[48px] text-[38px] md:leading-[60px] font-[500] text-heading"
           data-aos="fade-down"
         >
           The Orbiz Blog
@@ -65,7 +65,7 @@ const Blog = () => {
                 <input
                   type="text"
                   placeholder="Search"
-                  className="border-none outline-none bg-transparent text-[#818898] text-[16px] leading-[25px] font-normal w-full flex-grow"
+                  className="border-none outline-none bg-transparent text-dropdownFilterText text-[16px] leading-[25px] font-normal w-full flex-grow"
                 />
               </div>
               <div className="w-full md:w-fit flex items-center flex-col justify-between gap-3">

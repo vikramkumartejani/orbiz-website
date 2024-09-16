@@ -11,71 +11,139 @@ const invoiceData = [
   {
     label: "Credit and debit cards",
     icons: [
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark1" />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark2" />,
+      <IoIosCheckmarkCircleOutline
+        color="#40C4AA"
+        size={24}
+        key="checkmark1"
+      />,
+      <IoIosCheckmarkCircleOutline
+        color="#40C4AA"
+        size={24}
+        key="checkmark2"
+      />,
     ],
   },
   {
     label: "International card payments",
     icons: [
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark3" />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark4" />,
+      <IoIosCheckmarkCircleOutline
+        color="#40C4AA"
+        size={24}
+        key="checkmark3"
+      />,
+      <IoIosCheckmarkCircleOutline
+        color="#40C4AA"
+        size={24}
+        key="checkmark4"
+      />,
     ],
   },
   {
     label: "Links",
     icons: [
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark5" />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark6" />,
+      <IoIosCheckmarkCircleOutline
+        color="#40C4AA"
+        size={24}
+        key="checkmark5"
+      />,
+      <IoIosCheckmarkCircleOutline
+        color="#40C4AA"
+        size={24}
+        key="checkmark6"
+      />,
     ],
   },
   {
     label: "Links",
     icons: [
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark7" />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark8" />,
+      <IoIosCheckmarkCircleOutline
+        color="#40C4AA"
+        size={24}
+        key="checkmark7"
+      />,
+      <IoIosCheckmarkCircleOutline
+        color="#40C4AA"
+        size={24}
+        key="checkmark8"
+      />,
     ],
   },
   {
     label: "Settle and pay out in additional currencies",
     icons: [
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark9" />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark10" />,
+      <IoIosCheckmarkCircleOutline
+        color="#40C4AA"
+        size={24}
+        key="checkmark9"
+      />,
+      <IoIosCheckmarkCircleOutline
+        color="#40C4AA"
+        size={24}
+        key="checkmark10"
+      />,
     ],
   },
   {
     label: "3D Secure authentication",
     icons: [
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark11" />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark12" />,
+      <IoIosCheckmarkCircleOutline
+        color="#40C4AA"
+        size={24}
+        key="checkmark11"
+      />,
+      <IoIosCheckmarkCircleOutline
+        color="#40C4AA"
+        size={24}
+        key="checkmark12"
+      />,
     ],
   },
   {
     label: "Card account updater",
     icons: [
       <IoIosCloseCircleOutline color="#DF1C41" size={24} key="close1" />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark13" />,
+      <IoIosCheckmarkCircleOutline
+        color="#40C4AA"
+        size={24}
+        key="checkmark13"
+      />,
     ],
   },
   {
     label: "Adaptive Acceptance",
     icons: [
       <IoIosCloseCircleOutline color="#DF1C41" size={24} key="close2" />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark14" />,
+      <IoIosCheckmarkCircleOutline
+        color="#40C4AA"
+        size={24}
+        key="checkmark14"
+      />,
     ],
   },
   {
     label: "Network tokens",
     icons: [
       <IoIosCloseCircleOutline color="#DF1C41" size={24} key="close3" />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark15" />,
+      <IoIosCheckmarkCircleOutline
+        color="#40C4AA"
+        size={24}
+        key="checkmark15"
+      />,
     ],
   },
   {
     label: "Disputes",
     icons: [
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark16" />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="checkmark17" />,
+      <IoIosCheckmarkCircleOutline
+        color="#40C4AA"
+        size={24}
+        key="checkmark16"
+      />,
+      <IoIosCheckmarkCircleOutline
+        color="#40C4AA"
+        size={24}
+        key="checkmark17"
+      />,
     ],
   },
 ];
@@ -88,7 +156,7 @@ const InvoiceManagement = () => {
     <div data-aos="fade-up" className="max-w-[1200px] mx-auto">
       {/* Header Section */}
       <div
-        className="flex justify-between border-b border-b-[#DFE1E7] py-[16px] gap-1 cursor-pointer"
+        className="flex justify-between border-b border-b-borderColor py-[16px] gap-1 cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
       >
         <h3>Invoice Management</h3>
@@ -98,7 +166,11 @@ const InvoiceManagement = () => {
             isOpen ? "rotate-[180deg]" : ""
           } transition-all duration-300 ease-in-out`}
         >
-          {isOpen ? <MdKeyboardArrowUp size={20} /> : <MdKeyboardArrowDown size={20} />}
+          {isOpen ? (
+            <MdKeyboardArrowUp size={20} />
+          ) : (
+            <MdKeyboardArrowDown size={20} />
+          )}
         </span>
       </div>
 
@@ -111,9 +183,9 @@ const InvoiceManagement = () => {
         {invoiceData.map((item, index) => (
           <div
             key={index}
-            className="grid md:grid-cols-3 grid-cols-[2fr_1fr_1fr] border-b border-b-[#DFE1E7] py-[16px] gap-1"
+            className="grid md:grid-cols-3 grid-cols-[2fr_1fr_1fr] border-b border-b-borderColor py-[16px] gap-1"
           >
-            <p className="sm:text-[16px] text-[14px] text-[#666D80]">
+            <p className="sm:text-[16px] text-[14px] text-secondaryText">
               {item.label}
             </p>
             {/* Displaying icons dynamically from the array */}

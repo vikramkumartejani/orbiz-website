@@ -46,7 +46,7 @@ const Integrations = () => {
           data-aos="fade-up"
         >
           <div
-            className="shadow-custom border border-[#DFE1E7] bg-white rounded-[1000px] px-3 py-1 max-w-[118px] mx-auto flex items-center gap-1.5"
+            className="shadow-custom border border-borderColor bg-white rounded-[1000px] px-3 py-1 max-w-[118px] mx-auto flex items-center gap-1.5"
             data-aos="fade-up"
           >
             <Image
@@ -55,19 +55,19 @@ const Integrations = () => {
               width={16}
               height={16}
             />
-            <h1 className="text-[#5F57FF] text-[14px] leading-[21.7px] font-medium font-custom">
+            <h1 className="text-btn text-[14px] leading-[21.7px] font-medium font-custom">
               Integrations
             </h1>
           </div>
           <h1
-            className="text-[#0D0D12] text-[48px] sm:text-[68px] sm:leading-[85px] tracking-[-0.01em] font-medium max-w-[865px] mx-auto"
+            className="text-heading text-[48px] sm:text-[68px] sm:leading-[85px] tracking-[-0.01em] font-medium max-w-[865px] mx-auto"
             data-aos="fade-up"
             data-aos-delay="100"
           >
             Simplify Your Workflow with Orbiz Integrations
           </h1>
           <p
-            className="text-[#666D80] text-[18px] leading-[27.9px] font-normal max-w-[540px] mx-auto font-custom"
+            className="text-secondaryText text-[18px] leading-[27.9px] font-normal max-w-[540px] mx-auto font-custom"
             data-aos="fade-up"
             data-aos-delay="200"
           >
@@ -81,13 +81,13 @@ const Integrations = () => {
           >
             <Link
               href="/#get-started"
-              className="flex items-center justify-center sm:w-[150px] w-full h-[52px] scale-105 hover:scale-100 transition-all duration-300 rounded-[1000px] bg-[#5F57FF] shadow-custom text-white text-[16px] font-semibold leading-[24px]"
+              className="flex items-center justify-center sm:w-[150px] w-full h-[52px] scale-105 hover:scale-100 transition-all duration-300 rounded-[1000px] bg-btn shadow-custom text-white text-[16px] font-semibold leading-[24px]"
             >
               Get Started
             </Link>
             <Link
               href="/contact-us"
-              className="flex items-center justify-center sm:w-[150px] w-full h-[52px] scale-105 hover:scale-100 transition-all duration-300 rounded-[1000px] bg-white border border-[#DFE1E7] shadow-custom text-[#0D0D12] text-[16px] font-semibold leading-[24px]"
+              className="flex items-center justify-center sm:w-[150px] w-full h-[52px] scale-105 hover:scale-100 transition-all duration-300 rounded-[1000px] bg-white border border-borderColor shadow-custom text-heading text-[16px] font-semibold leading-[24px]"
             >
               Contact Us
             </Link>
@@ -106,7 +106,7 @@ const Integrations = () => {
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <div className="border border-[#DFE1E7] shadow-custom w-full md:w-[300px] h-[40px] rounded-lg flex items-center gap-2 px-3">
+              <div className="border border-borderColor shadow-custom w-full md:w-[300px] h-[40px] rounded-lg flex items-center gap-2 px-3">
                 <Image
                   src="/assets/icons/search.svg"
                   alt="search"
@@ -116,7 +116,7 @@ const Integrations = () => {
                 <input
                   type="text"
                   placeholder="Search"
-                  className="border-none outline-none bg-transparent text-[#818898] text-[16px] leading-[25px] font-normal"
+                  className="border-none outline-none bg-transparent text-dropdownFilterText text-[16px] leading-[25px] font-normal"
                 />
               </div>
               <div className="w-full md:w-fit flex items-center flex-col justify-between gap-3">

@@ -6,7 +6,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div className="w-full px-2 md:px-5 py-2 md:py-5 overflow-hidden">
-      <div className="bg-[#0D0D12] text-white w-full rounded-[24px] pb-10 lg:pb-24 px-4">
+      <div className="bg-heading text-white w-full rounded-[24px] pb-10 lg:pb-24 px-4">
         <Navbar />
         <div className="pt-10 md:pt-24 w-full px-5">
           <div className="max-w-[1200px] mx-auto w-full flex lg:items-start items-center lg:justify-between lg:flex-row flex-col lg:gap-0 gap-10">
@@ -20,13 +20,13 @@ const Hero = () => {
                 </h3>
               </div>
               <h1
-                className="my-4 text-[48px] sm:text-[55px] xl:text-[68px] lg:leading-[85px] tracking-[-0.01em] text-[#F8FAFB] font-medium"
+                className="my-4 text-[48px] sm:text-[55px] xl:text-[68px] lg:leading-[85px] tracking-[-0.01em] text-whitish font-medium"
                 data-aos="fade-up"
               >
                 Simplifying Payment for Growing Business
               </h1>
               <p
-                className="text-[#666D80] text-[16px] sm:leading-[25.9px] font-normal lg:max-w-[588px]"
+                className="text-secondaryText text-[16px] sm:leading-[25.9px] font-normal lg:max-w-[588px]"
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
@@ -40,7 +40,10 @@ const Hero = () => {
                 data-aos="fade-up"
                 data-aos-delay="400"
               >
-                <Link  href='/#get-started' className="flex items-center justify-center bg-[#5F57FF] shadow-custom w-full sm:w-[150px] h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]">
+                <Link
+                  href="/#get-started"
+                  className="flex items-center justify-center bg-btn shadow-custom w-full sm:w-[150px] h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-[#6860f7]"
+                >
                   Get Started
                 </Link>
                 <Link
@@ -52,7 +55,7 @@ const Hero = () => {
               </div>
 
               <p
-                className="text-[#666D80] text-[16px] leading-[25.6px] font-medium mt-14 mb-8 lg:block hidden"
+                className="text-secondaryText text-[16px] leading-[25.6px] font-medium mt-14 mb-8 lg:block hidden"
                 data-aos="fade-up"
               >
                 Trusted by beloved partner and customer

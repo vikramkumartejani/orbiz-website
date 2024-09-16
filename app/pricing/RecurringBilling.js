@@ -54,21 +54,37 @@ const recurringBilling = [
     label: "Card account updater",
     icons: [
       <IoIosCloseCircleOutline color="#DF1C41" size={24} key="cardClose1" />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="cardCheck1" />,
+      <IoIosCheckmarkCircleOutline
+        color="#40C4AA"
+        size={24}
+        key="cardCheck1"
+      />,
     ],
   },
   {
     label: "Adaptive Acceptance",
     icons: [
-      <IoIosCloseCircleOutline color="#DF1C41" size={24} key="adaptiveClose1" />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="adaptiveCheck1" />,
+      <IoIosCloseCircleOutline
+        color="#DF1C41"
+        size={24}
+        key="adaptiveClose1"
+      />,
+      <IoIosCheckmarkCircleOutline
+        color="#40C4AA"
+        size={24}
+        key="adaptiveCheck1"
+      />,
     ],
   },
   {
     label: "Network tokens",
     icons: [
       <IoIosCloseCircleOutline color="#DF1C41" size={24} key="networkClose1" />,
-      <IoIosCheckmarkCircleOutline color="#40C4AA" size={24} key="networkCheck1" />,
+      <IoIosCheckmarkCircleOutline
+        color="#40C4AA"
+        size={24}
+        key="networkCheck1"
+      />,
     ],
   },
   {
@@ -88,7 +104,7 @@ const RecurringBilling = () => {
     <div data-aos="fade-up" className="max-w-[1200px] mx-auto">
       {/* Header Section */}
       <div
-        className="flex justify-between border-b border-b-[#DFE1E7] py-[16px] gap-1 cursor-pointer"
+        className="flex justify-between border-b border-b-borderColor py-[16px] gap-1 cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
       >
         <h3>Recurring Billing</h3>
@@ -98,7 +114,11 @@ const RecurringBilling = () => {
             isOpen ? "rotate-[180deg]" : ""
           } transition-all duration-300 ease-in-out`}
         >
-          {isOpen ? <MdKeyboardArrowUp size={20} /> : <MdKeyboardArrowDown size={20} />}
+          {isOpen ? (
+            <MdKeyboardArrowUp size={20} />
+          ) : (
+            <MdKeyboardArrowDown size={20} />
+          )}
         </span>
       </div>
 
@@ -111,9 +131,9 @@ const RecurringBilling = () => {
         {recurringBilling.map((item, index) => (
           <div
             key={index}
-            className="grid md:grid-cols-3 grid-cols-[2fr_1fr_1fr] border-b border-b-[#DFE1E7] py-[16px] gap-1"
+            className="grid md:grid-cols-3 grid-cols-[2fr_1fr_1fr] border-b border-b-borderColor py-[16px] gap-1"
           >
-            <p className="sm:text-[16px] text-[14px] text-[#666D80]">
+            <p className="sm:text-[16px] text-[14px] text-secondaryText">
               {item.label}
             </p>
             {/* Displaying icons dynamically from the array */}

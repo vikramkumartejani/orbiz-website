@@ -81,7 +81,7 @@ const OurCustomer = () => {
     setShowAll(false);
   };
 
-   useEffect(() => {
+  useEffect(() => {
     const updateVisibleCards = () => {
       if (showAll) {
         setVisibleCards(cardsData);
@@ -103,11 +103,11 @@ const OurCustomer = () => {
     return () => window.removeEventListener("resize", updateVisibleCards);
   }, [showAll]);
   return (
-    <div className="bg-[#F8FAFB] w-full py-20 px-5">
+    <div className="bg-whitish w-full py-20 px-5">
       <div className="w-full">
         <div className="flex flex-col text-center gap-4">
           <div
-            className="shadow-custom border border-[#DFE1E7] bg-white rounded-[1000px] mx-auto px-3 py-1 max-w-[141px] flex items-center gap-1.5"
+            className="shadow-custom border border-borderColor bg-white rounded-[1000px] mx-auto px-3 py-1 max-w-[141px] flex items-center gap-1.5"
             data-aos="fade-up"
           >
             <Image
@@ -117,18 +117,18 @@ const OurCustomer = () => {
               height={16}
               className="-mt-0.5"
             />
-            <h1 className="text-[#5F57FF] text-[13px] leading-[21.7px] font-medium font-custom">
+            <h1 className="text-btn text-[13px] leading-[21.7px] font-medium font-custom">
               Our Customers
             </h1>
           </div>
           <h1
-            className="max-w-[607px] mx-auto text-[#0D0D12] text-[40px] sm:text-[52px] sm:leading-[65px] tracking-[-0.01em] font-medium"
+            className="max-w-[607px] mx-auto text-heading text-[40px] sm:text-[52px] sm:leading-[65px] tracking-[-0.01em] font-medium"
             data-aos="fade-up"
           >
             See What Our Customers Are Saying
           </h1>
           <p
-            className="text-[#666D80] text-[16px] sm:text-[18px] sm:leading-[27px] font-normal max-w-[630px] mx-auto"
+            className="text-secondaryText text-[16px] sm:text-[18px] sm:leading-[27px] font-normal max-w-[630px] mx-auto"
             data-aos="fade-up"
           >
             Heres what some of our customers say about our platform.
@@ -137,9 +137,7 @@ const OurCustomer = () => {
         <div className="mt-14 relative">
           <div className="absolute bottom-0 h-[300px] w-full bg-custom-bg-one z-[20]"></div>
           <div className="w-full max-w-[1160px] mx-auto">
-            <div
-              className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
-            >
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {visibleCards.map((card, index) => (
                 <div
                   key={index}
@@ -153,11 +151,11 @@ const OurCustomer = () => {
                       width={108}
                       height={20}
                     />
-                    <span className="text-[#666D80] text-[16px] leading-[25px] font-medium mt-1">
+                    <span className="text-secondaryText text-[16px] leading-[25px] font-medium mt-1">
                       {card.rating}
                     </span>
                   </div>
-                  <p className="mt-4 text-[#0D0D12] text-[18px] font-medium leading-[27px]">
+                  <p className="mt-4 text-heading text-[18px] font-medium leading-[27px]">
                     {card.review}
                   </p>
                   <div className="mt-10 flex items-center gap-3">
@@ -184,14 +182,14 @@ const OurCustomer = () => {
                 {!showAll ? (
                   <button
                     onClick={handleShowAll}
-                    className="bg-[#5F57FF] shadow-custom-one sm:w-fit w-full px-5 h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition transform hover:shadow-lg  duration-300  hover:scale-105  hover:bg-[#6860f7]"
+                    className="bg-btn shadow-custom-one sm:w-fit w-full px-5 h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition transform hover:shadow-lg  duration-300  hover:scale-105  hover:bg-[#6860f7]"
                   >
                     See All Customer Stories
                   </button>
                 ) : (
                   <button
                     onClick={handleShowLess}
-                    className="bg-[#5F57FF] shadow-custom-one sm:w-fit w-full px-5 h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition transform hover:shadow-lg duration-300  hover:scale-105 hover:bg-[#6860f7]"
+                    className="bg-btn shadow-custom-one sm:w-fit w-full px-5 h-[52px] rounded-[1000px] text-[16px] leading-[24px] font-semibold text-white transition transform hover:shadow-lg duration-300  hover:scale-105 hover:bg-[#6860f7]"
                   >
                     See Less Customer Stories
                   </button>
